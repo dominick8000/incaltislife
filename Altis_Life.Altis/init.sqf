@@ -27,14 +27,9 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-[] execVM "IgiLoad\IgiLoadInit.sqf";
 
 if(!StartProgress) then
 {
 	[8,true,false] execFSM "core\fsm\core_time.fsm";
 };
 StartProgress = true;
-
-[] spawn life_fnc_autoSave;
-
-onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
