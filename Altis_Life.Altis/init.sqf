@@ -27,6 +27,7 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "IgiLoad\IgiLoad.sqf";
 
 if(!StartProgress) then
 {
