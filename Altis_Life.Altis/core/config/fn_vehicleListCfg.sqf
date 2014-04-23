@@ -283,7 +283,7 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",315000],
 			["O_Heli_Light_02_unarmed_F",1500000],
-			["I_Heli_Transport_02_F",4500000],
+			["I_Heli_Transport_02_F",3500000],
 			["C_Quadbike_01_F",200000]
 		];
 	};
@@ -294,7 +294,7 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",315000],
 			["O_Heli_Light_02_unarmed_F",1500000],
-			["I_Heli_Transport_02_F",4500000],
+			["I_Heli_Transport_02_F",3500000],
 			["C_Quadbike_01_F",200000]
 		];
 	};
