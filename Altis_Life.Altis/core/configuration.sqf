@@ -251,7 +251,6 @@ life_weapon_shop_array =
 	["arifle_sdar_F",7500],
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",1500],
-	["Binocular",50],
 	["ItemGPS",45],
 	["ToolKit",75],
 	["FirstAidKit",65],
