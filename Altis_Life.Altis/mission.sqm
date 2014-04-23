@@ -2026,7 +2026,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3637.0159,10.13537,13101.211};
+					position[]={3637.2739,10.136681,13100.333};
 					special="NONE";
 					id=94;
 					side="CIV";
@@ -7851,12 +7851,13 @@ class Mission
 		};
 		class Item447
 		{
-			position[]={3361.6965,2.0156469,12958.367};
+			position[]={3361.1047,2.0142651,12957.849};
 			azimut=220;
 			id=654;
 			side="EMPTY";
 			vehicle="CamoNet_OPFOR_F";
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item448
 		{
