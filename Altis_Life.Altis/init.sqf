@@ -35,4 +35,6 @@ if(!StartProgress) then
 };
 StartProgress = true;
 
+[] spawn life_fnc_autoSave;
+
 onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
