@@ -16,10 +16,10 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["C_Hatchback_01_F",12000],
-			["C_Offroad_01_F",51000],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",70000]
+			["C_Hatchback_01_F",9600],
+			["C_Offroad_01_F",28000],
+			["C_SUV_01_F",40800],
+			["C_Van_01_transport_F",5600]
 		];
 	}; 
 	
@@ -27,10 +27,10 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["C_Hatchback_01_F",12000],
-			["C_Offroad_01_F",51000],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",70000]
+			["C_Hatchback_01_F",9600],
+			["C_Offroad_01_F",28000],
+			["C_SUV_01_F",40800],
+			["C_Van_01_transport_F",5600]
 		];
 	};
 	
@@ -38,10 +38,10 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["C_Hatchback_01_F",12000],
-			["C_Offroad_01_F",51000],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",70000]
+			["C_Hatchback_01_F",9600],
+			["C_Offroad_01_F",28000],
+			["C_SUV_01_F",40800],
+			["C_Van_01_transport_F",5600]
 		];
 	}; 
 	
@@ -49,10 +49,10 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["C_Hatchback_01_F",12000],
-			["C_Offroad_01_F",51000],
-			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",70000]
+			["C_Hatchback_01_F",9600],
+			["C_Offroad_01_F",28000],
+			["C_SUV_01_F",40800],
+			["C_Van_01_transport_F",5600]
 		];
 	}; 
 	
@@ -114,10 +114,10 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_box_F",150000],
-			["I_Truck_02_transport_F",350000],
-			["I_Truck_02_covered_F",600000],
-			["B_Truck_01_transport_F",1200000]
+			["C_Van_01_box_F",120000],
+			["I_Truck_02_transport_F",280000],
+			["I_Truck_02_covered_F",480000],
+			["B_Truck_01_transport_F",9600000]
 		];	
 	};
 	
@@ -125,10 +125,10 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_box_F",150000],
-			["I_Truck_02_transport_F",350000],
-			["I_Truck_02_covered_F",600000],
-			["B_Truck_01_transport_F",1200000]
+			["C_Van_01_box_F",120000],
+			["I_Truck_02_transport_F",280000],
+			["I_Truck_02_covered_F",480000],
+			["B_Truck_01_transport_F",9600000]
 		];	
 	};
 	
@@ -281,8 +281,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",315000],
-			["O_Heli_Light_02_unarmed_F",1500000],
+			["B_Heli_Light_01_F",252000],
+			["O_Heli_Light_02_unarmed_F",1200000],
 			["I_Heli_Transport_02_F",3500000],
 			["C_Quadbike_01_F",200000]
 		];
@@ -292,8 +292,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",315000],
-			["O_Heli_Light_02_unarmed_F",1500000],
+			["B_Heli_Light_01_F",252000],
+			["O_Heli_Light_02_unarmed_F",1200000],
 			["I_Heli_Transport_02_F",3500000],
 			["C_Quadbike_01_F",200000]
 		];
