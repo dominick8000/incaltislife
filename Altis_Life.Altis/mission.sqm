@@ -17137,7 +17137,7 @@ class Mission
 		class Item217
 		{
 			position[]={16825.916,17.266361,12942.925};
-			name="civ_gar_5";
+			name="civ_gar_1_5";
 			text="Garage";
 			type="o_service";
 		};
