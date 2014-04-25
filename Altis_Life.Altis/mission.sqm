@@ -3423,7 +3423,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={16826.389,17.245241,12943.353};
+					position[]={16826.895,17.220951,12943.858};
 					azimut=215;
 					special="NONE";
 					id=207;
@@ -17115,7 +17115,7 @@ class Mission
 		};
 		class Item217
 		{
-			position[]={16826.422,17.242071,12943.431};
+			position[]={16825.916,17.266361,12942.925};
 			name="civ_gar_5";
 			text="Garage";
 			type="o_service";
