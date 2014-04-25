@@ -117,7 +117,7 @@ switch (_shop) do
 			["C_Van_01_box_F",120000],
 			["I_Truck_02_transport_F",280000],
 			["I_Truck_02_covered_F",480000],
-			["B_Truck_01_transport_F",9600000]
+			["B_Truck_01_transport_F",2000000]
 		];	
 	};
 	
@@ -128,7 +128,7 @@ switch (_shop) do
 			["C_Van_01_box_F",120000],
 			["I_Truck_02_transport_F",280000],
 			["I_Truck_02_covered_F",480000],
-			["B_Truck_01_transport_F",9600000]
+			["B_Truck_01_transport_F",2000000]
 		];	
 	};
 	
@@ -204,6 +204,11 @@ switch (_shop) do
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
 		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["O_MRAP_02_F",40000]];
+		};
 	};
 	
 	case "cop_car_2":
@@ -216,6 +221,11 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["O_MRAP_02_F",40000]];
 		};
 	};
 	
@@ -230,6 +240,11 @@ switch (_shop) do
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
 		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["O_MRAP_02_F",40000]];
+		};
 	};
 	
 	case "cop_car_5":
@@ -242,6 +257,11 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_MRAP_01_F",30000]];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return set[count _return,
+			["O_MRAP_02_F",40000]];
 		};
 	};
 	
