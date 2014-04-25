@@ -209,6 +209,8 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",40000]];
 		};
+		_return set[count _return,
+		["C_Quadbike_01_F",200000]];
 	};
 	
 	case "cop_car_2":
@@ -227,6 +229,8 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",40000]];
 		};
+		_return set[count _return,
+		["C_Quadbike_01_F",200000]];
 	};
 	
 	case "cop_car_3":
@@ -245,6 +249,8 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",40000]];
 		};
+		_return set[count _return,
+		["C_Quadbike_01_F",200000]];
 	};
 	
 	case "cop_car_5":
@@ -263,6 +269,8 @@ switch (_shop) do
 			_return set[count _return,
 			["O_MRAP_02_F",40000]];
 		};
+		_return set[count _return,
+		["C_Quadbike_01_F",200000]];
 	};
 	
 	case "fed_car":
