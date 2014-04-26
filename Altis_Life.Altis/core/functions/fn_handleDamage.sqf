@@ -52,7 +52,7 @@ if(!isNull _source) then {
 // Flashbang
 if (_projectile in ["MiniGrenade"]) then {
 	_damage = 0;
-	[_projectile] spawn life_fnc_handleFlashbang;
+[_projectile] spawn life_fnc_handleFlashbang;
 };
 
 [] call life_fnc_hudUpdate;
