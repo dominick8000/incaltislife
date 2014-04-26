@@ -28,6 +28,18 @@ class RscTitles
 {
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
+	#include "=BTC=_Logistic\=BTC=_Lift\=BTC=_Hud.h"
+};
+
+class RscPicture 
+{
+	type = CT_STATIC;
+	idc = -1;
+	style = 48;
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {1, 1, 1, 1};
+	font = "PuristaMedium"; //Typeface
+	sizeEx = 0;
 };
 
 class CfgFunctions
