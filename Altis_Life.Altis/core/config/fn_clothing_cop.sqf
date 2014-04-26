@@ -43,6 +43,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
+			_ret set[count _ret,["V_RebreatherB","Gasmaske",1000]];
 		};
 	};
 	
