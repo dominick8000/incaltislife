@@ -99,9 +99,8 @@ class Mission
 		forecastWaves=0.12;
 		forecastGust=0.099999994;
 		forecastWindDir=360;
-		wavesForced=1;
 		rainForced=1;
-		lightnigsForced=1;
+		wavesForced=1;
 		windForced=1;
 		year=2035;
 		month=7;
@@ -20126,7 +20125,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={3352.7859,2.1740601,12968.114};
@@ -20205,6 +20204,22 @@ class Mission
 			name="grenze_trigger_2_2";
 			expActiv="grenze_gate_2_2 animate[""Door_1_rot"",1];";
 			expDesactiv="grenze_gate_2_2 animate[""Door_1_rot"",0];";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={3655.1824,10.278258,13130.083};
+			a=12;
+			b=12;
+			rectangular=1;
+			activationBy="CIV";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Parkzeit";
+			expActiv="hint ""Die Parkzeit beträgt 10 Minuten."";";
 			class Effects
 			{
 			};
