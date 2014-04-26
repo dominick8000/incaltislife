@@ -28,8 +28,6 @@ if(X_Client) then
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "IgiLoad\IgiLoadInit.sqf";
-[] execVM "scripts\transport\init.sqf";
-[] execVM "scripts\player\init.sqf";
 
 if(!StartProgress) then
 {
