@@ -4,8 +4,8 @@ While{true} do {
 "dynamicBlur" ppEffectCommit 15; // time it takes to normal
 resetCamShake; // resets the shake
 20 fadeSound 1;     //fades the sound back to normal
-if (headgear player != "V_RebreatherB") then {antidote1 = 2583};
-if (headgear player == "V_RebreatherB") then {antidote1 = 2581};
+if (headgear player != "H_PilotHelmetFighter_B") then {antidote1 = 2583};
+if (headgear player == "H_PilotHelmetFighter_B") then {antidote1 = 2581};
 
 
 waituntil{
