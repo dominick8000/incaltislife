@@ -148,9 +148,10 @@ switch (_vehicle) do
 	
 	case "B_MRAP_01_F":
 	{
+		_path = "textures";
 		_ret = 
 		[
-			["textures\swat_hunter_1.paa","cop"],
+			[_path + "swat_hunter_1.paa","cop",_path + "swat_hunter_2.paa"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
