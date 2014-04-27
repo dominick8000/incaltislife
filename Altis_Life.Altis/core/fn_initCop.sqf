@@ -26,3 +26,23 @@ if((str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+[] spawn
+{
+while {true} do
+{
+waitUntil {uniform player == "U_Rangemaster"};
+player setObjectTextureGlobal [0,"textures\police_shirt.paa"];
+waitUntil {uniform player != "U_Rangemaster"}; 
+};
+};
+
+[] spawn
+{
+while {true} do
+{
+waitUntil {vest player == "V_PlateCarrier2_rgr"};
+player setObjectTextureGlobal [0,"textures\police_vest.paa"];
+waitUntil {vest player != "V_PlateCarrier2_rgr"}; 
+};
+};

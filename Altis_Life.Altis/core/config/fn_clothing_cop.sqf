@@ -68,10 +68,9 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];
+			_ret set[count _ret,["V_PlateCarrier2_rgr","Polizeiweste",1500]];
 		};
 	};
 	
