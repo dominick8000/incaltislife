@@ -125,7 +125,14 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-	
+	player createDiaryRecord ["serverrules", 
+		[
+			"Teamspeak", 
+				"
+				Der Teamspeak Server ist mit folgender IP zu erreichen: 85.214.149.79 Port: 9987<br/>
+				"
+		]
+	];
 	player createDiaryRecord ["serverrules",
 		[
 			"Kommunikation", 
