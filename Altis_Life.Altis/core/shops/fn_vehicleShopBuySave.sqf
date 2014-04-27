@@ -258,11 +258,6 @@ if(_veh in ["B_MRAP_01_F","C_SUV_01_F"] && playerSide == west) then {
 	_vehicle setVariable["lights",false,true];
 };
 
-if(_veh in ["B_Heli_Transport_01_F"]) {
-	_vehicle addMagazines["2000Rnd_65x39_Belt_Tracer_Red", 3];
-};
-
-
 if(playerSide == west) then
 {
 	if(_veh == "C_Offroad_01_F") then
