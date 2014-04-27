@@ -91,7 +91,11 @@ switch(_shop) do
 						["30Rnd_9x21_Mag",nil,60],
 						["9Rnd_45ACP_Mag",nil,200],
 						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200]
+						["MiniGrenade","Flashbang",200],
+						["srifle_LRR_F","Scharfschuetzengewehr",50000],
+						["7Rnd_408_Mag","LRR Munition",1000],
+						["Rangefinder",nil,1000],
+						["optic_SOS","Scharfuetzenvisier",1000]
 					]
 				];
 			};
