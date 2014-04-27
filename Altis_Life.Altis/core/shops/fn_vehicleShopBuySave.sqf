@@ -259,7 +259,7 @@ if(_veh in ["B_MRAP_01_F","C_SUV_01_F"] && playerSide == west) then {
 };
 
 if(_veh in ["B_Heli_Transport_01_F"]) {
-	_vehicle addMagazines ["2000Rnd_65x39_Belt_Tracer_Red", 3];
+	_vehicle addMagazines["2000Rnd_65x39_Belt_Tracer_Red", 3];
 };
 
 
