@@ -174,12 +174,6 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Don't Be A Dick!"
-		]
-	];
 	
 // Police Section
 	player createDiaryRecord ["policerules",
