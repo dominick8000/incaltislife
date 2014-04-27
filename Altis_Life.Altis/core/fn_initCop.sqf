@@ -41,18 +41,8 @@ waitUntil {uniform player != "U_Rangemaster"};
 {
 while {true} do
 {
-waitUntil {uniform player == "U_B_CombatUniform_mcam_tshirt"};
-player setObjectTextureGlobal [0,"textures\sniper_shirt.paa"];
-waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
-};
-};
-
-[] spawn
-{
-while {true} do
-{
 waitUntil {vest player == "V_PlateCarrierIA1_dgtl"};
-player setObjectTextureGlobal [0,"textures\police_vest.paa"];
+vest setObjectTextureGlobal [0,"textures\police_vest.paa"];
 waitUntil {vest player != "V_PlateCarrierIA1_dgtl"};
 };
 };
