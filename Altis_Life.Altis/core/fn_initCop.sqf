@@ -51,8 +51,8 @@ waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
 {
 while {true} do
 {
-waitUntil {vest player == "V_PlateCarrier2_rgr"};
+waitUntil {vest player == "V_PlateCarrierIA1_dgtl"};
 player setObjectTextureGlobal [0,"textures\police_vest.paa"];
-waitUntil {vest player != "V_PlateCarrier2_rgr"};
+waitUntil {vest player != "V_PlateCarrierIA1_dgtl"};
 };
 };

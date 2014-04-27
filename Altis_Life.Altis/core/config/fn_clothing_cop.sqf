@@ -70,7 +70,7 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrier2_rgr","Polizeiweste",1500]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl","Polizeiweste",1500]];
 		};
 	};
 	
