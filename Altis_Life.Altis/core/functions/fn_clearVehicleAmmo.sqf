@@ -26,6 +26,7 @@ if(_veh == "O_Heli_Attack_02_black_F") then
 	_vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];
 };
 
+
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
