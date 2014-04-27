@@ -18379,7 +18379,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=221;
+		items=222;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -20131,9 +20131,17 @@ class Mission
 		};
 		class Item220
 		{
-			position[]={2493.4246,-0.11348212,25580};
+			position[]={1998.2201,0.094925836,25605.074};
 			name="website";
 			text="   Website: www.inc-altislife.de";
+			type="mil_warning";
+			colorName="ColorRed";
+		};
+		class Item221
+		{
+			position[]={1993.6564,0.032496296,25268.281};
+			name="ts3";
+			text=" TS 3 Server Adresse: 85.214.149.79:9987";
 			type="mil_warning";
 			colorName="ColorRed";
 		};
