@@ -36,13 +36,3 @@ player setObjectTextureGlobal [0,"textures\police_shirt.paa"];
 waitUntil {uniform player != "U_Rangemaster"};
 };
 };
-
-[] spawn
-{
-while {true} do
-{
-waitUntil {vest player == "V_PlateCarrierIA1_dgtl"};
-vest setObjectTextureGlobal [0,"textures\police_vest.paa"];
-waitUntil {vest player != "V_PlateCarrierIA1_dgtl"};
-};
-};
