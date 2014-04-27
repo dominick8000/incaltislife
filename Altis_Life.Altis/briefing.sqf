@@ -25,7 +25,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Official Change Log",
 				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
+					Das offizielle Altis Life Changelog kann in den BIS Foren gefunden werden (suche Altis Life RPG)
 				"
 		]
 	];
@@ -43,13 +43,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Exploits", 
 				"
-				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
+				Es ist verboten Exploits auszunutzen, dazu zaehlt unter anderem: <br/><br/>
 
-				1. Es ist verboten mit einer anderen Methode als mit einem Heli oder Bezahlung aus dem Gefängnis zu entkommen.<br/>
-				2. Disconnect oder ähnliche Methoden um dem Roleplay zu entgehen.<br/>
-				3. Duping von Items oder Geld. Wenn euch am Anfang des Spiels eine sehr große Summe an Geld überwiesen wird, meldet dies SOFORT dem Admin. Falls ihr das nicht tut und die Admins in der Datenbank einen unrealistischen Wert ohne Erklärung finden, werdet ihr ohne Vorwarnung gebannt.<br/>
+				1. mit einer anderen Methode als mit einem Heli oder Bezahlung aus dem Gefaengnis zu entkommen.<br/>
+				2. Disconnect oder aehnliche Methoden um dem Roleplay zu entgehen.<br/>
+				3. Duping von Items oder Geld. Wenn euch am Anfang des Spiels eine sehr große Summe an Geld ueberwiesen wird, meldet dies SOFORT dem Admin. Falls ihr das nicht tut und die Admins in der Datenbank einen unrealistischen Wert ohne Erklaerung finden, werdet ihr ohne Vorwarnung gebannt.<br/>
 				4. Verwendung von gehackten Items. Falls ihr ein gehacktes Item findet, meldet dies SOFORT dem Admin oder ihr werdet ohne Vorwarnung gebannt.<br/>
-				5. Verwendung von Bugs für euren Vorteil.<br/><br/>
+				5. Verwendung von Bugs fuer euren Vorteil.<br/><br/>
 				"
 		]
 	];
@@ -58,9 +58,9 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Safe Zones",
 				"
-					Zerstörung, Überfälle, Mord oder ähnliches in der Nähe oder in den folgenden Zonen wird je nach Schwere mit einem Kick/Bann bestraft.<br/><br/>
+					Zerstoerung, Ueberfaelle, Mord oder aehnliches in der Naehe oder in den folgenden Zonen wird je nach Schwere mit einem Kick/Bann bestraft.<br/><br/>
 					
-					Jeder Fahrzeugshop<br/>
+					Jeder Fahrzeugspawn (Garage/Shop)<br/>
 					Jeder Waffenshop<br/>
 					Alle Polizei-HQs<br/>
 					Rebellenaußenposten<br/>
@@ -70,85 +70,71 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 					
-	
 	player createDiaryRecord ["serverrules",
 		[
-			"Bannable Offenses", 
-				"
-				Consider this your one and only warning.<br/><br/>
-				
-				1. Hacking<br/>
-				2. Cheating<br/>
-				3. Exploiting (See 'Exploits')<br/>
-				4. 3 oder mehrmals gekickt worden sein<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Cop Interaction", 
+			"Interaktion mit Behoerden", 
 				"
 				
-				1. Zivilisten werden für das Betrachten von Polizeirucksäcken und -fahrzeugen verhaftet. Mehrmaliges Durchführen dieser Aktion resultiert in einem Kick/Bann.<br/>
+				1. Zivilisten werden fuer das Betrachten von Polizeirucksaecken und -fahrzeugen verhaftet. Mehrmaliges Durchfuehren dieser Aktion resultiert in einem Kick/Bann.<br/>
 				2. Zivilisten werden verhaftet, wenn diese Polizisten verfolgen, um die Position der Polizei zu verraten.<br/>
-				3. Zivilisten oder Rebellen, die Polizisten in Städten oder anderen Orten ohne RP Grund töten, werden nach RDM bestraft.<br/>
-				4. Verfolgung und Beleidigung von Polizisten auf längere Zeit wird als Spam/Grief angesehen und mit einem Kick/Bann bestraft.<br/>
-				5. Aktiv die Polizei daran hindern ihren Job zu machen führt zu einer Verhaftung. Mehrmaliges Durchführen dieser Aktion resultiert in einem Kick/Bann.<br/><br/>
+				3. Zivilisten oder Rebellen, die Polizisten in Staedten oder anderen Orten ohne RP Grund toeten, werden nach RDM bestraft.<br/>
+				4. Verfolgung und Beleidigung von Polizisten auf laengere Zeit wird als Spam/Grief angesehen und mit einem Kick/Bann bestraft.<br/>
+				5. Aktiv die Polizei daran hindern ihren Job zu machen fuehrt zu einer Verhaftung. Mehrmaliges Durchfuehren dieser Aktion resultiert in einem Kick/Bann.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Boats", 
+			"Boote", 
 				"
 				
 				1. Wegschieben eines Bootes ohne Erlaubnis<br/>
-				2. Verschieben eines Bootes um jemanden zu verletzen/töten. Das ist kein RP sondern ein Fehler in der Spielmechanik.<br/>
-				3. Überfahren von Tauchern/Schwimmern<br/><br/>
+				2. Verschieben eines Bootes um jemanden zu verletzen/toeten. Das ist kein RP sondern ein Fehler in der Spielmechanik.<br/>
+				3. ueberfahren von Tauchern/Schwimmern<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Aviation", 
+			"Flug", 
 				"
+				Die Folgenden Punkte koennen zu einem Kick/Bann fuehren:<br/><br/>
 				
-				1. Absichtliches Rammen mit einem Helikopter. Egal ob Menschen, Gebäude oder andere Fahrzeuge.<br/>
-				2. Unter 150m ständig über eine Stadt fliegen.<br/>
-				3. Stehlen von Helikopter ohne Vorwarnung und Zeit für den Besitzer, den Heli abzuschließen.<br/><br/>
+				1. Absichtliches rammen mit einem Helikopter. Egal ob Menschen, Gebaeude oder andere Fahrzeuge.<br/>
+				2. Unter 150m staendig ueber eine Stadt fliegen.<br/>
+				3. Stehlen von Helikopter ohne Vorwarnung und Zeit fuer den Besitzer, den Heli abzuschließen.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Vehicles", 
+			"Fahrzeuge", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
+				Die Folgenden Punkte koennen zu einem Kick/Bann fuehren:<br/><br/>
 				
-				1. Absichtliches Überfahren. Unfälle werden einzeln untersucht.<br/>
-				2. Absichtlich vor ein Fahrzeug werfen, um getötet/verletzt zu werden.<br/>
+				1. Absichtliches ueberfahren. Unfaelle werden einzeln untersucht.<br/>
+				2. Absichtlich vor ein Fahrzeug werfen, um getoetet/verletzt zu werden.<br/>
 				3. Rammen von anderen Fahrzeugen, um eine Explosion zu verursachen.<br/>
 				4. Andauerndes Einsteigen in Fahrzeuge anderer Leute wird nicht als RP angesehen.<br/>
-				5. Diebstahl eines Vehikels, nur um es zu zerstören.<br/>
+				5. Diebstahl eines Vehikels, nur um es zu zerstoeren.<br/>
 				6. Kaufen mehrerer Fahrzeuge um eines der ersten 5 Dinge zu tun.<br/>
-				7. Der einzige Grund um auf ein Fahrzeug zu schießen ist, um es fahruntüchtig zu machen oder Warnschüsse in einem RP Szenario abzugeben. Ihr dürft nicht auf Fahrzeuge schießen um diese zu zerstören.<br/><br/>
+				7. Der einzige Grund um auf ein Fahrzeug zu schießen ist, um es fahruntuechtig zu machen oder Warnschuesse in einem RP Szenario abzugeben. Ihr duerft nicht auf Fahrzeuge schießen um diese zu zerstoeren.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Communication Rules", 
+			"Kommunikation", 
 				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
+				Folgendes wird mit einem Kick/Bann bestraft:<br/><br/>
 				
-				1. Der Sidechat darf nicht für Musik oder Voicegespräche verwendet werden.<br/>
+				1. Der Sidechat darf nicht fuer Musik oder Voicegespraeche verwendet werden.<br/>
 				2. Spammen eines Chats wird mit Kick/Bann bestraft.<br/>
-				4. Teamspeak Channel müssen eingehalten werden. Polizisten in Polizistenchannel, Zivilisten in Zivilistenchannel.<br/><br/>
+				4. Teamspeak Channel muessen eingehalten werden. Polizisten in Polizistenchannel, Zivilisten in Zivilistenchannel.<br/><br/>
 				"
 		]
 	];
@@ -158,12 +144,12 @@ player createDiarySubject ["controls","Controls"];
 			"Random Deathmatching (RDM)", 
 				"
 				
-				1. Das Töten ohne RP Grund.<br/>
-				2. Das Starten einer Rebellion erlaubt nicht das Töten. Ein genauerer Grund muss vorhanden sein.<br/>
-				3. Polizisten und Zivilisten/Rebellen können nur ein Feuergefecht starten, wenn die Gründe zu einem Verbrechen führen.<br/>
+				1. Das Toeten ohne RP Grund.<br/>
+				2. Das Starten einer Rebellion erlaubt nicht das Toeten. Ein genauerer Grund muss vorhanden sein.<br/>
+				3. Polizisten und Zivilisten/Rebellen koennen nur ein Feuergefecht starten, wenn die Gruende zu einem Verbrechen fuehren.<br/>
 				4. Wenn du im Kreuzfeuer eines Gefechts stirbst, wird das NICHT als RDM angesehen.<br/>
-				5. Jemanden zu Töten um Andere zu verteidigen wird NICHT als RMD angesehen.<br/>
-				6. Jemanden zu töten ohne Ihm genug Zeit zu geben, Befehle zu folgen, wird als RDM angesehen.<br/><br/>
+				5. Jemanden zu Toeten um Andere zu verteidigen wird NICHT als RMD angesehen.<br/>
+				6. Jemanden zu toeten ohne Ihm genug Zeit zu geben, Befehle zu folgen, wird als RDM angesehen.<br/><br/>
 				"
 		]
 	];
@@ -173,11 +159,11 @@ player createDiarySubject ["controls","Controls"];
 				"
 				Die New Life Regeln betrifft Zivilisten/Rebellen sowie Polizisten.<br/><br/>
 
-				1. Wenn du getötet wirst, musst du 15 Minuten warten, bevor du an den Unfallort zurückzukehren darfst.<br/>
-				2. Wenn du während des Roleplays getötet wirst, werden deine vergangen Taten vergessen, du darfst aber keine Rache üben.<br/>
-				3. Wenn du von RDM getötet wurdest, gilt die New Life Regel NICHT.<br/>
+				1. Wenn du getoetet wirst, musst du 10 Minuten warten, bevor du an den Unfallort zurueckzukehren darfst.<br/>
+				2. Wenn du waehrend des Roleplays getoetet wirst, werden deine vergangen Taten vergessen, du darfst aber keine Rache ueben.<br/>
+				3. Wenn du von RDM getoetet wurdest, gilt die New Life Regel NICHT.<br/>
 				4. Wenn du manuell neu spawnst, gilt die New Life Regel NICHT.<br/>
-				5. Wenn du dich absichtlich tötest, um dem RP zu entgehen, gilt die New Life Regel NICHT.<br/><br/>
+				5. Wenn du dich absichtlich toetest, um dem RP zu entgehen, gilt die New Life Regel NICHT.<br/><br/>
 				"
 		]
 	];
@@ -193,7 +179,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Crisis Negotiation",
 				"
-				Krisenmanagement muss vom Sergeant behandelt werden. Falls kein Sergeant auf dem Server ist, ist der vom Rang nächst höhere Polizisten verantwortlich.<br/><br/>
+				Krisenmanagement muss vom Sergeant behandelt werden. Falls kein Sergeant auf dem Server ist, ist der vom Rang naechst hoehere Polizisten verantwortlich.<br/><br/>
 				"
 		]
 	];
@@ -202,12 +188,12 @@ player createDiarySubject ["controls","Controls"];
 			"The Federal Reserve",
 				"
 				1. Die Bank darf von keinem Zivilisten betreten werden, außer eine Genehmigung liegt vor. Falls ein Zivilist trotzdem die Bank betritt, wird dieser eskortiert oder verhaftet.
-				2. Helikopter, die über der Bank fliegen, werden gebeten weiterzufliegen oder außer Gefecht gesetzt wenn diese verweigern.<br/>
-				2. Wenn die Bank ausgeraubt wird, sollten sich alle verfügbaren Polizisten auf den Weg zur Bank begeben.<br/>
-				3. Tödliche Gewalt darf auf die Räuber angewendet werden, wenn keine Alternative besteht. Jede Option, um die Räuber zu tasern, wird bevorzugt.<br/>
-				4. Die Polizisten dürfen nicht blind in die Bank schießen.<br/>
-				5. Die Polizei sollte Zivilisten in der Nähe evakuieren.<br/>
-				6. Jeder Zivilist, der versucht, die Polizei beim eintreten in das Gebäude zu stören, wird als Komplize angesehen.<br/><br/>
+				2. Helikopter, die ueber der Bank fliegen, werden gebeten weiterzufliegen oder außer Gefecht gesetzt wenn diese verweigern.<br/>
+				2. Wenn die Bank ausgeraubt wird, sollten sich alle verfuegbaren Polizisten auf den Weg zur Bank begeben.<br/>
+				3. Toedliche Gewalt darf auf die Raeuber angewendet werden, wenn keine Alternative besteht. Jede Option, um die Raeuber zu tasern, wird bevorzugt.<br/>
+				4. Die Polizisten duerfen nicht blind in die Bank schießen.<br/>
+				5. Die Polizei sollte Zivilisten in der Naehe evakuieren.<br/>
+				6. Jeder Zivilist, der versucht, die Polizei beim eintreten in das Gebaeude zu stoeren, wird als Komplize angesehen.<br/><br/>
 				"
 		]
 	];
@@ -216,10 +202,10 @@ player createDiarySubject ["controls","Controls"];
 			"Aviation",
 				"
 				1. Kein Helikopter darf ohne Erlaubnis innerhalb jeder Stadt landen. (Kavala, Athira, Pyrigos, Sofia)
-				2. Helikopter dürfen nicht auf Straßen landen.<br/>
-				3. Die Polizei darf temporär alle Landungen verbieten.<br/>
-				4. Helikopter dürfen ohne Erlaubnis nicht unter 150m über eine Stadt fliegen.<br/>
-				5. Helikopter dürfen nicht über einer Stadt schweben. Polizeihelikopter nur während eines Polizeieinsatzes.<br/><br/>
+				2. Helikopter duerfen nicht auf Straßen landen.<br/>
+				3. Die Polizei darf temporaer alle Landungen verbieten.<br/>
+				4. Helikopter duerfen ohne Erlaubnis nicht unter 150m ueber eine Stadt fliegen.<br/>
+				5. Helikopter duerfen nicht ueber einer Stadt schweben. Polizeihelikopter nur waehrend eines Polizeieinsatzes.<br/><br/>
 
 				"
 		]
@@ -229,8 +215,8 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Patrolling", 
 				"
-				1. Die Polizei kann auf Straßen und in Städten patrouilleren, um nach verlassenen Fahrzeugen oder krimineller Aktivität zu suchen.<br/>
-				2. Patrouillen dürfen zu Fuß in der Stadt und in einem Fahrzeug außerhalb der Stadt durchgeführt werden.<br/><br/>
+				1. Die Polizei kann auf Straßen und in Staedten patrouilleren, um nach verlassenen Fahrzeugen oder krimineller Aktivitaet zu suchen.<br/>
+				2. Patrouillen duerfen zu Fuß in der Stadt und in einem Fahrzeug außerhalb der Stadt durchgefuehrt werden.<br/><br/>
 				"
 		]
 	];
@@ -240,8 +226,8 @@ player createDiarySubject ["controls","Controls"];
 			"Checkpoints", 
 				"
 				
-				1. An einem Checkpoint müssen mindestens 3 Polizisten anwesend sein.
-				2. Checkpoints dürfen nur auf Straßen angelegt, bemannt werden.<br/>
+				1. An einem Checkpoint muessen mindestens 3 Polizisten anwesend sein.
+				2. Checkpoints duerfen nur auf Straßen angelegt, bemannt werden.<br/>
 				3.Vorhandene Checkpoints mit Infrastruktur: Checkpoint Charlie, Checkpoint Alpha, Checkpoint Grenze.<br/><br/>
 				"
 		]
@@ -251,12 +237,12 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Vehicles", 
 				"
-				1. Fahrzeuge, die auf einem Parkplatz stehen oder ordnungsgemäß abgestellt wurden, sollten nicht untersucht werden.<br/>
-				2. Fahrzeuge, die verlassen sind/kaputt sind/ oder kein Fahrer anwesend ist, dürfen beschlagnahmt werden.<br/>
-				3. Boote sollten nahe an der Küste abgestellt werden.<br/>
-				4. Jedes Fahrzeug das länger nicht bewegt wurde, darf beschlagnahmt werden.<br/>
+				1. Fahrzeuge, die auf einem Parkplatz stehen oder ordnungsgemaeß abgestellt wurden, sollten nicht untersucht werden.<br/>
+				2. Fahrzeuge, die verlassen sind/kaputt sind/ oder kein Fahrer anwesend ist, duerfen beschlagnahmt werden.<br/>
+				3. Boote sollten nahe an der Kueste abgestellt werden.<br/>
+				4. Jedes Fahrzeug das laenger nicht bewegt wurde, darf beschlagnahmt werden.<br/>
 				5. Falls Zweifel bestehen, untersucht das Fahrzeug und schreibt den Inhaber an.<br/>
-				6. Waffen auf Fahrzeugen sollten dürfen nur verwendet werden, um Fahrzeuge außer Gefecht zu setzen.<br/><br/>
+				6. Waffen auf Fahrzeugen sollten duerfen nur verwendet werden, um Fahrzeuge außer Gefecht zu setzen.<br/><br/>
 				"
 		]
 	];
@@ -265,10 +251,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Speeding", 
 				"
-				Innerhalb großer Städte: 50 km/h<br/>
+				Innerhalb großer Staedte: 50 km/h<br/>
 				Kleine Straßen: 60 km/h<br/>
 				Hauptstraßen: 65 km/h<br/>
-				Außerhalb der Städte: 110 km/h<br/>
+				Außerhalb der Staedte: 110 km/h<br/>
 				"
 		]
 	];
@@ -277,10 +263,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Arresting and Ticketing",
 				"
-				1. Du darfst niemanden verhaften, wenn er für ein Ticket bezahlt hat.
-				2. Du musst dem Verdächtigen sagen warum du Ihn verhaftest, BEVOR du ihn verhaftest.<br/>
+				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat.
+				2. Du musst dem Verdaechtigen sagen warum du Ihn verhaftest, BEVOR du ihn verhaftest.<br/>
 				3. Wenn ein Zivilist gesucht wird, darfst du ihn verhaften.<br/>
-				4. Wenn ein Ticket dreimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefängnis verfrachtet.<br/>
+				4. Wenn ein Ticket dreimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefaengnis verfrachtet.<br/>
 				"
 		]
 	];
@@ -291,7 +277,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				Ein Polizist darf NIEMALS Zivilisten mit Waffen versorgen. Wenn ihr das tut werdet ihr von der Whitelist entfernt.<br/><br/>
 
-				Legale Waffen, die mit Waffenlizenz getragen werden dürfen:<br/>
+				Legale Waffen, die mit Waffenlizenz getragen werden duerfen:<br/>
 				1. P07<br/>
 				2. Rook<br/>
 				3. ACP-C2<br/>
@@ -301,7 +287,7 @@ player createDiarySubject ["controls","Controls"];
 
 				Jeder andere Waffe ist illegal.<br/><br/>
 
-				1. Waffen müssen innerhalb einer Stadt eingesteckt werden.<br/><br/>
+				1. Waffen muessen innerhalb einer Stadt eingesteckt werden.<br/><br/>
 				"
 		]
 	];
@@ -312,7 +298,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				At this time the Taser (Silenced P07) is the only form of Non-Lethal Force.<br/><br/>
 
-				1. Der Taser sollte nur dafür verwendet werden, einen Zivilisten außer Gefecht zu setzen.<br/>
+				1. Der Taser sollte nur dafuer verwendet werden, einen Zivilisten außer Gefecht zu setzen.<br/>
 				2. Feuere den Taser nie ohne Ziel ab.<br/>
 				3. Verwende nur den Taser, wenn es nach den Regeln angebracht ist. Zwinge anderen nicht deinen Willen auf.<br/><br/>
 				"
@@ -323,8 +309,8 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Use of Lethal Force",
 				"
-				1. Tödliche Gewalt darf nur angewendet werden, um dein Leben, oder des eines Anderen zu schützen. Tödliche Gewalt darf nur angewendet werden, wenn nicht tödliche Gewalt NICHT mehr effektiv ist.<br/>
-				2. Waffen dürfen nicht ohne Grund abgefeuert werden.<br/><br/>
+				1. Toedliche Gewalt darf nur angewendet werden, um dein Leben, oder des eines Anderen zu schuetzen. Toedliche Gewalt darf nur angewendet werden, wenn nicht toedliche Gewalt NICHT mehr effektiv ist.<br/>
+				2. Waffen duerfen nicht ohne Grund abgefeuert werden.<br/><br/>
 				"
 		]
 	];
@@ -335,8 +321,8 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Rebel Rules",
 				"
-				1. Rebellen dürfen nicht ohne guten Grund Polizisten angreifen.<br/>
-				2. Ein Rebell muss erst eine Gang gründen, bevor z.B. Forderungen gestellt werden dürfen.<br/>
+				1. Rebellen duerfen nicht ohne guten Grund Polizisten angreifen.<br/>
+				2. Ein Rebell muss erst eine Gang gruenden, bevor z.B. Forderungen gestellt werden duerfen.<br/>
 				3. Gegenwehr gegen die Regierung, erlaubt kein RDM.<br/>
 				4. Gegenwehr sollte aus mehr als nur Ausrauben und erschießen Polizisten bestehen.<br/>
 				5. Die Gegenwehr muss koordiniert sein.<br/>
@@ -396,12 +382,13 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"",
 				"
-				Y: Open Player Menu<br/>
-				U: Lock and unlock cars<br/>
-				F: Cop Siren (if cop)<br/>
-				T: Vehicle Trunk<br/>
-				Left Shift + R: Restrain (Cop Only)<br/>
-				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>
+				Q: Pickaxe benutzen<br/>
+				Y: Das Spieler Menue oeffnen<br/>
+				U: Autos auf und zu sperren<br/>
+				F: Polizeisirene (als cop)<br/>
+				T: Kofferaum eines Autos<br/>
+				Left Shift + R: fesseln (Cop Only)<br/>
+				Left Shift + G: Knock out / stun (Civ Only, um auszurauben)<br/>
 				Left Windows: Main Interaction key which is used for picking up items/money, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
 				Left Shift + L: Activates cop siren lights (as a cop).<br/>
 				"
