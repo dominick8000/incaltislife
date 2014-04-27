@@ -47,7 +47,7 @@ player createDiarySubject ["controls","Controls"];
 
 				1. mit einer anderen Methode als mit einem Heli oder Bezahlung aus dem Gefaengnis zu entkommen.<br/>
 				2. Disconnect oder aehnliche Methoden um dem Roleplay zu entgehen.<br/>
-				3. Duping von Items oder Geld. Wenn euch am Anfang des Spiels eine sehr groﬂe Summe an Geld ueberwiesen wird, meldet dies SOFORT dem Admin. Falls ihr das nicht tut und die Admins in der Datenbank einen unrealistischen Wert ohne Erklaerung finden, werdet ihr ohne Vorwarnung gebannt.<br/>
+				3. Duping von Items oder Geld. Wenn euch am Anfang des Spiels eine sehr grosse Summe an Geld ueberwiesen wird, meldet dies SOFORT dem Admin. Falls ihr das nicht tut und die Admins in der Datenbank einen unrealistischen Wert ohne Erklaerung finden, werdet ihr ohne Vorwarnung gebannt.<br/>
 				4. Verwendung von gehackten Items. Falls ihr ein gehacktes Item findet, meldet dies SOFORT dem Admin oder ihr werdet ohne Vorwarnung gebannt.<br/>
 				5. Verwendung von Bugs fuer euren Vorteil.<br/><br/>
 				"
@@ -63,7 +63,7 @@ player createDiarySubject ["controls","Controls"];
 					Jeder Fahrzeugspawn (Garage/Shop)<br/>
 					Jeder Waffenshop<br/>
 					Alle Polizei-HQs<br/>
-					Rebellenauﬂenposten<br/>
+					Rebellenaussenposten<br/>
 					Donatorshops<br/>
 					100m im Umkreis eines ATMs<br/><br/>
 				"
@@ -104,7 +104,7 @@ player createDiarySubject ["controls","Controls"];
 				
 				1. Absichtliches rammen mit einem Helikopter. Egal ob Menschen, Gebaeude oder andere Fahrzeuge.<br/>
 				2. Unter 150m staendig ueber eine Stadt fliegen.<br/>
-				3. Stehlen von Helikopter ohne Vorwarnung und Zeit fuer den Besitzer, den Heli abzuschlieﬂen.<br/><br/>
+				3. Stehlen von Helikopter ohne Vorwarnung und Zeit fuer den Besitzer, den Heli abzuschliessen.<br/><br/>
 				"
 		]
 	];
@@ -121,7 +121,7 @@ player createDiarySubject ["controls","Controls"];
 				4. Andauerndes Einsteigen in Fahrzeuge anderer Leute wird nicht als RP angesehen.<br/>
 				5. Diebstahl eines Vehikels, nur um es zu zerstoeren.<br/>
 				6. Kaufen mehrerer Fahrzeuge um eines der ersten 5 Dinge zu tun.<br/>
-				7. Der einzige Grund um auf ein Fahrzeug zu schieﬂen ist, um es fahruntuechtig zu machen oder Warnschuesse in einem RP Szenario abzugeben. Ihr duerft nicht auf Fahrzeuge schieﬂen um diese zu zerstoeren.<br/><br/>
+				7. Der einzige Grund um auf ein Fahrzeug zu schiessen ist, um es fahruntuechtig zu machen oder Warnschuesse in einem RP Szenario abzugeben. Ihr duerft nicht auf Fahrzeuge schiessen um diese zu zerstoeren.<br/><br/>
 				"
 		]
 	];
@@ -187,11 +187,11 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"The Federal Reserve",
 				"
-				1. Die Bank darf von keinem Zivilisten betreten werden, auﬂer eine Genehmigung liegt vor. Falls ein Zivilist trotzdem die Bank betritt, wird dieser eskortiert oder verhaftet.
-				2. Helikopter, die ueber der Bank fliegen, werden gebeten weiterzufliegen oder auﬂer Gefecht gesetzt wenn diese verweigern.<br/>
+				1. Die Bank darf von keinem Zivilisten betreten werden, ausser eine Genehmigung liegt vor. Falls ein Zivilist trotzdem die Bank betritt, wird dieser eskortiert oder verhaftet.
+				2. Helikopter, die ueber der Bank fliegen, werden gebeten weiterzufliegen oder ausser Gefecht gesetzt wenn diese verweigern.<br/>
 				2. Wenn die Bank ausgeraubt wird, sollten sich alle verfuegbaren Polizisten auf den Weg zur Bank begeben.<br/>
 				3. Toedliche Gewalt darf auf die Raeuber angewendet werden, wenn keine Alternative besteht. Jede Option, um die Raeuber zu tasern, wird bevorzugt.<br/>
-				4. Die Polizisten duerfen nicht blind in die Bank schieﬂen.<br/>
+				4. Die Polizisten duerfen nicht blind in die Bank schiessen.<br/>
 				5. Die Polizei sollte Zivilisten in der Naehe evakuieren.<br/>
 				6. Jeder Zivilist, der versucht, die Polizei beim eintreten in das Gebaeude zu stoeren, wird als Komplize angesehen.<br/><br/>
 				"
@@ -202,7 +202,7 @@ player createDiarySubject ["controls","Controls"];
 			"Aviation",
 				"
 				1. Kein Helikopter darf ohne Erlaubnis innerhalb jeder Stadt landen. (Kavala, Athira, Pyrigos, Sofia)
-				2. Helikopter duerfen nicht auf Straﬂen landen.<br/>
+				2. Helikopter duerfen nicht auf Strassen landen.<br/>
 				3. Die Polizei darf temporaer alle Landungen verbieten.<br/>
 				4. Helikopter duerfen ohne Erlaubnis nicht unter 150m ueber eine Stadt fliegen.<br/>
 				5. Helikopter duerfen nicht ueber einer Stadt schweben. Polizeihelikopter nur waehrend eines Polizeieinsatzes.<br/><br/>
@@ -215,8 +215,8 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Patrolling", 
 				"
-				1. Die Polizei kann auf Straﬂen und in Staedten patrouilleren, um nach verlassenen Fahrzeugen oder krimineller Aktivitaet zu suchen.<br/>
-				2. Patrouillen duerfen zu Fuﬂ in der Stadt und in einem Fahrzeug auﬂerhalb der Stadt durchgefuehrt werden.<br/><br/>
+				1. Die Polizei kann auf Strassen und in Staedten patrouilleren, um nach verlassenen Fahrzeugen oder krimineller Aktivitaet zu suchen.<br/>
+				2. Patrouillen duerfen zu Fuss in der Stadt und in einem Fahrzeug ausserhalb der Stadt durchgefuehrt werden.<br/><br/>
 				"
 		]
 	];
@@ -227,7 +227,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				
 				1. An einem Checkpoint muessen mindestens 3 Polizisten anwesend sein.
-				2. Checkpoints duerfen nur auf Straﬂen angelegt, bemannt werden.<br/>
+				2. Checkpoints duerfen nur auf Strassen angelegt, bemannt werden.<br/>
 				3.Vorhandene Checkpoints mit Infrastruktur: Checkpoint Charlie, Checkpoint Alpha, Checkpoint Grenze.<br/><br/>
 				"
 		]
@@ -237,12 +237,12 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Vehicles", 
 				"
-				1. Fahrzeuge, die auf einem Parkplatz stehen oder ordnungsgemaeﬂ abgestellt wurden, sollten nicht untersucht werden.<br/>
+				1. Fahrzeuge, die auf einem Parkplatz stehen oder ordnungsgemaess abgestellt wurden, sollten nicht untersucht werden.<br/>
 				2. Fahrzeuge, die verlassen sind/kaputt sind/ oder kein Fahrer anwesend ist, duerfen beschlagnahmt werden.<br/>
 				3. Boote sollten nahe an der Kueste abgestellt werden.<br/>
 				4. Jedes Fahrzeug das laenger nicht bewegt wurde, darf beschlagnahmt werden.<br/>
 				5. Falls Zweifel bestehen, untersucht das Fahrzeug und schreibt den Inhaber an.<br/>
-				6. Waffen auf Fahrzeugen sollten duerfen nur verwendet werden, um Fahrzeuge auﬂer Gefecht zu setzen.<br/><br/>
+				6. Waffen auf Fahrzeugen sollten duerfen nur verwendet werden, um Fahrzeuge ausser Gefecht zu setzen.<br/><br/>
 				"
 		]
 	];
@@ -251,10 +251,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Speeding", 
 				"
-				Innerhalb groﬂer Staedte: 50 km/h<br/>
-				Kleine Straﬂen: 60 km/h<br/>
-				Hauptstraﬂen: 65 km/h<br/>
-				Auﬂerhalb der Staedte: 110 km/h<br/>
+				Innerhalb grosser Staedte: 50 km/h<br/>
+				Kleine Strassen: 60 km/h<br/>
+				Hauptstrassen: 65 km/h<br/>
+				Ausserhalb der Staedte: 110 km/h<br/>
 				"
 		]
 	];
@@ -298,7 +298,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 				At this time the Taser (Silenced P07) is the only form of Non-Lethal Force.<br/><br/>
 
-				1. Der Taser sollte nur dafuer verwendet werden, einen Zivilisten auﬂer Gefecht zu setzen.<br/>
+				1. Der Taser sollte nur dafuer verwendet werden, einen Zivilisten ausser Gefecht zu setzen.<br/>
 				2. Feuere den Taser nie ohne Ziel ab.<br/>
 				3. Verwende nur den Taser, wenn es nach den Regeln angebracht ist. Zwinge anderen nicht deinen Willen auf.<br/><br/>
 				"
@@ -324,7 +324,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Rebellen duerfen nicht ohne guten Grund Polizisten angreifen.<br/>
 				2. Ein Rebell muss erst eine Gang gruenden, bevor z.B. Forderungen gestellt werden duerfen.<br/>
 				3. Gegenwehr gegen die Regierung, erlaubt kein RDM.<br/>
-				4. Gegenwehr sollte aus mehr als nur Ausrauben und erschieﬂen Polizisten bestehen.<br/>
+				4. Gegenwehr sollte aus mehr als nur Ausrauben und erschiessen Polizisten bestehen.<br/>
 				5. Die Gegenwehr muss koordiniert sein.<br/>
 				6. Ein GUTER Grund steht hinter JEDEM Angriff.<br/><br/>
 				"
