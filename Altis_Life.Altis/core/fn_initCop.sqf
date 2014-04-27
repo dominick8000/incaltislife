@@ -33,7 +33,7 @@ while {true} do
 {
 waitUntil {uniform player == "U_Rangemaster"};
 player setObjectTextureGlobal [0,"textures\police_shirt.paa"];
-waitUntil {uniform player != "U_Rangemaster"}; 
+waitUntil {uniform player != "U_Rangemaster"};
 };
 };
 
@@ -43,7 +43,7 @@ while {true} do
 {
 waitUntil {uniform player == "U_B_CombatUniform_mcam_tshirt"};
 player setObjectTextureGlobal [0,"textures\sniper_shirt.paa"];
-waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"}; 
+waitUntil {uniform player != "U_B_CombatUniform_mcam_tshirt"};
 };
 };
 
@@ -53,6 +53,6 @@ while {true} do
 {
 waitUntil {vest player == "V_PlateCarrier2_rgr"};
 player setObjectTextureGlobal [0,"textures\police_vest.paa"];
-waitUntil {vest player != "V_PlateCarrier2_rgr"}; 
+waitUntil {vest player != "V_PlateCarrier2_rgr"};
 };
 };
