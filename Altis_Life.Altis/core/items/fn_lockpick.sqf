@@ -22,6 +22,8 @@ if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {};
 _title = format["Lock-picking %1",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
 
+[[player, "caralarm",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;  //* Play Lockpick Sound
+
 //Setup the progress bar
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];

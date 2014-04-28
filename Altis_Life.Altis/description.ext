@@ -170,3 +170,10 @@ class CfgNotifications
 		priority = 5;
 	};
 };
+class caralarm
+	{
+	name = "caralarm";
+	sound[] = {\sounds\caralarm.ogg", 1, 2};
+	titles[] = {};
+	};
+};
