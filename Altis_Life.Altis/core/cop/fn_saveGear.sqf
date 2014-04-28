@@ -22,7 +22,10 @@ _allowedItems =
 	"optic_Arco",
 	"optic_MRCO",
 	"muzzle_snds_H",
-	"muzzle_snds_L"
+	"muzzle_snds_L",
+	"srifle_LRR_F",
+	"Rangefinder",
+	"optic_SOS"
 ];
 
 //Old format / code
