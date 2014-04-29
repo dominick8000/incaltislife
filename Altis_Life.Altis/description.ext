@@ -80,6 +80,12 @@ class CfgSounds
     sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
     titles[] = {};
   };
+  class caralarm
+  {
+	name = "caralarm";
+	sound[] = {\sounds\caralarm.ogg", 1, 2};
+	titles[] = {};
+  };
 };
 
 class CfgDebriefing
@@ -168,12 +174,5 @@ class CfgNotifications
 		description = "%1";
 		duration = 10;
 		priority = 5;
-	};
-};
-class caralarm
-	{
-	name = "caralarm";
-	sound[] = {\sounds\caralarm.ogg", 1, 2};
-	titles[] = {};
 	};
 };
