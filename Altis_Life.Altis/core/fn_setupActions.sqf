@@ -16,7 +16,7 @@ switch (playerSide) do
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 		//sequest
 		life_actions = [player addAction["<t color='#00FF00'>Start Sequest</t>",life_fnc_restrainAction,cursorTarget,9999999,false,false,"",'
-        	!isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];
+        	!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && license_civ_rebel && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];
 	};
 };
 
