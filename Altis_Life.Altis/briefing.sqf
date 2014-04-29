@@ -214,7 +214,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Patrolling", 
+			"Patroullie", 
 				"
 				1. Die Polizei kann auf Strassen und in Staedten patrouilleren, um nach verlassenen Fahrzeugen oder krimineller Aktivitaet zu suchen.<br/>
 				2. Patrouillen duerfen zu Fuss in der Stadt und in einem Fahrzeug ausserhalb der Stadt durchgefuehrt werden.<br/><br/>
@@ -227,7 +227,7 @@ player createDiarySubject ["controls","Controls"];
 			"Checkpoints", 
 				"
 				
-				1. An einem Checkpoint muessen mindestens 3 Polizisten anwesend sein.
+				1. An einem Checkpoint sollten mindestens 3 Polizisten anwesend sein.
 				2. Checkpoints duerfen nur auf Strassen angelegt, bemannt werden.<br/>
 				3.Vorhandene Checkpoints mit Infrastruktur: Checkpoint Charlie, Checkpoint Alpha, Checkpoint Grenze.<br/><br/>
 				"
@@ -236,7 +236,7 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Vehicles", 
+			"Fahrzeuge", 
 				"
 				1. Fahrzeuge, die auf einem Parkplatz stehen oder ordnungsgemaess abgestellt wurden, sollten nicht untersucht werden.<br/>
 				2. Fahrzeuge, die verlassen sind/kaputt sind/ oder kein Fahrer anwesend ist, duerfen beschlagnahmt werden.<br/>
@@ -250,7 +250,7 @@ player createDiarySubject ["controls","Controls"];
 
 	player createDiaryRecord ["policerules",
 		[
-			"Speeding", 
+			"Hoechstgeschwindigkeiten", 
 				"
 				Innerhalb grosser Staedte: 50 km/h<br/>
 				Kleine Strassen: 60 km/h<br/>
@@ -262,9 +262,9 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Arresting and Ticketing",
+			"Verhaftung / Ticket",
 				"
-				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat.
+				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat.<br/>
 				2. Du musst dem Verdaechtigen sagen warum du Ihn verhaftest, BEVOR du ihn verhaftest.<br/>
 				3. Wenn ein Zivilist gesucht wird, darfst du ihn verhaften.<br/>
 				4. Wenn ein Ticket dreimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefaengnis verfrachtet.<br/>
@@ -274,7 +274,7 @@ player createDiarySubject ["controls","Controls"];
 		
 	player createDiaryRecord ["policerules",
 		[
-			"Weapons", 
+			"Waffen", 
 				"
 				Ein Polizist darf NIEMALS Zivilisten mit Waffen versorgen. Wenn ihr das tut werdet ihr von der Whitelist entfernt.<br/><br/>
 
@@ -295,9 +295,9 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Use of Non-Lethal Force",
+			"Nicht toedliche Waffen",
 				"
-				At this time the Taser (Silenced P07) is the only form of Non-Lethal Force.<br/><br/>
+				Zurzeit ist der Taser (Silenced P07) die einzige nicht toedliche Waffe.<br/><br/>
 
 				1. Der Taser sollte nur dafuer verwendet werden, einen Zivilisten ausser Gefecht zu setzen.<br/>
 				2. Feuere den Taser nie ohne Ziel ab.<br/>
@@ -308,14 +308,25 @@ player createDiarySubject ["controls","Controls"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Use of Lethal Force",
+			"Toedliche Waffen",
 				"
 				1. Toedliche Gewalt darf nur angewendet werden, um dein Leben, oder des eines Anderen zu schuetzen. Toedliche Gewalt darf nur angewendet werden, wenn nicht toedliche Gewalt NICHT mehr effektiv ist.<br/>
 				2. Waffen duerfen nicht ohne Grund abgefeuert werden.<br/><br/>
 				"
 		]
 	];
-	
+	player createDiaryRecord ["Addons",
+		[
+			"Used Addons",
+				" 
+				Auf diesem Server sind u.a. folgende Addons installiert:<br/>
+				- BRUUUDI Housing Script<br/> 
+				- BTC Logistic<br/>
+				- Teargas / Flashbang <br/>
+				"
+		]
+	];
+		
 		
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
