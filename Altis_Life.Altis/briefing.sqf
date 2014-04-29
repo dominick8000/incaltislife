@@ -267,7 +267,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat (ausser es handelt sich um eine besonders schwere Tat/Vorsatz).<br/>
 				2. Du musst dem Verdaechtigen sagen warum du Ihn verhaftest, BEVOR du ihn verhaftest.<br/>
 				3. Wenn ein Zivilist gesucht wird, darfst du ihn verhaften.<br/>
-				4. Wenn ein Ticket dreimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefaengnis verfrachtet.<br/>
+				4. Wenn ein Ticket zweimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefaengnis verfrachtet.<br/>
 				"
 		]
 	];
