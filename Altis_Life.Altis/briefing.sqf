@@ -178,7 +178,7 @@ player createDiarySubject ["controls","Controls"];
 // Police Section
 	player createDiaryRecord ["policerules",
 		[
-			"Crisis Negotiation",
+			"Krisenmanagement",
 				"
 				Krisenmanagement muss vom Sergeant behandelt werden. Falls kein Sergeant auf dem Server ist, ist der vom Rang naechst hoehere Polizisten verantwortlich.<br/><br/>
 				"
@@ -186,7 +186,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["policerules",
 		[
-			"The Federal Reserve",
+			"Zentralbank",
 				"
 				1. Die Bank darf von keinem Zivilisten betreten werden, ausser eine Genehmigung liegt vor. Falls ein Zivilist trotzdem die Bank betritt, wird dieser eskortiert oder verhaftet.
 				2. Helikopter, die ueber der Bank fliegen, werden gebeten weiterzufliegen oder ausser Gefecht gesetzt wenn diese verweigern.<br/>
@@ -200,7 +200,7 @@ player createDiarySubject ["controls","Controls"];
 	];
 	player createDiaryRecord ["policerules",
 		[
-			"Aviation",
+			"Luft",
 				"
 				1. Kein Helikopter darf ohne Erlaubnis innerhalb jeder Stadt landen. (Kavala, Athira, Pyrigos, Sofia)
 				2. Helikopter duerfen nicht auf Strassen landen.<br/>
@@ -264,7 +264,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Verhaftung / Ticket",
 				"
-				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat.<br/>
+				1. Du darfst niemanden verhaften, wenn er fuer ein Ticket bezahlt hat (ausser es handelt sich um eine besonders schwere Tat/Vorsatz).<br/>
 				2. Du musst dem Verdaechtigen sagen warum du Ihn verhaftest, BEVOR du ihn verhaftest.<br/>
 				3. Wenn ein Zivilist gesucht wird, darfst du ihn verhaften.<br/>
 				4. Wenn ein Ticket dreimal hintereinander nicht bezahlt wird, wird der Zivilist in Gefaengnis verfrachtet.<br/>
