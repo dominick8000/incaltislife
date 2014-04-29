@@ -91,9 +91,38 @@ switch(_shop) do
 						["30Rnd_9x21_Mag",nil,60],
 						["9Rnd_45ACP_Mag",nil,200],
 						["SmokeShellBlue","Traenengas",200],
+						["MiniGrenade","Flashbang",200]
+					]
+				];
+			};
+		};
+	};
+
+	case "cop_chief":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 7): {"You are not at a chief rank!"};
+			default
+			{
+				["Altis Chief Shop",
+					[
+						["SMG_02_ACO_F",nil,15000],
+						["hgun_ACPC2_F",nil,17500],
+						["arifle_MXC_F",nil,30000],
+						["optic_Arco",nil,2500],
+						["muzzle_snds_H",nil,2750],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["30Rnd_9x21_Mag",nil,60],
+						["9Rnd_45ACP_Mag",nil,200],
+						["SmokeShellBlue","Traenengas",200],
 						["MiniGrenade","Flashbang",200],
-						["srifle_LRR_F","Scharfschuetzengewehr",50000],
-						["7Rnd_408_Mag","LRR Munition",1000],
+						["srifle_LRR_F","M320",50000],
+						["7Rnd_408_Mag","M320 Munition",1000],
+						["srifle_GM6_F","GM6 Lynx",50000],
+						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
+						["5Rnd_127x108_Mag","Lynx Munition",1000],
 						["Rangefinder",nil,1000],
 						["optic_SOS","Scharfuetzenvisier",1000]
 					]
