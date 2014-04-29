@@ -141,7 +141,9 @@ life_inv_items =
 	"life_inv_spikeStrip",
 	"life_inv_rock",
 	"life_inv_cement",
-	"life_inv_goldbar"
+	"life_inv_goldbar",
+    "life_inv_storage1",
+    "life_inv_storage2"	
 ];
 
 //Setup variable inv vars.
@@ -169,7 +171,8 @@ life_licenses =
 	["license_civ_iron","civ"],
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
-	["license_civ_cement","civ"]
+	["license_civ_cement","civ"],
+	["license_civ_home", "civ"]
 ];
 
 //Setup License Variables

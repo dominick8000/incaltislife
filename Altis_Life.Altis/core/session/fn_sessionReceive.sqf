@@ -74,6 +74,24 @@ switch (playerSide) do
 	};
 };
 
+
+switch (playerSide) do
+{
+    case west:
+    {
+
+    };
+
+    case civilian:
+    {
+        // add this to your session
+        life_houses = (_session select 9);
+        life_houses_markers = [];
+    };
+};
+
+
+
 switch(__GETC__(life_donator)) do
 {
 	case 1: {life_paycheck = life_paycheck + 750;};

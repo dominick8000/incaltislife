@@ -33,6 +33,7 @@ _validFunctions =
 ,"clientGangKick","clientGangLeader","clientMessage","life_fnc_impoundMenu","TON_fnc_managesc","life_fnc_sessionReceive"
 ,"life_fnc_fedSuccess","TON_fnc_spikeStrip","TON_fnc_robReserve","TON_fnc_vehicleStore","TON_fnc_getVehicles"
 ,"TON_fnc_vehicleCreate","TON_fnc_getID","life_fnc_adminid","fnc_player_query","life_fnc_refuelGlobal"
+,"BRUUUDIS_fnc_add","BRUUUDIS_fnc_query","BRUUUDIS_fnc_deleteHouse","BRUUUDIS_fnc_insertHouse","BRUUUDIS_fnc_queryHouses","BRUUUDIS_fnc_queryPlayerHouses","BRUUUDIS_fnc_updateHouseStorage","BRUUUDIS_fnc_updateHouseWeaponStorage"
 ];
 
 /*

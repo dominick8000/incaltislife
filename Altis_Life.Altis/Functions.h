@@ -96,6 +96,9 @@ class Life_Client_Core
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
+		
+        class houseContainers {};
+        class housePrice {};		
 	};
 	
 	class session
@@ -162,6 +165,10 @@ class Life_Client_Core
 		class fedSuccess {};
 		class actionKeyHandler {};
 		class handleFlashbang {};
+		
+		class updateCash {};
+        class vehicleGarage {};
+		
 	};
 	
 	class Network
@@ -226,6 +233,11 @@ class Life_Client_Core
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
+		
+		class houseOwnerSearch {};
+        class houseInvSearch {};
+        class raidHouse {};
+		
 	};
 	
 	class Gangs
@@ -290,5 +302,32 @@ class Life_Client_Core
 		class impoundMenu {};
 		class unimpound {};
 		class sellGarage {};
+		class houseMenu {};		
 	};
+    class Housing
+    {
+        file = "core\housing";
+        class buyHouse {};
+        class sellHouse {}; 
+        class createMarkers {};
+        class deleteMarkers {};
+        class getBuildID {};
+        class initHouses {};
+        class lockHouse {};
+        class lockStorage {};
+        class countBuildingPositions {};
+        class houseStoreItem {};
+        class houseTakeItem {};
+        class houseInventory {};
+        class openStorage {};
+        class placeStorage {};
+        class preCloseHouseStorage {};
+        class calcGarageSpawn {};
+        class onPut {};
+        class onTake {};
+    };	
+	
+	
+	
+	
 };

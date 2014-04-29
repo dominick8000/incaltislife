@@ -21,7 +21,7 @@ life_animals_array = [];
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
-
+[] execVM "\life_server\initHousing.sqf";
 [] spawn TON_fnc_cleanup;
 life_gang_list = [];
 publicVariable "life_gang_list";
