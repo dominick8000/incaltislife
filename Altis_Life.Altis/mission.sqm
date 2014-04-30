@@ -2711,7 +2711,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Weapon Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Chief Weapon Shop"",life_fnc_weaponShopMenu,""cop_chief""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Weapon Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""];  this addAction[""GSG Weapon Shop"",life_fnc_weaponShopMenu,""cop_gsg""]; this addAction[""Chief Weapon Shop"",life_fnc_weaponShopMenu,""cop_chief""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
 				};
 				class Item51
 				{
@@ -3451,7 +3451,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1516;
+		items=1519;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -18382,7 +18382,7 @@ class Mission
 		class Item1511
 		{
 			position[]={3256.3372,2.0449266,12943.115};
-			azimut=174.87733;
+			azimut=264.88474;
 			id=1720;
 			side="EMPTY";
 			vehicle="TargetP_Inf_F";
@@ -18391,7 +18391,7 @@ class Mission
 		class Item1512
 		{
 			position[]={3256.5762,2.0258105,12940.726};
-			azimut=174.87733;
+			azimut=263.53381;
 			id=1721;
 			side="EMPTY";
 			vehicle="TargetP_Inf_F";
@@ -18400,7 +18400,7 @@ class Mission
 		class Item1513
 		{
 			position[]={3256.8152,2.0072949,12938.411};
-			azimut=174.87733;
+			azimut=263.29376;
 			id=1722;
 			side="EMPTY";
 			vehicle="TargetP_Inf_F";
@@ -18418,10 +18418,37 @@ class Mission
 		class Item1515
 		{
 			position[]={3301.5298,2.1023924,12946.076};
-			azimut=63.226292;
+			azimut=-114.55712;
 			id=1724;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryArea_F";
+			skill=0.60000002;
+		};
+		class Item1516
+		{
+			position[]={3275.0144,2.1789954,12949.837};
+			azimut=-182.02457;
+			id=1725;
+			side="EMPTY";
+			vehicle="Land_Sign_WarningMilitaryArea_F";
+			skill=0.60000002;
+		};
+		class Item1517
+		{
+			position[]={3297.1497,2.072592,12941.648};
+			azimut=264.83069;
+			id=1726;
+			side="EMPTY";
+			vehicle="Land_BagFence_Short_F";
+			skill=0.60000002;
+		};
+		class Item1518
+		{
+			position[]={3297.3247,2.0365844,12939.328};
+			azimut=264.83069;
+			id=1727;
+			side="EMPTY";
+			vehicle="Land_BagFence_Short_F";
 			skill=0.60000002;
 		};
 	};
