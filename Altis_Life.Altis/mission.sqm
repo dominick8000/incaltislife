@@ -43,7 +43,8 @@ class Mission
 		"A3_Signs_F_AD",
 		"A3_Structures_F_System",
 		"A3_Misc_F_Helpers",
-		"A3_Structures_F_Wrecks"
+		"A3_Structures_F_Wrecks",
+		"A3_Structures_F_Mil_BagFence"
 	};
 	addOnsAuto[]=
 	{
@@ -82,6 +83,7 @@ class Mission
 		"A3_Structures_F_Civ_Dead",
 		"A3_Weapons_F_Explosives",
 		"A3_Structures_F_Naval_Buoys",
+		"A3_Structures_F_Mil_BagFence",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -3449,7 +3451,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1511;
+		items=1516;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -18371,9 +18373,55 @@ class Mission
 		class Item1510
 		{
 			position[]={3646.5996,10.214932,13118.783};
+			azimut=180;
 			id=1719;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryVehicles_F";
+			skill=0.60000002;
+		};
+		class Item1511
+		{
+			position[]={3256.3372,2.0449266,12943.115};
+			azimut=174.87733;
+			id=1720;
+			side="EMPTY";
+			vehicle="TargetP_Inf_F";
+			skill=0.60000002;
+		};
+		class Item1512
+		{
+			position[]={3256.5762,2.0258105,12940.726};
+			azimut=174.87733;
+			id=1721;
+			side="EMPTY";
+			vehicle="TargetP_Inf_F";
+			skill=0.60000002;
+		};
+		class Item1513
+		{
+			position[]={3256.8152,2.0072949,12938.411};
+			azimut=174.87733;
+			id=1722;
+			side="EMPTY";
+			vehicle="TargetP_Inf_F";
+			skill=0.60000002;
+		};
+		class Item1514
+		{
+			position[]={3296.9312,2.103178,12944.052};
+			azimut=264.83069;
+			id=1723;
+			side="EMPTY";
+			vehicle="Land_BagFence_Short_F";
+			skill=0.60000002;
+		};
+		class Item1515
+		{
+			position[]={3301.5298,2.1023924,12946.076};
+			azimut=63.226292;
+			id=1724;
+			side="EMPTY";
+			vehicle="Land_Sign_WarningMilitaryArea_F";
 			skill=0.60000002;
 		};
 	};
