@@ -47,7 +47,27 @@ _allowedItems =
 	"optic_Hamr",
 	"optic_tws",
 	"SmokeShellBlue",
-	"MiniGrenade"
+	"MiniGrenade",
+	"U_Rangemaster",
+	"U_B_CombatUniform_mcam_tshirt",
+	"U_B_survival_uniform",
+	"U_B_CombatUniform_mcam_worn",
+	"U_B_CombatUniform_mcam_worn",
+	"U_B_CombatUniform_wdl",
+	"U_I_GhillieSuit",
+	"H_HelmetB_plain_mcamo",
+	"H_Booniehat_mcamo",
+	"H_MilCap_mcamo",
+	"H_PilotHelmetFighter_B",
+	"H_HelmetSpecB_blk",
+	"V_PlateCarrierIA1_dgtl",
+	"V_RebreatherB",
+	"V_TacVestIR_blk",
+	"B_Kitbag_cbr",
+	"B_FieldPack_cbr",
+	"B_AssaultPack_cbr",
+	"B_Bergen_sgg",
+	"B_Carryall_cbr"
 ];
 
 //Old format / code
