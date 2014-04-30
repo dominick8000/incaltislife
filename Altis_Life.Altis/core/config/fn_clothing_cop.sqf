@@ -29,6 +29,11 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["U_B_CombatUniform_wdl",nil,550]];
+			_ret set[count _ret,["U_I_GhillieSuit",nil,550]];
+		};
 	};
 	
 	//Hats
@@ -44,6 +49,12 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 			_ret set[count _ret,["H_PilotHelmetFighter_B","Gasmaske",1000]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
+			_ret set[count _ret,["H_PilotHelmetFighter_B","Gasmaske",1000]];
+			_ret set[count _ret,["H_HelmetSpecB_blk","Gasmaske",1000]];
 		};
 	};
 	
@@ -70,8 +81,12 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["V_PlateCarrierIA1_dgtl","Polizeiweste",1500]];
+			_ret set[count _ret,["V_PlateCarrierIA1_dgtl",nil,1500]];
 			_ret set[count _ret,["V_RebreatherB",nil,500]];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret set[count _ret,["V_TacVestIR_blk",nil,1500]];
 		};
 	};
 	

@@ -57,14 +57,12 @@ switch(_shop) do
 			{
 				["Altis Patrol Officer Shop",
 					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
+						["SMG_02_ACO_F",nil,15000],
 						["MineDetector",nil,1000],
 						["acc_flashlight",nil,750],
 						["optic_Holosight",nil,1200],
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
 						["30Rnd_9x21_Mag",nil,250]
 					]
 				];
@@ -83,7 +81,6 @@ switch(_shop) do
 				["Altis Sergeant Officer Shop",
 					[
 						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
 						["arifle_MXC_F",nil,30000],
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],
@@ -98,6 +95,56 @@ switch(_shop) do
 		};
 	};
 
+
+	case "cop_gsg":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 6): {"You are not at a GSG rank!"};
+			default
+			{
+				["Altis GSG Shop",
+					[
+						["SMG_02_ACO_F",nil,15000],
+						["30Rnd_9x21_Mag",nil,60],
+						["hgun_ACPC2_F",nil,17500],
+						["9Rnd_45ACP_Mag",nil,200],
+						["arifle_MX_F",nil,30000],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["arifle_MX_SW_F",nil,30000],
+						["100Rnd_65x39_caseless_mag",nil,100],
+						["arifle_MXM_F",nil,30000],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["muzzle_snds_H",nil,2750],
+						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
+						["muzzle_snds_acp",nil,2750],
+						["muzzle_snds_B",nil,2750],
+						["muzzle_snds_L",nil,2750],
+						["muzzle_snds_M",nil,2750],
+						["srifle_LRR_F","M320",50000],
+						["7Rnd_408_Mag","M320 Munition",1000],
+						["srifle_GM6_F","GM6 Lynx",50000],
+						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
+						["5Rnd_127x108_Mag","Lynx Munition",1000],
+					  	["launch_I_Titan_F","Anti Air Werfer",100000],
+						["Titan_AA ","Anti Air Rakete",20000],
+						["launch_I_Titan_short_F","Anti Tank Werfer",100000],
+						["Titan_AT","Anti Tank Rakete",100000],
+						["Rangefinder",nil,1000],
+						["optic_SOS","Scharfuetzenvisier",1000],
+						["optic_Aco",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_tws",nil,1000],
+						["SmokeShellBlue","Traenengas",200],
+						["MiniGrenade","Flashbang",200]
+					]
+				];
+			};
+		};
+	};
+	
+
 	case "cop_chief":
 	{
 		switch(true) do
@@ -109,22 +156,33 @@ switch(_shop) do
 				["Altis Chief Shop",
 					[
 						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
 						["30Rnd_9x21_Mag",nil,60],
+						["hgun_ACPC2_F",nil,17500],
 						["9Rnd_45ACP_Mag",nil,200],
-						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200],
+						["arifle_MX_F",nil,30000],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["arifle_MX_SW_F",nil,30000],
+						["100Rnd_65x39_caseless_mag",nil,100],
+						["arifle_MXM_F",nil,30000],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["muzzle_snds_H",nil,2750],
+						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
+						["muzzle_snds_acp",nil,2750],
+						["muzzle_snds_B",nil,2750],
+						["muzzle_snds_L",nil,2750],
+						["muzzle_snds_M",nil,2750],
 						["srifle_LRR_F","M320",50000],
 						["7Rnd_408_Mag","M320 Munition",1000],
 						["srifle_GM6_F","GM6 Lynx",50000],
 						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
 						["5Rnd_127x108_Mag","Lynx Munition",1000],
 						["Rangefinder",nil,1000],
-						["optic_SOS","Scharfuetzenvisier",1000]
+						["optic_SOS","Scharfuetzenvisier",1000],
+						["optic_Aco",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_tws",nil,1000],
+						["SmokeShellBlue","Traenengas",200],
+						["MiniGrenade","Flashbang",200]
 					]
 				];
 			};
@@ -142,18 +200,15 @@ switch(_shop) do
 				["Mohammed's Jihadi Shop",
 					[
 						["arifle_TRG20_F",nil,25000],
-						["arifle_Katiba_F",nil,30000],
-						["srifle_DMR_01_F",nil,50000],
-						["arifle_SDAR_F",nil,20000],
-						["optic_ACO_grn",nil,3500],
-						["optic_Holosight",nil,3600],
-						["acc_flashlight",nil,1000],
-						["optic_Hamr",nil,7500],
-						["30Rnd_9x21_Mag",nil,200],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["30Rnd_556x45_Stanag",nil,300],
-						["10Rnd_762x51_Mag",nil,500],
-						["30Rnd_65x39_caseless_green",nil,275]
+						["30Rnd_556x45_Stanag",nil,100],
+						["SMG_01_F",nil,10000],
+						["30Rnd_45ACP_Mag_SMG_01",nil,10000],
+						["srifle_EBR_F",nil,10000],
+						["20Rnd_762x51_Mag",nil,100],
+						["launch_I_Titan_F","Anti Air Werfer",100000],
+						["Titan_AA ","Anti Air Rakete",20000],
+						["launch_I_Titan_short_F","Anti Tank Werfer",100000],
+						["Titan_AT","Anti Tank Rakete",100000]
 					]
 				];
 			};
