@@ -25,13 +25,9 @@ switch (_filter) do
 			_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,350]];
 			_ret set[count _ret,["U_B_survival_uniform",nil,1250]];
 		};
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
-		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret set[count _ret,["U_B_CombatUniform_wdl_vest",nil,550]];
+			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 			_ret set[count _ret,["U_I_GhillieSuit",nil,550]];
 		};
 	};
