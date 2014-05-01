@@ -128,7 +128,7 @@ switch(_shop) do
 						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
 						["5Rnd_127x108_Mag","Lynx Munition",1000],
 					  	["launch_I_Titan_F","Anti Air Werfer",100000],
-						["Titan_AA ","Anti Air Rakete",20000],
+						["Titan_AA","Anti Air Rakete",20000],
 						["launch_I_Titan_short_F","Anti Tank Werfer",100000],
 						["Titan_AT","Anti Tank Rakete",100000],
 						["Rangefinder",nil,1000],
@@ -208,7 +208,10 @@ switch(_shop) do
 						["launch_I_Titan_F","Anti Air Werfer",100000],
 						["Titan_AA ","Anti Air Rakete",20000],
 						["launch_I_Titan_short_F","Anti Tank Werfer",100000],
-						["Titan_AT","Anti Tank Rakete",100000]
+						["Titan_AT","Anti Tank Rakete",100000],
+						["optic_Aco",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_tws",nil,1000]
 					]
 				];
 			};

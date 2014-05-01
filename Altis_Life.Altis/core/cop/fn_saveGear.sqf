@@ -67,7 +67,11 @@ _allowedItems =
 	"B_FieldPack_cbr",
 	"B_AssaultPack_cbr",
 	"B_Bergen_sgg",
-	"B_Carryall_cbr"
+	"B_Carryall_cbr",
+	"launch_I_Titan_F",
+	"launch_I_Titan_short_F",
+	"Titan_AT",
+	"Titan_AA"
 ];
 
 //Old format / code
