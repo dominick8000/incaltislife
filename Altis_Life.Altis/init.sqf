@@ -31,8 +31,6 @@ if(X_Client) then
 _logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 [] execVM "teargas\teargas.sqf";
 
-onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
-
 if(!StartProgress) then
 {
 	[8,true,false] execFSM "core\fsm\core_time.fsm";
