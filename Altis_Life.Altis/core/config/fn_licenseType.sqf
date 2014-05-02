@@ -38,7 +38,8 @@ switch (_mode) do
 			case "iron": {_var = "license_civ_iron"};
 			case "copper": {_var = "license_civ_copper"};
 			case "cement": {_var = "license_civ_cement"};
-            case "home": {_var = "license_civ_home"}; 			
+            		case "home": {_var = "license_civ_home"};
+			case "cmastery": {_var = "license_civ_cmastery"};
 			default {_var = ""};
 		};
 	};
@@ -69,7 +70,8 @@ switch (_mode) do
 			case "license_civ_iron": {_var = "iron"};
 			case "license_civ_copper": {_var = "copper"};
 			case "license_civ_cement": {_var = "cement"};
-            case "license_civ_home": {_var = "home"};			
+            		case "license_civ_home": {_var = "home"};
+			case "license_civ_cmastery": {_var = "cmastery"};
 			default {_var = ""};
 		};
 	};
