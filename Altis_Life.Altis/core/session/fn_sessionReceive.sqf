@@ -8,7 +8,8 @@
 	initializes the player, if no data is found it starts the session
 	creation process.
 */
-private["_session"];
+private["_session","_leaderstatus","_lockedbool","_strplayer","_locked","_gangresult"];
+_leaderstatus = 0;
 _session = _this;
 diag_log format["CLIENT: %1 :: %2", typeName _session,_session];
 life_session_tries = life_session_tries + 1;
@@ -93,14 +94,71 @@ switch (playerSide) do
     };
     case civilian:
     {
-        // add this to your session
+        // Housing initialization
         life_houses = (_session select 9);
         life_houses_markers = [];
     };
 };
 
-
-
+switch (playerSide) do
+{
+	case civilian:
+	{
+		// Fetch Global Gang list
+		life_gang_list = missionNamespace getVariable "life_gang_list";
+		// Get Players Gang Result
+		_gangresult = (_session select 10);
+		if(isNil "_gangresult") then
+		{
+			diag_log "No Gangs for player in Database. 1";
+		}
+		else
+		{
+			_name = (_gangresult select 0); 
+			_leaderid = (_gangresult select 1);
+			_locked = (_gangresult select 3);
+			if (_locked == "0") then {
+				_lockedbool = false;
+			} else {
+				_lockedbool = true;
+			};
+			if(isNil "_name") then
+			{
+				diag_log "No Gangs for player in Database. 2";
+			}
+				else
+			{
+				diag_log format ["Found Gang: %1 - locked: %2 - %3 - %4",_name, _locked, typeName _locked, _lockedbool];
+				// Join da Group
+				diag_log "Get Group id from life_gang_list";
+				_index = [_name,life_gang_list] call fnc_index;
+				if(_index == -1) then {
+					diag_log "Gang could not be found in Global Gang list... exit";
+				}
+				else
+				{
+					_gang = life_gang_list select _index;
+					_group = _gang select 1;
+					if (isNull _group) then {
+						diag_log "Couldn't find Group for that gang, creating new";
+						_group = createGroup civilian;
+					};
+					diag_log "Joining Group";
+					[player] join _group;
+					life_my_gang = _group;
+					diag_log format["You have joined the gang: %1",_gang select 0];
+					if (_leaderid == getPlayerUID player) then {
+						life_gang_list = [life_gang_list, _index] call BIS_fnc_removeIndex;
+						life_gang_list set[count life_gang_list,[_name,_group,_lockedbool,str(player),getPlayerUID player]];
+						publicVariable "life_gang_list";
+						group player selectLeader player
+						player setRank "COLONEL";
+					};
+				};	
+			};
+		};
+	};
+};
 switch(__GETC__(life_donator)) do
 {
 	case 1: {life_paycheck = life_paycheck + 750;};

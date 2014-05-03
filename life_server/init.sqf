@@ -18,13 +18,13 @@ life_federal_funds = (count playableUnits) * 750; //Amount the federal reserve i
 life_animals_spawned = false;
 life_animals_array = [];
 
+
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 [] execVM "\life_server\initHousing.sqf";
+[] execVM "\life_server\initGangs.sqf";
 [] spawn TON_fnc_cleanup;
-life_gang_list = [];
-publicVariable "life_gang_list";
 life_wanted_list = [];
 client_session_list = [];
 

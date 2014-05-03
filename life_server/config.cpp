@@ -115,6 +115,21 @@ class CfgFunctions
             class updateHouseWeaponStorage {};
         };
     };
+	class msc_System {
+		tag = "MSC";
+		class msc
+		{
+			file = "\life_server\core\msc";
+			class insertGang{};
+			class queryGangs{};
+			class queryPlayerGang{};
+			class insertGangPlayer{};
+			class removeGangPlayer{};
+			class removeGang{};
+			class updateGangLeader{};
+			class updateGanglock{};
+		};
+	};
 };
 
 class CfgVehicles
