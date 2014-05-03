@@ -155,9 +155,8 @@ switch (playerSide) do
 					};
 
 					life_gang_list = [life_gang_list, _index] call BIS_fnc_removeIndex;
-					life_gang_list set[count life_gang_list,[_name,_group,_lockedbool,str(player),getPlayerUID player]];
+					life_gang_list set[count life_gang_list,[_name,_group,_lockedbool,_strplayer,getPlayerUID player]];
 					publicVariable "life_gang_list";
-					};
 				};	
 			};
 		};
