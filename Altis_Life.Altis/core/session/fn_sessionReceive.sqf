@@ -139,6 +139,7 @@ switch (playerSide) do
 				{
 					_gang = life_gang_list select _index;
 					_group = _gang select 1;
+					_strplayer = _gang select 3;
 					if (isNull _group) then {
 						diag_log "Couldn't find Group for that gang, creating new";
 						_group = createGroup civilian;
@@ -148,11 +149,14 @@ switch (playerSide) do
 					life_my_gang = _group;
 					diag_log format["You have joined the gang: %1",_gang select 0];
 					if (_leaderid == getPlayerUID player) then {
-						life_gang_list = [life_gang_list, _index] call BIS_fnc_removeIndex;
-						life_gang_list set[count life_gang_list,[_name,_group,_lockedbool,str(player),getPlayerUID player]];
-						publicVariable "life_gang_list";
 						group player selectLeader player;
 						player setRank "COLONEL";
+						_strplayer = str(player);
+					};
+
+					life_gang_list = [life_gang_list, _index] call BIS_fnc_removeIndex;
+					life_gang_list set[count life_gang_list,[_name,_group,_lockedbool,str(player),getPlayerUID player]];
+					publicVariable "life_gang_list";
 					};
 				};	
 			};
