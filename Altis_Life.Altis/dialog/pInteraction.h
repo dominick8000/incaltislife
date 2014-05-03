@@ -189,7 +189,7 @@ class vInteraction_Menu
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_Global_Close";
-			onButtonClick = "closeDialog 0;";
+			onButtonClick = "closeDialog 0; life_action_inUse = false;";
 			x = BGX;
 			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);

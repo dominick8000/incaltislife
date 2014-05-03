@@ -15,6 +15,10 @@ private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5"];
 if(!dialog) then {
 	createDialog "vInteraction_Menu";
 };
+if(playerSide == civilian) then {
+	life_action_inUse = true;
+}
+
 disableSerialization;
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
