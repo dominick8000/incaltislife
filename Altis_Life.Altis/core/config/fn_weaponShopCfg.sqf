@@ -122,8 +122,6 @@ switch(_shop) do
 						["muzzle_snds_B",nil,2750],
 						["muzzle_snds_L",nil,2750],
 						["muzzle_snds_M",nil,2750],
-						["srifle_LRR_F","M320",50000],
-						["7Rnd_408_Mag","M320 Munition",1000],
 						["srifle_GM6_F","GM6 Lynx",50000],
 						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
 						["5Rnd_127x108_Mag","Lynx Munition",1000],
@@ -171,8 +169,6 @@ switch(_shop) do
 						["muzzle_snds_B",nil,2750],
 						["muzzle_snds_L",nil,2750],
 						["muzzle_snds_M",nil,2750],
-						["srifle_LRR_F","M320",50000],
-						["7Rnd_408_Mag","M320 Munition",1000],
 						["srifle_GM6_F","GM6 Lynx",50000],
 						["5Rnd_127x108_APDS_Mag","Lynx APDS Munition",1000],
 						["5Rnd_127x108_Mag","Lynx Munition",1000],
@@ -205,13 +201,17 @@ switch(_shop) do
 						["30Rnd_45ACP_Mag_SMG_01",nil,100],
 						["srifle_EBR_F",nil,10000],
 						["20Rnd_762x51_Mag",nil,100],
+						["srifle_LRR_F",nil,100000],
+						["7Rnd_408_Mag",nil,1000],
 						["launch_I_Titan_F","Anti Air Werfer",100000],
 						["Titan_AA","Anti Air Rakete",10000],
 						["launch_I_Titan_short_F","Anti Tank Werfer",100000],
 						["Titan_AT","Anti Tank Rakete",10000],
 						["optic_Aco",nil,1000],
 						["optic_Hamr",nil,1000],
-						["optic_tws",nil,1000]
+						["optic_tws",nil,1000],
+						["optic_SOS","Scharfuetzenvisier",1000],
+						["Rangefinder",nil,1000]
 					]
 				];
 			};
