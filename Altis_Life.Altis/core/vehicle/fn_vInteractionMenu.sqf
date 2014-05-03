@@ -17,7 +17,7 @@ if(!dialog) then {
 };
 if(playerSide == civilian) then {
 	life_action_inUse = true;
-}
+};
 
 disableSerialization;
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
