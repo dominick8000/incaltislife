@@ -6,7 +6,7 @@
 	Description:
 	This is a gateway to the SQF->MySQL Query function.
 */
-private["_uid","_unit","_side","_ret","_ownerID"];
+private["_uid","_unit","_side","_ret","_ownerID","_retGang"];
 _unit = [_this,0,ObjNull,[Objnull]] call BIS_fnc_param;
 _side = [_this,1,civilian,[sideUnknown]] call BIS_fnc_param;
 _uid = [_this,2,"",[""]] call BIS_fnc_param;
@@ -36,6 +36,11 @@ if(count _ret > 0) then {
 	waitUntil {typeName _retHouses == "ARRAY" OR typeName _retHouses == "STRING" OR isNil "_retHouses"};
 
 	_ret set [count _ret, _retHouses];
+
+	_retGang = [_uid,_side] call MSC_fnc_queryPlayerGang;
+	waitUntil {typeName _retGang == "ARRAY" OR typeName _retGang == "STRING" OR isNil "_retGang"};
+	_ret set [count _ret, _retGang];
+
 	
 	diag_log "--------------SESSION--------------";
 	diag_log format["_ret 1: %1 (%2)", (_ret select 0), typeName (_ret select 0)];
@@ -48,8 +53,8 @@ if(count _ret > 0) then {
 	diag_log format["_ret 7: %1 (%2)", (_ret select 7), typeName (_ret select 7)];
 	diag_log format["_ret 8: %1 (%2)", (_ret select 8), typeName (_ret select 8)];
 	diag_log format["_ret 9: %1 (%2)", (_ret select 9), typeName (_ret select 9)];
+	diag_log format["_ret 10: %1 (%2)", (_ret select 10), typeName (_ret select 10)];
 	diag_log "------------SESSION END------------";
-	
 };
 
 if(!isNil "_ret") then
