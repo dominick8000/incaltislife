@@ -173,7 +173,10 @@ life_licenses =
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
 	["license_civ_home","civ"],
-	["license_civ_cmastery","civ"]
+	["license_civ_cmastery","civ"],
+	["license_civ_hmastery","civ"],
+	["license_civ_canmastery","civ"],
+	["license_civ_processmastery","civ"]
 ];
 
 //Setup License Variables

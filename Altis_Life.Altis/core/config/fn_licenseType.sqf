@@ -40,6 +40,9 @@ switch (_mode) do
 			case "cement": {_var = "license_civ_cement"};
             		case "home": {_var = "license_civ_home"};
 			case "cmastery": {_var = "license_civ_cmastery"};
+			case "hmastery": {_var = "license_civ_hmastery"};
+			case "canmastery": {_var = "license_civ_canmastery"};
+			case "processmastery": {_var = "license_civ_processmastery"};
 			default {_var = ""};
 		};
 	};
@@ -72,6 +75,9 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
             		case "license_civ_home": {_var = "home"};
 			case "license_civ_cmastery": {_var = "cmastery"};
+			case "license_civ_hmastery": {_var = "hmastery"};
+			case "license_civ_canmastery": {_var = "canmastery"};
+			case "license_civ_processmastery": {_var = "processmastery"};
 			default {_var = ""};
 		};
 	};

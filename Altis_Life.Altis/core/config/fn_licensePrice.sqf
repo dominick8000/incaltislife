@@ -35,4 +35,7 @@ switch (_type) do
 	case "cement": {35000};
     	case "home": {100000};
 	case "cmastery": {3000000};
+	case "hmastery": {3000000};
+	case "canmastery": {3000000};
+	case "processmastery": {3000000};
 };
