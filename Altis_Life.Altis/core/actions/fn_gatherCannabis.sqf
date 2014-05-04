@@ -11,8 +11,15 @@ if(_sum > 0) then
 {
 	life_action_inUse = true;
 	titleText["Gathering Cannabis...","PLAIN"];
-	titleFadeOut 5;
-	sleep 5;
+	if(license_civ_canmastery) then
+	{
+		titleFadeOut 1;
+		sleep 1;
+	} else
+	{
+		titleFadeOut 5;
+		sleep 5;
+	};
 	if(([true,"cannabis",1] call life_fnc_handleInv)) then
 	{
 		titleText["You have collected some Cannabis.","PLAIN"];
