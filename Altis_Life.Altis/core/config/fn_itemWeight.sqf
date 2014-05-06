@@ -52,5 +52,7 @@ switch (_item) do
 	case "cement": {10};
 	case "goldbar": {12};
 	case "peach": {2};
+	case "meth": {20};
+	case "crystalmeth": {15};
 	default {1};
 };
