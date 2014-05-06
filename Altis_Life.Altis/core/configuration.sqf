@@ -142,10 +142,8 @@ life_inv_items =
 	"life_inv_rock",
 	"life_inv_cement",
 	"life_inv_goldbar",
-    	"life_inv_storage1",
-    	"life_inv_storage2",
-	"life_inv_meth",
-	"life_inv_crystalmeth"
+    "life_inv_storage1",
+    "life_inv_storage2"	
 ];
 
 //Setup variable inv vars.
@@ -178,8 +176,7 @@ life_licenses =
 	["license_civ_cmastery","civ"],
 	["license_civ_hmastery","civ"],
 	["license_civ_canmastery","civ"],
-	["license_civ_processmastery","civ"],
-	["license_civ_meth","civ"]
+	["license_civ_processmastery","civ"]
 ];
 
 //Setup License Variables
@@ -187,7 +184,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["meth",4000],["crystalmeth",5000]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000]];
 
 
 /*
@@ -227,9 +224,7 @@ sell_array =
 	["glass",1075],
 	["fuelF",95],
 	["spikeStrip",1200],
-	["cement",1950],
-	["meth",500],
-	["crystalmeth",8000]
+	["cement",1950]
 ];
 __CONST__(sell_array,sell_array);
 

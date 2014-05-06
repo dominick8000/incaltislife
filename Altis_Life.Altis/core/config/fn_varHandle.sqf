@@ -60,10 +60,8 @@ switch (_mode) do
 			case "cement": {"life_inv_cement"};
 			case "rock": {"life_inv_rock"};
 			case "goldbar": {"life_inv_goldbar"};
-           		case "storage1": {"life_inv_storage1"};
-            		case "storage2": {"life_inv_storage2"};
-			case "meth": {"live_inv_meth"};
-			case "crystalmeth": {"live_inv_crystalmeth"};			
+            case "storage1": {"life_inv_storage1"};
+            case "storage2": {"life_inv_storage2"};			
 		};
 	};
 	
@@ -115,10 +113,8 @@ switch (_mode) do
 			case "life_inv_cement": {"cement"};
 			case "life_inv_rock": {"rock"};
 			case "life_inv_goldbar": {"goldbar"};
-            		case "life_inv_storage1": {"storage1"};
-            		case "life_inv_storage2": {"storage2"};
-			case "life_inv_meth": {"meth"};
-			case "life_inv_crystalmeth": {"crystalmeth"};		
+            case "life_inv_storage1": {"storage1"};
+            case "life_inv_storage2": {"storage2"};			
 		};
 	};
 };
