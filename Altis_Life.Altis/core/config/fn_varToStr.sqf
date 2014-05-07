@@ -56,6 +56,10 @@ switch (_var) do
 	case "life_inv_rock": {"Rock"};
 	case "life_inv_cement": {"Cement Bag"};
 	case "life_inv_goldbar": {"Gold Bar"};
+	case "life_inv_meth_kit": {"meth_kit"};
+	case "life_inv_sodium_hydroxide": {"sodium_hydroxide"};
+	case "life_inv_crystal_meth": {"crystal_meth"};
+	case "life_inv_crystal_meth_pure": {"crystal_meth_pure"};
 	
 	//License Block
 	case "license_civ_driver": {"Driver License"};
@@ -83,6 +87,7 @@ switch (_var) do
 	case "license_civ_hmastery": {"Heroin Mastery License"};
 	case "license_civ_canmastery": {"Cannabis Mastery License"};
 	case "license_civ_processmastery": {"Process Mastery License"};
+	case "license_civ_meth": {"Meth Training"};
 	
     //Virtual Inventory Items
     case "life_inv_storage1": {"House Storage"};

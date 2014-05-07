@@ -146,8 +146,6 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_G_Offroad_01_armed_F",500000]];
-			_return set[count _return,
-			["I_MRAP_03_hmg_F",500000]];
 		};
 	};
 	
@@ -165,8 +163,6 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_G_Offroad_01_armed_F",500000]];
-			_return set[count _return,
-			["I_MRAP_03_hmg_F",500000]];
 		};
 	};
 			
@@ -185,8 +181,6 @@ switch (_shop) do
 		["B_Quadbike_01_F",5000]];
 		_return set[count _return,
 		["C_Offroad_01_F",50000]];
-		_return set[count _return,
-		["O_MRAP_02_F",150000]];
 	};
 	
 	case "reb_air":

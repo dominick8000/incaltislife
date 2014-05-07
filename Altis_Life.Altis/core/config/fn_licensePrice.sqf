@@ -34,6 +34,7 @@ switch (_type) do
 	case "copper": {10000};
 	case "cement": {35000};
     	case "home": {100000};
+	case "meth": {80000};
 	case "cmastery": {3000000};
 	case "hmastery": {3000000};
 	case "canmastery": {3000000};

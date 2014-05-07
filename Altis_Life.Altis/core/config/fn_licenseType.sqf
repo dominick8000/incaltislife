@@ -43,6 +43,9 @@ switch (_mode) do
 			case "hmastery": {_var = "license_civ_hmastery"};
 			case "canmastery": {_var = "license_civ_canmastery"};
 			case "processmastery": {_var = "license_civ_processmastery"};
+			case "meth": {_var = "license_civ_meth"};
+			case "meth1": {_var = "license_civ_meth"};
+			case "meth2": {_var = "license_civ_meth"};
 			default {_var = ""};
 		};
 	};
@@ -78,6 +81,9 @@ switch (_mode) do
 			case "license_civ_hmastery": {_var = "hmastery"};
 			case "license_civ_canmastery": {_var = "canmastery"};
 			case "license_civ_processmastery": {_var = "processmastery"};
+			case "license_civ_meth": {_var = "meth"};
+			case "license_civ_meth": {_var = "meth1"};
+			case "license_civ_meth": {_var = "meth2"};
 			default {_var = ""};
 		};
 	};

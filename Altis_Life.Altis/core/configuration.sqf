@@ -30,6 +30,10 @@ life_knockout = false;
 life_interrupted = false;
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
+life_inv_meth_kit = objNull;
+life_inv_sodium_hydroxide = objNull;
+life_inv_crystal_meth = objNull;
+life_inv_crystal_meth_pure = objNull;
 /*
 *****************************
 ****** Weight Variables *****
@@ -143,7 +147,11 @@ life_inv_items =
 	"life_inv_cement",
 	"life_inv_goldbar",
     "life_inv_storage1",
-    "life_inv_storage2"	
+    "life_inv_storage2",
+	"life_inv_meth_kit",
+	"life_inv_sodium_hydroxide",
+	"life_inv_crystal_meth",
+	"life_inv_crystal_meth_pure"
 ];
 
 //Setup variable inv vars.
@@ -176,7 +184,8 @@ life_licenses =
 	["license_civ_cmastery","civ"],
 	["license_civ_hmastery","civ"],
 	["license_civ_canmastery","civ"],
-	["license_civ_processmastery","civ"]
+	["license_civ_processmastery","civ"],
+	["license_civ_meth","civ"]
 ];
 
 //Setup License Variables
@@ -184,7 +193,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["meth_kit",2500],["crystal_meth",3000],["sodium_hydroxyde",2000],["crystal_meth_pure",10000]];
 
 
 /*
@@ -224,7 +233,10 @@ sell_array =
 	["glass",1075],
 	["fuelF",95],
 	["spikeStrip",1200],
-	["cement",1950]
+	["cement",1950],
+	["sodium_hydroxyde",1000],
+	["meth_kit",1500],
+	["crystal_meth_pure",20000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -251,7 +263,8 @@ buy_array =
 	["peach",68],
 	["spikeStrip",2500],
 	["storage1",50000],
-    ["storage2",250000]
+    	["storage2",250000],
+	["meth_kit",15000]
 ];
 __CONST__(buy_array,buy_array);
 
