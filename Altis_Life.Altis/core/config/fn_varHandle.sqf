@@ -122,7 +122,7 @@ switch (_mode) do
 			case "life_inv_meth_kit": {"meth_kit"};
 			case "life_inv_sodium_hydroxide": {"sodium_hydroxide"};
 			case "life_inv_crystal_meth": {"crystal_meth"};
-			case "live_inv_crystal_meth_pure": {"crystal_meth_pure"};
+			case "life_inv_crystal_meth_pure": {"crystal_meth_pure"};
 		};
 	};
 };

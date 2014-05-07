@@ -236,7 +236,7 @@ sell_array =
 	["cement",1950],
 	["sodium_hydroxyde",1000],
 	["meth_kit",1500],
-	["crystal_meth_pure",20000]
+	["crystal_meth_pure",40000]
 ];
 __CONST__(sell_array,sell_array);
 
