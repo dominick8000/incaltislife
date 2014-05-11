@@ -118,7 +118,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=91;
+		items=93;
 		class Item0
 		{
 			side="WEST";
@@ -3550,6 +3550,89 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Methdealer"",life_fnc_virt_menu,""meth""];";
+				};
+			};
+		};
+		class Item91
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8437.2002,105.64852,25149.426};
+					azimut=182.302;
+					id=205;
+					side="GUER";
+					vehicle="I_Story_Colonel_F";
+					player="PLAY CDG";
+					forceHeadlessClient=1;
+					leader=1;
+					skill=0.60000002;
+					text="hc_1";
+					description="Headless Client";
+				};
+			};
+		};
+		class Item92
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8424.9258,99.930687,25177.225};
+					azimut=185.11099;
+					special="NONE";
+					id=206;
+					side="GUER";
+					vehicle="B_RangeMaster_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="medic_1";
+					description="EMS Medic";
+				};
+				class Item1
+				{
+					position[]={8425.2324,99.418427,25179.02};
+					azimut=185.11099;
+					special="NONE";
+					id=207;
+					side="GUER";
+					vehicle="B_RangeMaster_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="medic_3";
+					description="EMS Medic";
+				};
+				class Item2
+				{
+					position[]={8427.6777,99.306786,25178.748};
+					azimut=185.11099;
+					special="NONE";
+					id=208;
+					side="GUER";
+					vehicle="B_RangeMaster_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="medic_4";
+					description="EMS Medic";
+				};
+				class Item3
+				{
+					position[]={8428.2236,99.711594,25177.109};
+					azimut=185.11099;
+					special="NONE";
+					id=209;
+					side="GUER";
+					vehicle="B_RangeMaster_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="medic_2";
+					description="EMS Medic";
 				};
 			};
 		};
