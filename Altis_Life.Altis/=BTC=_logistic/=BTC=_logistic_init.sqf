@@ -45,7 +45,7 @@ if (BTC_active_lift == 1) then
 			//PO-30 Orca
 			case "O_Heli_Light_02_unarmed_F"     : {_array = ["C_Quadbike_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_SUV_01_F"];};
 			//UH80
-			case "B_Heli_Transport_01_F" : {_array = ["C_Quadbike_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_SUV_01_F","B_MRAP_01_F","O_MRAP_02_F"];};
+			case "B_Heli_Transport_01_F" : {_array = ["C_Quadbike_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_SUV_01_F","B_MRAP_01_F","O_MRAP_02_F","O_MRAP_02_hmg_F"];};
 			//CH49
 			case "I_Heli_Transport_02_F" : {_array = ["C_Quadbike_01_F","C_Offroad_01_F","C_Hatchback_01_F","C_SUV_01_F","C_Van_01_transport_F","C_Van_01_box_F","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F"];};
 
