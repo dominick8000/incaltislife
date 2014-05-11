@@ -62,7 +62,7 @@ switch (_side) do
 		}forEach life_houses;		
 	};
 	case independent: {
-		[
+		_markers = [
 			["medic_spawn_1","Kavala Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_2","Athira Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
