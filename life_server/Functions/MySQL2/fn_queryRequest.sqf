@@ -38,16 +38,17 @@ while {true} do {
 	_thread = [_query,_uid] spawn _handler;
 	waitUntil {scriptDone _thread};
 	sleep 0.2;
-	_queryResult = (missionNamespace getVariable format["QUERY_%1",_uid]) select 0;
-	diag_log format["got mission namespace variable: %1 Result: %2",format["QUERY_%1",_uid],_queryResult];
+	_queryResult = (missionNamespace getVariable format["QUERY_%1",_uid]);
 	if(!isNil "_queryResult") exitWith {};
 };
-
-missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
-
+if(typeName _queryResult == "ARRAY") then {
+	_queryResult = _queryResult select 0;
+	diag_log format["got mission namespace variable: %1 Result: %2",_uid,_queryResult];
+};
 if(typeName _queryResult == "STRING") exitWith {
 	[[],"SOCK_fnc_insertPlayerInfo",_ownerID,false,true] spawn life_fnc_MP;
 };
+missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
 
 //Parse licenses (Always index 6)
 _new = [(_queryResult select 6)] call DB_fnc_mresToArray;
@@ -92,9 +93,15 @@ switch(_side) do
 			_threadGang = [_queryGang,_Gangqhandle] spawn _handler;
 			waitUntil {scriptDone _threadGang};
 			sleep 0.2;
-			_queryGangResult = (missionNamespace getVariable format["QUERY_%1",_Gangqhandle]) select 0;
-			diag_log format["got mission namespace variable: %1 Result: %2",format["QUERY_%1",_Gangqhandle],_queryGangResult];
-			if(!isNil "_queryGangResult") exitWith {};
+			_queryGangResult = (missionNamespace getVariable format["QUERY_%1",_Gangqhandle]);
+			if(!isNil "_queryResult") exitWith {};
+		};
+		if(typeName _queryGangResult == "ARRAY") then {
+			_queryGangResult = _queryGangResult select 0;
+			diag_log format["got mission namespace variable: %1 Result: %2",_Gangqhandle,_queryGangResult];
+		}
+		else {
+			_queryGangResult = [];
 		};
 		missionNamespace setVariable[format["QUERY_%1",_Gangqhandle],nil]; //Unset the variable.
 		_queryResult set[count _queryResult,[_queryGangResult]];
@@ -114,8 +121,14 @@ switch(_side) do
 			waitUntil {scriptDone _threadHousing};
 			sleep 0.2;
 			_queryHousingResult = missionNamespace getVariable format["QUERY_%1", _Housingqhandle];
+			if(!isNil "_queryResult") exitWith {};
+		};
+		if(typeName _queryHousingResult == "ARRAY") then {
+			_queryHousingResult = _queryHousingResult select 0;
 			diag_log format["got mission namespace variable: %1",_queryHousingResult];
-			if(!isNil "_queryHousingResult") exitWith {};
+		}
+		else {
+			_queryHousingResult = [];
 		};
 	
 		// Parse Housing Data:
