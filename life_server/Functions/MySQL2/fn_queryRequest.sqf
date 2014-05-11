@@ -14,7 +14,7 @@ private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _ownerID = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
-
+_ret = [];
 if(isNull _ownerID) exitWith {};
 _ownerID = owner _ownerID;
 //if(_uid == "" || _side == sideUnknown) exitWith {"The UID or side passed had invalid inputs."};
@@ -124,33 +124,31 @@ switch(_side) do
 			if(!isNil "_queryResult") exitWith {};
 		};
 		if(typeName _queryHousingResult == "ARRAY") then {
-			_queryHousingResult = _queryHousingResult select 0;
 			diag_log format["got mission namespace variable: %1",_queryHousingResult];
+			// Parse Housing Data:
+			_i = 0;
+			{	
+				_new = [(_x select 0)] call DB_fnc_mresToArray;
+				if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+				//diag_log format ["pos : %1 (%2)", _new, typeName _new];
+				
+				_storage = [(_x select 1)] call DB_fnc_mresToArray;
+				if(typeName _storage == "STRING") then {_storage = call compile format["%1", _storage];};
+				//diag_log format ["storage : %1 (%2)", _storage, typeName _storage];
+				
+				_weaponStorage = [(_x select 2)] call DB_fnc_mresToArray;
+				if(typeName _weaponStorage == "STRING") then {_weaponStorage = call compile format["%1", _weaponStorage];};
+				//diag_log format ["_weaponStorage : %1 (%2)", _weaponStorage, typeName _weaponStorage];
+					
+				_ret set[_i, [_new,_storage, _weaponStorage]];
+				//_ret set[_i, _new];
+				_i = _i + 1;
+			}forEach (_queryHousingResult);
 		}
 		else {
 			_queryHousingResult = [];
+			_ret = [];
 		};
-	
-		// Parse Housing Data:
-		_ret = [];
-		_i = 0;
-		{	
-			_new = [(_x select 0)] call DB_fnc_mresToArray;
-			if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-			//diag_log format ["pos : %1 (%2)", _new, typeName _new];
-			
-			_storage = [(_x select 1)] call DB_fnc_mresToArray;
-			if(typeName _storage == "STRING") then {_storage = call compile format["%1", _storage];};
-			//diag_log format ["storage : %1 (%2)", _storage, typeName _storage];
-			
-			_weaponStorage = [(_x select 2)] call DB_fnc_mresToArray;
-			if(typeName _weaponStorage == "STRING") then {_weaponStorage = call compile format["%1", _weaponStorage];};
-			//diag_log format ["_weaponStorage : %1 (%2)", _weaponStorage, typeName _weaponStorage];
-				
-			_ret set[_i, [_new,_storage, _weaponStorage]];
-			//_ret set[_i, _new];
-			_i = _i + 1;
-		}forEach (_queryHousingResult);
 	};	
 };
 missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
