@@ -78,7 +78,8 @@ switch (_side) do {
 };
 diag_log format["Got Player Information: Return: %1",_queryResult];
 
-switch(_side) do {
+switch(_side) do
+{
 	case civilian: 
 	{
 		//compile our query request
@@ -101,51 +102,45 @@ switch(_side) do {
 		
 		diag_log format["got Player Gang Information: Return: %1",_queryGangResult];
 		
-		// Again for Housing
-		_handlerHousing = {
-		private["_threadHousing"];
-		_threadHousing = [_this select 0,true,_this select 1] spawn DB_fnc_asyncCall;
-		waitUntil {scriptDone _threadHousing};
-	};
-	
-	//compile our query request
-	_queryHousing = format["SELECT houses.position, houses.storage, houses.weapon_storage FROM houses WHERE pid='%1'",_uid];
-	};
-	diag_log format["get Player Housing Information: Query: %1",_queryHousing];
-	waitUntil{!DB_Async_Active};
-	
-	_Housingqhandle = format["%1_HOUSING",_uid];
-	while {true} do {
-		_threadHousing = [_queryHousing,_Housingqhandle] spawn _handler;
-		waitUntil {scriptDone _threadHousing};
-		sleep 0.2;
-		_queryHousingResult = missionNamespace getVariable format["QUERY_%1", _Housingqhandle];
-		diag_log format["got mission namespace variable: %1",_queryHousingResult];
-		if(!isNil "_queryHousingResult") exitWith {};
-	};
-	
-	// Parse Housing Data:
-	_ret = [];
-	_i = 0;
-	{	
-		_new = [(_x select 0)] call DB_fnc_mresToArray;
-		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-		//diag_log format ["pos : %1 (%2)", _new, typeName _new];
-		
-		_storage = [(_x select 1)] call DB_fnc_mresToArray;
-		if(typeName _storage == "STRING") then {_storage = call compile format["%1", _storage];};
-		//diag_log format ["storage : %1 (%2)", _storage, typeName _storage];
-		
-		_weaponStorage = [(_x select 2)] call DB_fnc_mresToArray;
-		if(typeName _weaponStorage == "STRING") then {_weaponStorage = call compile format["%1", _weaponStorage];};
-		//diag_log format ["_weaponStorage : %1 (%2)", _weaponStorage, typeName _weaponStorage];
-			
-		_ret set[_i, [_new,_storage, _weaponStorage]];
-		//_ret set[_i, _new];
-		_i = _i + 1;
-	}forEach (_queryHousingResult);
-};	
 
+		//compile our query request
+		_queryHousing = format["SELECT houses.position, houses.storage, houses.weapon_storage FROM houses WHERE pid='%1'",_uid];
+		
+		diag_log format["get Player Housing Information: Query: %1",_queryHousing];
+		waitUntil{!DB_Async_Active};
+		
+		_Housingqhandle = format["%1_HOUSING",_uid];
+		while {true} do {
+			_threadHousing = [_queryHousing,_Housingqhandle] spawn _handler;
+			waitUntil {scriptDone _threadHousing};
+			sleep 0.2;
+			_queryHousingResult = missionNamespace getVariable format["QUERY_%1", _Housingqhandle];
+			diag_log format["got mission namespace variable: %1",_queryHousingResult];
+			if(!isNil "_queryHousingResult") exitWith {};
+		};
+	
+		// Parse Housing Data:
+		_ret = [];
+		_i = 0;
+		{	
+			_new = [(_x select 0)] call DB_fnc_mresToArray;
+			if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+			//diag_log format ["pos : %1 (%2)", _new, typeName _new];
+			
+			_storage = [(_x select 1)] call DB_fnc_mresToArray;
+			if(typeName _storage == "STRING") then {_storage = call compile format["%1", _storage];};
+			//diag_log format ["storage : %1 (%2)", _storage, typeName _storage];
+			
+			_weaponStorage = [(_x select 2)] call DB_fnc_mresToArray;
+			if(typeName _weaponStorage == "STRING") then {_weaponStorage = call compile format["%1", _weaponStorage];};
+			//diag_log format ["_weaponStorage : %1 (%2)", _weaponStorage, typeName _weaponStorage];
+				
+			_ret set[_i, [_new,_storage, _weaponStorage]];
+			//_ret set[_i, _new];
+			_i = _i + 1;
+		}forEach (_queryHousingResult);
+	};	
+};
 missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
 _queryResult set[count _queryResult,[_ret]];
 
