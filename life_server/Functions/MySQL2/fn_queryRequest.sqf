@@ -84,7 +84,6 @@ switch(_side) do
 	{
 		//compile our query request
 		_queryGang = format["SELECT gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
-		};
 		diag_log format["get Player Gang Information: Query: %1",_queryGang];
 		waitUntil{!DB_Async_Active};
 		_Gangqhandle = format["%1_GANG",_uid];
