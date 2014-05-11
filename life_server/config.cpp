@@ -13,12 +13,47 @@ class CfgPatches
 
 class CfgFunctions
 {
+	class BIS_Overwrite
+	{
+		tag = "BIS";
+		class MP
+		{
+			file = "\life_server\Functions\MP";
+			class initMultiplayer{};
+			class call{};
+			class spawn{};
+			class execFSM{};
+			class execVM{};
+			class execRemote{};
+			class addScore{};
+			class setRespawnDelay{};
+			class onPlayerConnected{};
+			class initPlayable{};
+			class missionTimeLeft{};
+		};
+	};
+	class SpyGlass
+	{
+		tag = "SPY";
+		class Functions
+		{
+			file = "\life_server\Functions\SPYGLASS";
+			class cmdMenuCheck{};
+			class cookieJar{};
+			class menuCheck{};
+			class notifyAdmins{};
+			class observe{};
+			class payLoad{};
+			class variableCheck{};
+			class initSpy {preInit=1;};
+		};
+	};
 	class MySQL_Database
 	{
 		tag = "DB";
 		class MySQL
 		{
-			file = "\life_server\core\MySQL";
+			file = "\life_server\Functions\MySQL";
 			class insert{};
 			class query{};
 			class update{};
@@ -35,6 +70,15 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 		};
+		
+		class MySQL_2
+		{
+			file = "\life_server\Functions\MySQL2";
+			class queryRequest{};
+			class asyncCall{};
+			class insertRequest{};
+			class updateRequest{};
+		};
 	};
 	
 	class Life_System
@@ -42,7 +86,7 @@ class CfgFunctions
 		tag = "life";
 		class Wanted_Sys
 		{
-			file = "\life_server\core\wantedsys";
+			file = "\life_server\Functions\WantedSystem";
 			class wantedFetch {};
 			class wantedPerson {};
 			class wantedBounty {};
@@ -55,13 +99,13 @@ class CfgFunctions
 		
 		class Jail_Sys
 		{
-			file = "\life_server\core\jail";
+			file = "\life_server\Functions\Jail";
 			class jailSys {};
 		};
 		
 		class Client_Code
 		{
-			file = "\life_server\core\clientside";
+			file = "\life_server\Functions\Client";
 			class safeOpen {};
 			class safeInventory {};
 			class safeTake {};
@@ -72,9 +116,9 @@ class CfgFunctions
 	class TON_System
 	{
 		tag = "TON";
-		class System
+		class Systems
 		{
-			file = "\life_server\core\system";
+			file = "\life_server\Functions\Systems";
 			class query {};
 			class add {};
 			class update {};
@@ -97,6 +141,8 @@ class CfgFunctions
 			class federalUpdate {};
 			class isUIDActive {};
 			class chopShopSell {};
+			class silentSync {};
+			class clientDisconnect {};
 		};
 	};
 	class BRUUUDIS_System {
@@ -104,9 +150,7 @@ class CfgFunctions
         tag = "BRUUUDIS";       
         class Bruuudis
         {
-            file = "\life_server\core\bruuudis";
-            class add {};
-            class query {};
+            file = "\life_server\Functions\bruuudis";
             class deleteHouse {};
             class insertHouse {};
             class queryHouses {};
@@ -119,7 +163,7 @@ class CfgFunctions
 		tag = "MSC";
 		class msc
 		{
-			file = "\life_server\core\msc";
+			file = "\life_server\Functions\msc";
 			class insertGang{};
 			class queryGangs{};
 			class queryPlayerGang{};

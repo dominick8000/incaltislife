@@ -1,25 +1,27 @@
 /*
-    File: fn_civFetchGear.sqf
-    Author: Bryan "Tonic" Boardwine
-    Full Gear/Y-Menu Save by Vampire
-    
-    Description:
-    Saves the players gear for syncing to the database for persistence.
+	File: fn_civFetchGear.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Fetches specific key items from the civilian for a persistent state.
 */
 private["_ret","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled"];
 _ret = [];
 
 _ret set[count _ret,uniform player];
-_ret set[count _ret,vest player];
 _ret set[count _ret,backpack player];
 _ret set[count _ret,goggles player];
 _ret set[count _ret,headgear player];
 _ret set[count _ret,assignedItems player];
+//* Edited 
+_ret set[count _ret,vest player];
 _ret set[count _ret,primaryWeapon player];
 _ret set[count _ret,handGunWeapon player];
 
+
 _uItems = [];
 _uMags  = [];
+// Added for full gear save
 _bItems = [];
 _bMags  = [];
 _vItems = [];
@@ -30,36 +32,37 @@ _yItems = [];
 
 if(uniform player != "") then
 {
-    {
-        if (_x in (magazines player)) then {
-            _uMags = _uMags + [_x];
-        } else {
-            _uItems = _uItems + [_x];
-        };
-    } forEach (uniformItems player);
+	{
+		_info = [_x] call life_fnc_fetchCfgDetails;
+		if((_info select 4) in [4096,131072]) then
+		{
+			_uItems set[count _uItems,_x];
+		};
+	} foreach (uniformItems player);
 };
 
 if(backpack player != "") then
 {
-    {
-        if (_x in (magazines player)) then {
-            _bMags = _bMags + [_x];
-        } else {
-            _bItems = _bItems + [_x];
-        };
-    } forEach (backpackItems player);
+	{
+		_info = [_x] call life_fnc_fetchCfgDetails;
+		if((_info select 4) in [4096,131072]) then
+		{
+			_bItems set[count _bItems,_x];
+		};
+	} foreach (backpackItems player);
 };
 
 if(vest player != "") then
 {
     {
-        if (_x in (magazines player)) then {
-            _vMags = _vMags + [_x];
-        } else {
-            _vItems = _vItems + [_x];
-        };
+		_info = [_x] call life_fnc_fetchCfgDetails;
+		if((_info select 4) in [4096,131072]) then
+		{
+			_vItems set[count _vItems,_x];
+		};
     } forEach (vestItems player);
 };
+//: Still old style code but added for full gear save
 
 if (count (primaryWeaponMagazine player) > 0 ) then
 {
@@ -145,14 +148,15 @@ if(count (handGunItems player) > 0) then
     ["life_inv_tbacon",life_inv_tbacon],["life_inv_lockpick",life_inv_lockpick],["life_inv_redgull",life_inv_redgull],["life_inv_peach",life_inv_peach]
 ];
 
+
 _ret set[count _ret,_uItems];
-_ret set[count _ret,_uMags];
 _ret set[count _ret,_bItems];
+//* Added for full gear save
+_ret set[count _ret,_uMags];
 _ret set[count _ret,_bMags];
 _ret set[count _ret,_vItems];
 _ret set[count _ret,_vMags];
 _ret set[count _ret,_pItems];
 _ret set[count _ret,_hItems];
 _ret set[count _ret,_yItems];
-
 civ_gear = _ret;

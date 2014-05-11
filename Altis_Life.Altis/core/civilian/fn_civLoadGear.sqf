@@ -1,17 +1,18 @@
 /*
-    File: fn_civLoadGear.sqf
-    Author: Bryan "Tonic" Boardwine
-    
-    Description:
-    Loads saved civilian gear, this is limited for a reason and that's balance.
+	File: fn_civLoadGear.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Loads saved civilian gear, this is limited for a reason and that's balance.
+	//* Edited for full gear save
 */
-private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle"];
+private["_itemArray","_uniform","_backpack","_goggles","_headgear","_itemArray","_uItems","_bItems","_handle","_vest","_items","_prim","_seco","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags"];
 _itemArray = civ_gear;
 waitUntil {!(isNull (findDisplay 46))};
-if(count _itemArray == 0) exitWith
+if(count _itemArray == 0) exitWith 
 {
-    if(headGear player != "") then {removeHeadgear player;};
-    if(goggles player != "") then {removeGoggles player;};
+	if(headGear player != "") then {removeHeadgear player;};
+	if(goggles player != "") then {removeGoggles player;};
 };
 
 //Strip the unit down
@@ -23,16 +24,17 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 {
-    player unassignItem _x;
-    player removeItem _x;
+	player unassignItem _x;
+	player removeItem _x;
 } foreach (assignedItems player);
 
 _uniform = [_itemArray,0,"",[""]] call BIS_fnc_param;
-_vest = [_itemArray,1,"",[""]] call BIS_fnc_param;
-_backpack = [_itemArray,2,"",[""]] call BIS_fnc_param;
-_goggles = [_itemArray,3,"",[""]] call BIS_fnc_param;
-_headgear = [_itemArray,4,"",[""]] call BIS_fnc_param;
-_items = [_itemArray,5,[],[[]]] call BIS_fnc_param;
+_backpack = [_itemArray,1,"",[""]] call BIS_fnc_param;
+_goggles = [_itemArray,2,"",[""]] call BIS_fnc_param;
+_headgear = [_itemArray,3,"",[""]] call BIS_fnc_param;
+_items = [_itemArray,4,[],[[]]] call BIS_fnc_param;
+//* Added for full gear save
+_vest = [_itemArray,5,"",[""]] call BIS_fnc_param;
 _prim = [_itemArray,6,"",[""]] call BIS_fnc_param;
 _seco = [_itemArray,7,"",[""]] call BIS_fnc_param;
 _uItems = [_itemArray,8,[],[[]]] call BIS_fnc_param;
@@ -45,14 +47,20 @@ _pItems = [_itemArray,14,[],[[]]] call BIS_fnc_param;
 _hItems = [_itemArray,15,[],[[]]] call BIS_fnc_param;
 _yItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
 
-if(_prim != "") then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+//* Added:
 if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_prim != "") then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+
 {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
+{[_x,true,false,false,true] call life_fnc_handleItem;} foreach (_uItems);
+{[_x,true,true,false,false] call life_fnc_handleItem;} foreach (_bItems);
+
+//* Added
 {
     if (_x != "") then {
         player addPrimaryWeaponItem _x;
@@ -63,14 +71,8 @@ if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn lif
         player addHandgunItem _x;
     };
 } foreach (_hItems);
-{player addItemToUniform _x;} foreach (_uItems);
-{(uniformContainer player) addItemCargoGlobal [_x,1];} foreach (_uMags);
-{player addItemToVest _x;} foreach (_vItems);
-{(vestContainer player) addItemCargoGlobal [_x,1];} foreach (_vMags);
-{player addItemToBackpack _x;} foreach (_bItems);
-{(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
 
-{
-    _item = [_x,1] call life_fnc_varHandle;
-    [true,_item,1] call life_fnc_handleInv;
-} foreach (_yItems);
+
+
+
+

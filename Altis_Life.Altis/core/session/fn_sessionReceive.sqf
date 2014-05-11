@@ -73,29 +73,23 @@ switch (playerSide) do
 		[] spawn life_fnc_civLoadGear;
 		__CONST__(life_coplevel,0);
 	};
+	
+	case independent: {
+		if((getPlayerUID player) != (_session select 0)) exitWith {}; //Data returned didn't match, was it meant for someone else?
+		life_cash = parseNumber(_session select 1);
+		life_atmcash = parseNumber(_session select 2);
+		__CONST__(life_medicLevel,parseNumber(_session select 3));
+		__CONST__(life_donator,parseNumber(_session select 4));
+		__CONST__(life_adminlevel,parseNumber(_session select 5));
+	};
 };
-
 
 switch (playerSide) do
 {
-    case west:
-    {
-		switch(__GETC__(life_coplevel)) do
-		{
-			case 0: {life_paycheck = life_paycheck + 0;};
-			case 1: {life_paycheck = life_paycheck + 0;};
-			case 2: {life_paycheck = life_paycheck + 1000;};
-			case 3: {life_paycheck = life_paycheck + 2000;};
-			case 4: {life_paycheck = life_paycheck + 3000;};
-			case 5: {life_paycheck = life_paycheck + 4000;};
-			case 6: {life_paycheck = life_paycheck + 5000;};
-			case 7: {life_paycheck = life_paycheck + 6000;};
-		};
-    };
     case civilian:
     {
         // Housing initialization
-        life_houses = (_session select 9);
+        life_houses = (_session select 10);
         life_houses_markers = [];
     };
 };
@@ -107,7 +101,7 @@ switch (playerSide) do
 		// Fetch Global Gang list
 		life_gang_list = missionNamespace getVariable "life_gang_list";
 		// Get Players Gang Result
-		_gangresult = (_session select 10);
+		_gangresult = (_session select 11);
 		if(isNil "_gangresult") then
 		{
 			diag_log "No Gangs for player in Database. 1";
@@ -162,6 +156,7 @@ switch (playerSide) do
 		};
 	};
 };
+
 switch(__GETC__(life_donator)) do
 {
 	case 1: {life_paycheck = life_paycheck + 750;};
@@ -170,6 +165,6 @@ switch(__GETC__(life_donator)) do
 };
 
 if((getPlayerUID player) != (_session select 0)) exitWith {[] spawn life_fnc_sessionCreate;}; //Since it didn't match create the session again?
-cutText["Received information from server and validated it, you are almost ready.","BLACK FADED"];
-0 cutFadeOut 9999999;
+//cutText["Received information from server and validated it, you are almost ready.","BLACK FADED"];
+//0 cutFadeOut 9999999;
 life_session_completed = true;

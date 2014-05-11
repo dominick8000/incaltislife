@@ -139,6 +139,18 @@ class pInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
+		
+		class Button8 : life_RscButtonMenu
+		{
+			idc = 37457;
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			text = "";
+			sizeEx = 0.025;
+			x = BGX + 0.03;
+			y = BGY + 0.42;
+			w = 0.24;
+			h = 0.038;
+		};
 	};
 };
 
@@ -189,7 +201,7 @@ class vInteraction_Menu
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_Global_Close";
-			onButtonClick = "closeDialog 0; life_action_inUse = false;";
+			onButtonClick = "closeDialog 0;";
 			x = BGX;
 			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);

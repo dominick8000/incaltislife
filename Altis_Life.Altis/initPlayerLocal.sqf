@@ -4,16 +4,6 @@
 	Description:
 	Starts the initialization of the player.
 */
+if(!hasInterface) exitWith {}; //This is a headless client, he doesn't need to do anything but keep being headless..
+
 [] execVM "core\init.sqf";
-
-//Execute JIP code.
-if((_this select 1)) then {
-	[] execVM "core\jip.sqf";
-};
-
-//Make NPC's to normal stance..
-{
-	if(!isPlayer _x) then {
-		_x switchMove "";
-	};
-} foreach allUnits;

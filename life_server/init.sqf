@@ -1,6 +1,9 @@
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
-
+DB_Async_Active = false;
 __CONST__(LIFE_SCHEMA_NAME,"'arma3life'");//CHANGE THIS IF YOUR DATABASE IS NOT CALLED ARMA3LIFE KEEP THE ' '
+publicVariable "LIFE_SCHEMA_NAME";
+
+[] execVM "\life_server\fn_initHC.sqf";
 
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
@@ -18,18 +21,28 @@ life_federal_funds = (count playableUnits) * 750; //Amount the federal reserve i
 life_animals_spawned = false;
 life_animals_array = [];
 
+life_wanted_list = [];
+client_session_list = [];
+robbery_success = 0;
+life_gang_list = [];
 
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
-//[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 [] execVM "\life_server\initHousing.sqf";
 [] execVM "\life_server\initGangs.sqf";
+
+
+//[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
+
+_tempID = ["SERV_onClientDisconnect","onPlayerDisconnected","TON_fnc_clientDisconnect"] call BIS_fnc_addStackedEventHandler;
+
 [] spawn TON_fnc_cleanup;
-life_wanted_list = [];
-client_session_list = [];
+
+publicVariable "life_gang_list";
+
 
 bank_obj setVariable["rob_in_sess",false,true];
-robbery_success = 0;
+
 publicVariable "robbery_success";
 
 [] execFSM "\life_server\cleanup.fsm";

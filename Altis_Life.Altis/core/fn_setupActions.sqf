@@ -55,17 +55,6 @@ switch (playerSide) do
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*
 	Undecided actions
 life_actions = life_actions + [player addAction["Repair Vehicle ($500)",life_fnc_pumpRepair,"",999,false,false,"",

@@ -1,5 +1,5 @@
 author = "TAW_Tonic";
-onLoadName = "Altis Life RPG v3.1.2.10";
+onLoadName = "Altis Life RPG v3.1.2.8";
 onLoadMission = "A RPG game mode developed by TAW_Tonic, edited by InC_K3ating and InC_msc";
 joinUnassigned = 1;
 respawn = BASE;
@@ -109,10 +109,30 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
+	
+	class SpyGlass
+	{
+		title = "The SpyGlass sees you";
+		subTitle = "You were detected by the SpyGlass";
+		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
 };
 
 class CfgNotifications
 {
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+
 	class DeliveryAssigned
 	{
 		title = "Delivery Job Accepted";

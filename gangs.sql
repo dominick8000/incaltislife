@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 03. Mai 2014 um 13:51
+-- Generation Time: 11. Mai 2014 um 15:28
 -- Server Version: 5.6.15-log
 -- PHP Version: 5.4.24
 
@@ -28,18 +28,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `gangs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL,
+  `gangname` varchar(30) NOT NULL,
   `atmCash` varchar(2048) NOT NULL,
-  `leaderid` varchar(2048) NOT NULL,
   `locked` varchar(2048) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
-
---
--- Daten für Tabelle `gangs`
---
-
+  UNIQUE KEY `name` (`gangname`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
