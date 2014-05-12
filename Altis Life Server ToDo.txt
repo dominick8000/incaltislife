@@ -1,39 +1,14 @@
+ - Ganggebiete -
 
-Changelog Ver. 3.1.2.1 (Complete)
-
-Backpack and Z Saving
-
-Car Lock Unlock Sounds
-
-Civ Paycheck und Startmoney (1500, 15000)
-
-Weight And Price
+Verschiedene Gebiete auf Karte definieren
+Gebiete können von Gangs eingenommen werden
+Eine übernahme von einer anderen Gang erfolgt, wenn ein Gangmitglied welches in der Besetzer-Gang ist als Geisel zu einem NPC im Gebiet gebracht wird.
+Ganggebiete bringen mehr Geld/5min für alle Mitglieder
+In Gebieten sin bestimmte Shops die nur Mitgliedern zugänglich sind
 
 
 
-Ver. 3.1.2.2 (Complete)
+ - Organhandel -
 
-Add Big Heli to Trader
-
-Map Changes (Hangars)
-
-Garage Fee 1000$
-
-
-Ver. 3.1.2.3(Test)
-
-Cop Whitelist
-
-Map Changes
-
-Translation
-
-
-ToDo:
-
-
-Wiki + Website
-
-Verschiedene Pickaxes für Erze
-
-New Stuff
+Wenn jemand stirbt kann man ihm die Organe rausschneiden 1Skalpell/Organ -> unsaubere Organe -> sehr wenig Geld
+Wenn man eine Person als Geisel nimmt und sie ins Krankenhaus zu einem NPC bringt kann man gegen Geld die Organe entfernen lassen -> saubere Organe -> Sehr viel Geld
