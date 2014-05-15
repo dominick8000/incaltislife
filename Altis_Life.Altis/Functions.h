@@ -3,11 +3,12 @@ class Socket_Reciever
 	tag = "SOCK";
 	class SQL_Socket
 	{
-		file = "core\session\socket";
+		file = "core\session";
 		class requestReceived {};
 		class dataQuery {};
 		class insertPlayerInfo {};
 		class updateRequest {};
+		class syncData {};
 	};
 };
 
@@ -131,18 +132,6 @@ class Life_Client_Core
         class housePrice {};
 	};
 	
-	class session
-	{
-		file = "core\session";
-		class sessionSetup {};
-		class sessionReceive {};
-		class sessionUpdate {};
-		class sessionCreate {};
-		class sessionHandle {};
-		class syncData {};
-		class sessionQuickSync {};
-	};
-
 	class Player_Menu
 	{
 		file = "core\pmenu";
@@ -237,6 +226,13 @@ class Life_Client_Core
 		class zoneCreator {};
 		//* Added for Kidnapping
 		class civInteractionMenu {};
+	};
+	class Zones
+	{
+		file = "core\zones";
+		class getZoneControl{};
+		class ZoneControl{};
+		class refreshZones{};	
 	};
 	
 	class Vehicle

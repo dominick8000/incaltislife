@@ -278,7 +278,7 @@ buy_array =
 	["peach",68],
 	["spikeStrip",2500],
 	["storage1",50000],
-    	["storage2",250000],
+    ["storage2",250000],
 	["meth_kit",15000],
 	["mauer",5000]
 ];

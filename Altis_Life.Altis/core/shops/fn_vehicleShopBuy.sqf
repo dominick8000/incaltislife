@@ -36,6 +36,7 @@ hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _cl
 _vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 waitUntil {!isNil "_vehicle"}; //Wait?
 _vehicle allowDamage false; //Temp disable damage handling..
+_vehicle lock 2;
 _vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 _vehicle setDir (markerDir _spawnPoint);
 _vehicle setPos (getMarkerPos _spawnPoint);
@@ -54,7 +55,7 @@ switch(playerSide) do {
 	
 	case civilian: {
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
-			[_vehicle,"civ_littlebird",true] call life_fnc_vehicleAnimate;
+			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 };
@@ -66,6 +67,6 @@ if(_mode) then {
 	};
 };
 
-[] call life_fnc_sessionQuickSync; //Sync silently because it's obviously silently..
+[] call SOCK_fnc_updateRequest; //Sync silently because it's obviously silently..
 closeDialog 0; //Exit the menu.
 true;

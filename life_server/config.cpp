@@ -54,30 +54,16 @@ class CfgFunctions
 		class MySQL
 		{
 			file = "\life_server\Functions\MySQL";
-			class insert{};
-			class query{};
-			class update{};
 			class numberSafe {};
-			class formatArray {};
 			class mresArray {};
-			class mresToArray {};
-			class addQueue {};
-			class processQueue {};
-			class queueManagement {};
-			class insertVehicle {};
-			class queryVehicle {};
-			class queryVehicles {};
-			class bool{};
-			class mresString {};
-		};
-		
-		class MySQL_2
-		{
-			file = "\life_server\Functions\MySQL2";
 			class queryRequest{};
 			class asyncCall{};
 			class insertRequest{};
 			class updateRequest{};
+			class mresToArray {};
+			class insertVehicle {};
+			class bool{};
+			class mresString {};
 		};
 	};
 	
@@ -119,9 +105,6 @@ class CfgFunctions
 		class Systems
 		{
 			file = "\life_server\Functions\Systems";
-			class query {};
-			class add {};
-			class update {};
 			class managesc {};
 			class cleanup {};
 			class timeStamp {};
@@ -172,6 +155,8 @@ class CfgFunctions
 			class removeGang{};
 			class updateGangLeader{};
 			class updateGanglock{};
+			class gatherZoneControl{};
+			class updateZoneState{};
 		};
 	};
 };

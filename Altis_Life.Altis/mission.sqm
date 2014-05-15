@@ -19297,7 +19297,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=229;
+		items=247;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -19613,14 +19613,14 @@ class Mission
 		};
 		class Item41
 		{
-			position[]={3627.6904,10.062346,13119.143};
+			position[]={3629.0684,10.050426,13122.317};
 			name="civ_car_1";
 			type="Empty";
 			angle=273.08444;
 		};
 		class Item42
 		{
-			position[]={3633.678,10.109617,13117.402};
+			position[]={3636.1157,10.073479,13127.896};
 			name="civ_car_1_1";
 			type="Empty";
 			angle=274.65027;
@@ -21114,6 +21114,114 @@ class Mission
 			position[]={13814.703,20.192596,18953.412};
 			name="medic_spawn_2";
 			type="Empty";
+		};
+		class Item229
+		{
+			position[]={4556.0479,262.64838,15421.819};
+			name="gang_1";
+			type="mil_flag";
+		};
+		class Item230
+		{
+			position[]={8626.9307,180.56136,18285.281};
+			name="gang_2";
+			type="mil_flag";
+		};
+		class Item231
+		{
+			position[]={4899.3608,77.784004,16145.457};
+			name="gang_3";
+			type="mil_flag";
+		};
+		class Item232
+		{
+			position[]={7116.5879,111.9473,16436.621};
+			name="gang_4";
+			type="mil_flag";
+		};
+		class Item233
+		{
+			position[]={9414.4844,118.96411,15903.639};
+			name="gang_5";
+			type="mil_flag";
+		};
+		class Item234
+		{
+			position[]={12347.124,24.058445,15683.002};
+			name="gang_6";
+			type="mil_flag";
+		};
+		class Item235
+		{
+			position[]={11134.869,41.230141,14560.772};
+			name="gang_7";
+			type="mil_flag";
+		};
+		class Item236
+		{
+			position[]={11017.009,25.817682,13415.581};
+			name="gang_8";
+			type="mil_flag";
+		};
+		class Item237
+		{
+			position[]={11751.176,12.892993,13694.251};
+			name="gang_9";
+			type="mil_flag";
+		};
+		class Item238
+		{
+			position[]={10670.901,16.728987,12263.337};
+			name="gang_10";
+			type="mil_flag";
+		};
+		class Item239
+		{
+			position[]={5094.9175,49.652889,11251.886};
+			name="gang_11";
+			type="mil_flag";
+		};
+		class Item240
+		{
+			position[]={4154.7065,52.619022,11744.11};
+			name="gang_12";
+			type="mil_flag";
+		};
+		class Item241
+		{
+			position[]={10328.608,126.99372,19066.383};
+			name="gang_13";
+			type="mil_flag";
+		};
+		class Item242
+		{
+			position[]={14649.187,45.932793,20758.689};
+			name="gang_14";
+			type="mil_flag";
+		};
+		class Item243
+		{
+			position[]={18781.188,32.848789,16647.348};
+			name="gang_15";
+			type="mil_flag";
+		};
+		class Item244
+		{
+			position[]={20997.006,39.301346,17006.232};
+			name="gang_16";
+			type="mil_flag";
+		};
+		class Item245
+		{
+			position[]={21375.131,21.092607,16388.426};
+			name="gang_17";
+			type="mil_flag";
+		};
+		class Item246
+		{
+			position[]={16347.108,24.613335,17258.338};
+			name="gang_18";
+			type="mil_flag";
 		};
 	};
 	class Sensors

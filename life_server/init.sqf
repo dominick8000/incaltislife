@@ -30,7 +30,7 @@ life_gang_list = [];
 [] execVM "\life_server\eventhandlers.sqf";
 [] execVM "\life_server\initHousing.sqf";
 [] execVM "\life_server\initGangs.sqf";
-
+[] execVM "\life_server\initZones.sqf";
 
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 
@@ -61,7 +61,6 @@ publicVariable "robbery_success";
 
 fnc_serv_kick = {endMission "loser";};
 publicVariable "fnc_serv_kick";
-[] spawn DB_fnc_queueManagement;
 
 //Server-side functions that need to be sent out.
 publicVariable "TON_fnc_addVehicle2Chain";

@@ -1,6 +1,6 @@
 /*
 	File: initGangs.sqf
-	Author: Mario2002
+	Author: msc
 	
 	Description:
 	init
@@ -8,7 +8,6 @@
 private["_allGangs","_name","_gangPlayers","_atmCash","_leaderid","_locked","_groupid","_group"];
 diag_log "INIT GANGS";
 life_gang_list = [];
-publicVariable "life_gang_list";
 _allGangs = [] call MSC_fnc_queryGangs;
 // Create all Groups for Gangs
 // diag_log format ["ALL Gangs : %1 (%2)", _allGangs, typeName _allHouses];

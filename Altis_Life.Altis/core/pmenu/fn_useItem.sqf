@@ -46,7 +46,7 @@ switch (true) do
 			[] spawn life_fnc_spikeStrip;
 		};
 	};
-
+	
 	case (_item == "mauer"):
 	{
 		if(!isNull life_mauer) exitWith {hint "Du stellst schon eine Mauer!"};
@@ -55,7 +55,6 @@ switch (true) do
 			[] spawn life_fnc_mauer;
 		};
 	};
-	
 	
 	case (_item == "heroinp"):
 	{

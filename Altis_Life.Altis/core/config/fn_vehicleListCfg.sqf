@@ -312,7 +312,7 @@ switch (_shop) do
 			["I_Heli_Transport_02_F",3500000],
 			["C_Quadbike_01_F",200000]
 		];
-
+		
 		if(__GETC__(life_adminlevel) > 2) then
 		{
 			_return set[count _return,["B_Plane_CAS_01_F",10000]];
