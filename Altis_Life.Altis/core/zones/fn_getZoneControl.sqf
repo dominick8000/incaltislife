@@ -18,7 +18,7 @@ diag_log format ["New Zone Control Request from Server %1 - %2 - %3 - %4 ",_mark
 if(isNil "_marker") exitWith {diag_log "Nil Marker"}; //Bad data
 _markerpos = getMarkerPos _marker;
 if(player distance _markerpos > 10) exitWith {[[_marker,2,""],"MSC_fnc_updateZoneState",false,false] spawn life_fnc_MP; hint "You were to stay within 50m of the Zone!"};
-_timer = time + (1 * 60); //Default timer is 10 minutes to rob.
+_timer = time + (5 * 60); //Default timer is 10 minutes to rob.
 
 while {true} do
 {
