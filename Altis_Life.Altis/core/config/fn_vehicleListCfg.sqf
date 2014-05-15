@@ -316,6 +316,7 @@ switch (_shop) do
 		if(__GETC__(life_adminlevel) > 2) then
 		{
 			_return set[count _return,["B_Plane_CAS_01_F",10000]];
+			_return set[count _return,["B_MBT_01_mlrs_F",10000]];
 		};
 	};
 	
@@ -332,6 +333,7 @@ switch (_shop) do
 		if(__GETC__(life_adminlevel) > 2) then
 		{
 			_return set[count _return,["B_Plane_CAS_01_F",10000]];
+			_return set[count _return,["B_MBT_01_mlrs_F",10000]];
 		};
 	};
 	
