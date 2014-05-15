@@ -66,6 +66,7 @@ switch (_mode) do
 			case "sodium_hydroxide": {"life_inv_sodium_hydroxide"};
 			case "crystal_meth": {"life_inv_crystal_meth"};
 			case "crystal_meth_pure": {"life_inv_crystal_meth_pure"};
+			case "mauer": {"life_inv_mauer"};
 		};
 	};
 	
@@ -123,6 +124,7 @@ switch (_mode) do
 			case "life_inv_sodium_hydroxide": {"sodium_hydroxide"};
 			case "life_inv_crystal_meth": {"crystal_meth"};
 			case "life_inv_crystal_meth_pure": {"crystal_meth_pure"};
+			case "life_inv_mauer": {"mauer"};
 		};
 	};
 };

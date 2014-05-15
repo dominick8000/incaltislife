@@ -56,5 +56,6 @@ switch (_item) do
 	case "sodium_hydroxide": {5};
 	case "crystal_meth": {4};
 	case "crystal_meth_pure": {4};
+	case "mauer": {30};
 	default {1};
 };

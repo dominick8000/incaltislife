@@ -30,6 +30,7 @@ life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
+life_mauer = ObjNull;
 
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
@@ -162,7 +163,8 @@ life_inv_items =
 	"life_inv_meth_kit",
 	"life_inv_sodium_hydroxide",
 	"life_inv_crystal_meth",
-	"life_inv_crystal_meth_pure"
+	"life_inv_crystal_meth_pure",
+	"life_inv_mauer"
 ];
 
 //Setup variable inv vars.
@@ -248,7 +250,8 @@ sell_array =
 	["cement",1950],
 	["sodium_hydroxyde",1000],
 	["meth_kit",1500],
-	["crystal_meth_pure",40000]
+	["crystal_meth_pure",40000],
+	["mauer",2500]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -276,7 +279,8 @@ buy_array =
 	["spikeStrip",2500],
 	["storage1",50000],
     	["storage2",250000],
-	["meth_kit",15000]
+	["meth_kit",15000],
+	["mauer",5000]
 ];
 __CONST__(buy_array,buy_array);
 

@@ -56,10 +56,11 @@ switch (_var) do
 	case "life_inv_rock": {"Rock"};
 	case "life_inv_cement": {"Cement Bag"};
 	case "life_inv_goldbar": {"Gold Bar"};
-	case "life_inv_meth_kit": {"meth_kit"};
-	case "life_inv_sodium_hydroxide": {"sodium_hydroxide"};
-	case "life_inv_crystal_meth": {"crystal_meth"};
-	case "life_inv_crystal_meth_pure": {"crystal_meth_pure"};
+	case "life_inv_meth_kit": {"Meth Kit"};
+	case "life_inv_sodium_hydroxide": {"Sodium Hydroxide"};
+	case "life_inv_crystal_meth": {"Crystal Meth"};
+	case "life_inv_crystal_meth_pure": {"Crystal Meth pure"};
+	case "life_inv_mauer": {"Mauer"};
 	
 	//License Block
 	case "license_civ_driver": {"Driver License"};
