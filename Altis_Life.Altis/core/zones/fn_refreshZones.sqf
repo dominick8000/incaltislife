@@ -11,6 +11,18 @@ diag_log "Refreshing Zones";
 	_zonehinttrigger = _x select 5;
 	_text = format["Controlled by %1",_gangname];
 	_marker setMarkerText _text;
+	if(_status == 1) then {
+		_marker setMarkerColor "ColorRed";
+	}
+	if(_status == 2) then {
+		_marker setMarkerColor "ColorBlue";
+	}
+	if(_status == 3) then {
+		_marker setMarkerColor "ColorBlue";
+	}
+	if(_status == 0) then {
+		_marker setMarkerColor "ColorBlack";
+	}
 	_statement = format["MSC_Action_Zone = player addAction['Gather Zone Control',life_fnc_ZoneControl,'%1',0,false,false,'','!life_action_inUse'];",_x select 0];
 	_zonetrigger setTriggerStatements["player in thislist",_statement,"player removeAction MSC_Action_Zone;"];		
 	_zonetrigger setTriggerArea[10,10,0,false];
