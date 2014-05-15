@@ -20,7 +20,6 @@ if(count _vehicles == 0) exitWith
 	ctrlSetText[2811,localize "STR_Garage_NoVehicles"];
 };
 
-ctrlSetText[2802,localize "STR_Garage_GoodConnection"];
 _control = ((findDisplay 2800) displayCtrl 2802);
 lbClear _control;
 
