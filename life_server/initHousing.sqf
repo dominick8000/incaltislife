@@ -5,7 +5,6 @@
 	Description:
 	init
 */
-
 diag_log "INIT HOUSING";
 private ["_allHouses","_house","_numDoors","_i"];
 _allHouses = [] call BRUUUDIS_fnc_queryHouses;
