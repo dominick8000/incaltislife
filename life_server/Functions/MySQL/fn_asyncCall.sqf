@@ -13,7 +13,7 @@ _key = [_this,2,"",[""]] call BIS_fnc_param;
 
 if(_queryStmt == "") exitWith {_queryStmt};
 DB_Async_Active = true;
-diag_log format["Doing Async Request: Key: %1, Query: %2, Mode: %3", _key, _queryStmt, _mode];
+//* diag_log format["Doing Async Request: Key: %1, Query: %2, Mode: %3", _key, _queryStmt, _mode];
 _queryResult = "";
 while {true} do {
 	_queryResult = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommandAsync ['%1', '%2']", (call LIFE_SCHEMA_NAME), _queryStmt];

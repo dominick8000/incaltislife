@@ -12,5 +12,6 @@ _gangPlayer = [_this,0,"",[""]] call BIS_fnc_param;
 if(_gangPlayer == "") exitWith{};
 
 _query = format["DELETE FROM gang_players WHERE playerid = '%1'",_gangPlayer];
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
-diag_log format ["query : %1", _query];
+waitUntil {!DB_Async_Active};
+_thread = [_query,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};

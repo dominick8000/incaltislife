@@ -72,7 +72,10 @@ if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_ha
     };
 } foreach (_hItems);
 
-
+{
+    _item = [_x,1] call life_fnc_varHandle;
+    [true,_item,1] call life_fnc_handleInv;
+} foreach (_yItems);
 
 
 

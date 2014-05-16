@@ -52,6 +52,14 @@ switch(_state) do
 		life_zone_list set [_index,[_markerzl,_gangname,3,_zonename, _zonetrigger, _zonehinttrigger]];
 		publicVariable "life_zone_list";
 		[[],"life_fnc_refreshZones",true,false] spawn life_fnc_MP;		
+
+		//* Save it into MYSQL!
+		_query = format["UPDATE areas SET owner='%1' WHERE area='%2'",_gangname,_markerzl];
+		private["_handler","_queryResult","_thread"];
+		waitUntil{!DB_Async_Active};
+		_thread = [_query,false] spawn DB_fnc_asyncCall;
+		waitUntil {scriptDone _thread};
+		
 		sleep (10 * 60); //Wait 10 minutes
 		life_zone_list set [_index,[_markerzl,_gangname,0,_zonename, _zonetrigger, _zonehinttrigger]];
 		publicVariable "life_zone_list";

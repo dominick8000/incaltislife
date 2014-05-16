@@ -16,13 +16,11 @@ _atmcash = 0;
 if(_name == "" OR _leaderid == "") exitWith{diag_log format["Some nulls here: %1 %2",_name,_leaderid];};
 diag_log "creating new gang in database";
 _query = format["INSERT INTO gangs (gangname, atmcash, locked) VALUES ('%1','0','%2')",_name, _locked];
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
+waitUntil {!DB_Async_Active};
+_thread = [_query,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};
 
 _query2 = format["INSERT INTO gang_players (gangid, playerid, rank) VALUES ((SELECT id FROM gangs WHERE gangname='%1'),'%2', '7')",_name, _leaderid];
-_sql2 = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query2,(call LIFE_SCHEMA_NAME)];
-
-
-
-diag_log format ["query : %1", _query];
-diag_log format ["query2 : %1", _query2];
-
+waitUntil {!DB_Async_Active};
+_thread = [_query2,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};

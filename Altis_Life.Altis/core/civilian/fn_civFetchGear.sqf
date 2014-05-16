@@ -159,4 +159,5 @@ _ret set[count _ret,_vMags];
 _ret set[count _ret,_pItems];
 _ret set[count _ret,_hItems];
 _ret set[count _ret,_yItems];
+
 civ_gear = _ret;

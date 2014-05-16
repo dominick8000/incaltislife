@@ -21,7 +21,7 @@ switch (true) do
 		life_gang_list set[_index,[_name,_group,true,_owner,_ownerID]];
 		publicVariable "life_gang_list";
 		
-		[[1, _name], "MSC_fnc_updateGanglock",false,false] spawn life_fnc_MP;
+		[["true", _name], "MSC_fnc_updateGanglock",false,false] spawn life_fnc_MP;
 
 		ctrlShow[2622,false];
 		ctrlShow[2623,true];
@@ -32,7 +32,7 @@ switch (true) do
 		life_gang_list set [_index,[_name,_group,true,_owner,_ownerID]];
 		publicVariable "life_gang_list";
 
-		[[1, _name], "MSC_fnc_updateGanglock",false,false] spawn life_fnc_MP;
+		[["true", _name], "MSC_fnc_updateGanglock",false,false] spawn life_fnc_MP;
 		 
 		ctrlShow[2622,false];
 		ctrlShow[2623,true];

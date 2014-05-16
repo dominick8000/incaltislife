@@ -12,9 +12,12 @@ _name = [_this,0,"",[""]] call BIS_fnc_param;
 // Stop bad data...
 if(_name == "") exitWith{};
 
-_query = format["DELETE FROM gangs WHERE name = '%1'",_name];
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
-diag_log format ["query : %1", _query];
-_query = format["DELETE FROM gang_players WHERE gangname = '%1'",_name];
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
-diag_log format ["query : %1", _query];
+_query = format["DELETE FROM gangs WHERE gangname = '%1'",_name];
+waitUntil {!DB_Async_Active};
+_thread = [_query,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};
+
+_query2 = format["DELETE FROM gang_players WHERE gangid =(SELECT id FROM gangs WHERE gangname ='%1')",_name];
+waitUntil {!DB_Async_Active};
+_thread = [_query2,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};
