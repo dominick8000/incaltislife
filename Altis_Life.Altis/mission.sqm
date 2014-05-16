@@ -19052,7 +19052,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1558
 		{
@@ -19062,7 +19062,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1559
 		{
@@ -19072,7 +19072,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1560
 		{
@@ -19082,7 +19082,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1561
 		{
@@ -19092,7 +19092,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1562
 		{
@@ -19102,7 +19102,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1563
 		{
@@ -19112,7 +19112,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1564
 		{
@@ -19122,7 +19122,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1565
 		{
@@ -19132,7 +19132,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1566
 		{
@@ -19142,7 +19142,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampDecor_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,1];";
 		};
 		class Item1567
 		{

@@ -17,8 +17,6 @@ _ret set[count _ret,assignedItems player];
 _ret set[count _ret,vest player];
 _ret set[count _ret,primaryWeapon player];
 _ret set[count _ret,handGunWeapon player];
-
-
 _uItems = [];
 _uMags  = [];
 // Added for full gear save
@@ -148,11 +146,10 @@ if(count (handGunItems player) > 0) then
     ["life_inv_tbacon",life_inv_tbacon],["life_inv_lockpick",life_inv_lockpick],["life_inv_redgull",life_inv_redgull],["life_inv_peach",life_inv_peach]
 ];
 
-
-_ret set[count _ret,_uItems];
-_ret set[count _ret,_bItems];
 //* Added for full gear save
+_ret set[count _ret,_uItems];
 _ret set[count _ret,_uMags];
+_ret set[count _ret,_bItems];
 _ret set[count _ret,_bMags];
 _ret set[count _ret,_vItems];
 _ret set[count _ret,_vMags];
