@@ -18,7 +18,7 @@ diag_log "Refreshing Zones";
 		_marker setMarkerColor "ColorBlue";
 	};
 	if(_status == 3) then {
-		_marker setMarkerColor "ColorBlue";
+		_marker setMarkerColor "ColorGreen";
 	};
 	if(_status == 0) then {
 		_marker setMarkerColor "ColorBlack";
