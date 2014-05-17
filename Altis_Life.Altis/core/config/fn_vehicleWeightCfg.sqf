@@ -38,7 +38,7 @@ switch (_className) do
 	case "I_Boat_Armed_01_minigun_F": {175};
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
-	case "C_Quadbike_01_F": {350};  //* Transport Quad
+	case "C_Quadbike_01_F": {50};  //* Quad
 	case "B_G_Offroad_01_armed_F": {100}; //* Offroad mit Kanone
 	case "Land_Box_AmmoOld_F": {700};
     case "B_supplyCrate_F": {1000};

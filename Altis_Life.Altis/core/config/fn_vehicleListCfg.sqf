@@ -19,7 +19,8 @@ switch (_shop) do
 			["C_Hatchback_01_F",9600],
 			["C_Offroad_01_F",28000],
 			["C_SUV_01_F",40800],
-			["C_Van_01_transport_F",56000]
+			["C_Van_01_transport_F",56000];
+			["C_Quadbike_01_F",2000]
 		];
 	}; 
 	
@@ -30,7 +31,8 @@ switch (_shop) do
 			["C_Hatchback_01_F",9600],
 			["C_Offroad_01_F",28000],
 			["C_SUV_01_F",40800],
-			["C_Van_01_transport_F",56000]
+			["C_Van_01_transport_F",56000],
+			["C_Quadbike_01_F",2000]
 		];
 	};
 	
@@ -41,7 +43,8 @@ switch (_shop) do
 			["C_Hatchback_01_F",9600],
 			["C_Offroad_01_F",28000],
 			["C_SUV_01_F",40800],
-			["C_Van_01_transport_F",56000]
+			["C_Van_01_transport_F",56000],
+			["C_Quadbike_01_F",2000]
 		];
 	}; 
 	
@@ -309,8 +312,7 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",252000],
 			["O_Heli_Light_02_unarmed_F",1200000],
-			["I_Heli_Transport_02_F",3500000],
-			["C_Quadbike_01_F",200000]
+			["I_Heli_Transport_02_F",3500000]
 		];
 		
 		if(__GETC__(life_adminlevel) > 2) then
