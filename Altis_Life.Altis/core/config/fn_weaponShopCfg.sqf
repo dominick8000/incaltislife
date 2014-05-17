@@ -116,6 +116,8 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MXM_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
+						["srifle_LRR_F",nil,50000],
+						["7Rnd_408_Mag",nil,1000],
 						["muzzle_snds_H",nil,2750],
 						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
 						["muzzle_snds_acp",nil,2750],
@@ -126,6 +128,7 @@ switch(_shop) do
 						["optic_Aco",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_tws",nil,1000],
+						["optic_SOS",nil,1000],
 						["SmokeShellBlue","Traenengas",200],
 						["MiniGrenade","Flashbang",200]
 					]
@@ -155,6 +158,8 @@ switch(_shop) do
 						["100Rnd_65x39_caseless_mag",nil,100],
 						["arifle_MXM_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
+						["srifle_LRR_F",nil,50000],
+						["7Rnd_408_Mag",nil,1000],
 						["muzzle_snds_H",nil,2750],
 						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
 						["muzzle_snds_acp",nil,2750],
@@ -165,6 +170,7 @@ switch(_shop) do
 						["optic_Aco",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_tws",nil,1000],
+						["optic_SOS",nil,1000],
 						["SmokeShellBlue","Traenengas",200],
 						["MiniGrenade","Flashbang",200]
 					]
@@ -195,6 +201,7 @@ switch(_shop) do
 						["optic_Aco",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_tws",nil,1000],
+						["optic_SOS",nil,1000],
 						["Rangefinder",nil,1000]
 					]
 				];
