@@ -3653,9 +3653,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3747.0164,18.870001,12972.124};
-					azimut=20;
-					offsetY=18.65;
+					position[]={3741.8025,18.831633,12992.787};
+					azimut=320;
 					special="NONE";
 					id=220;
 					side="CIV";
@@ -21282,13 +21281,13 @@ class Mission
 		};
 		class Item248
 		{
-			position[]={3731.0454,18.874702,12979.381};
+			position[]={3729.5002,18.366867,13006.803};
 			name="med_air_1";
 			type="Empty";
 		};
 		class Item249
 		{
-			position[]={3730.1343,18.685671,12997.911};
+			position[]={3727.3049,18.614491,12998.585};
 			name="med_car_1";
 			type="Empty";
 		};
