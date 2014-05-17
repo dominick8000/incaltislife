@@ -129,6 +129,7 @@ switch(_shop) do
 						["optic_Hamr",nil,1000],
 						["optic_tws",nil,1000],
 						["optic_SOS",nil,1000],
+						["B_UavTerminal",nil,1000],
 						["SmokeShellBlue","Traenengas",200],
 						["MiniGrenade","Flashbang",200]
 					]

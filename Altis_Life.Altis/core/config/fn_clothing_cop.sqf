@@ -94,7 +94,8 @@ switch (_filter) do
 			["B_FieldPack_cbr",nil,500],
 			["B_AssaultPack_cbr",nil,700],
 			["B_Bergen_sgg",nil,2500],
-			["B_Carryall_cbr",nil,3500]
+			["B_Carryall_cbr",nil,3500],
+			["B_Parachute",nil,3500]
 		];
 	};
 };

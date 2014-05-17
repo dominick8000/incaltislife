@@ -359,6 +359,14 @@ switch (_shop) do
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",750000]];
 		};
+	};
+
+	case "cop_air_3":
+	{
+		_return set[count _return,
+		["B_UAV_02_CAS_F",100000]];
+		_return set[count _return,
+		["B_Plane_CAS_01_F",500000]];
 	}; 
 	
 	case "civ_ship_1":
