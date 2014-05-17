@@ -87,6 +87,8 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["30Rnd_9x21_Mag",nil,60],
 						["9Rnd_45ACP_Mag",nil,200],
+						["Laserdesignator",nil,200],
+						["Laserbatteries ",nil,100],
 						["SmokeShellBlue","Traenengas",200],
 						["MiniGrenade","Flashbang",200]
 					]
@@ -196,9 +198,9 @@ switch(_shop) do
 						["30Rnd_45ACP_Mag_SMG_01",nil,100],
 						["srifle_EBR_F",nil,10000],
 						["20Rnd_762x51_Mag",nil,100],
-						["srifle_GM6_F",nil,100000],
-						["5Rnd_127x108_APDS_Mag","Panzerbrechend",10000],
-						["5Rnd_127x108_Mag",nil,10000],
+						["srifle_GM6_F",nil,1000000],
+						["5Rnd_127x108_APDS_Mag","Panzerbrechend",100000],
+						["5Rnd_127x108_Mag",nil,100000],
 						["optic_Aco",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_tws",nil,1000],
