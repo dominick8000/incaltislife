@@ -438,6 +438,13 @@ switch (_shop) do
 			["B_Heli_Light_01_F",5000]
 		];
 	};
+	case "med_car_1":
+	{
+		_return = 
+		[
+			["C_SUV_01_F",5000]
+		];
+	};
 };
 
 _return;
