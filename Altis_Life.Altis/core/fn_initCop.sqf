@@ -6,7 +6,7 @@
 	Description:
 	Cop Initialization file.
 */
-private["_end"];
+private["_end","_rank"];
 player addRating 9999999;
 waitUntil {!(isNull (findDisplay 46))};
 _end = false;
@@ -22,17 +22,49 @@ if((str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop
 		sleep 35;
 	};
 };
-
+_rank = "";
+switch (__GETC__(life_coplevel)) do
+{
+	case 1:
+	{
+		_rank = "[Rekrut]";
+	};
+	case 2:
+	{
+		_rank = "[Advanced Rekrut]";
+	};
+	case 3:
+	{
+		_rank = "[Patrol Officer]";
+	};
+	case 4:
+	{
+		_rank = "[Officer]";
+	};
+	case 5:
+	{
+		_rank = "[Advanced Officer]";
+	};
+	case 6:
+	{
+		_rank = "[Seargent]";
+	};
+	case 7:
+	{
+		_rank = "[General]";
+	};
+};
+player setVariable["Rank",_rank,true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
 [] spawn
 {
-while {true} do
-{
-waitUntil {uniform player == "U_Rangemaster"};
-player setObjectTextureGlobal [0,"textures\police_shirt.paa"];
-waitUntil {uniform player != "U_Rangemaster"};
-};
+	while {true} do
+	{
+		waitUntil {uniform player == "U_Rangemaster"};
+		player setObjectTextureGlobal [0,"textures\police_shirt.paa"];
+		waitUntil {uniform player != "U_Rangemaster"};
+	};
 };
