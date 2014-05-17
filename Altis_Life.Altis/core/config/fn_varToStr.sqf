@@ -89,6 +89,7 @@ switch (_var) do
 	case "license_civ_canmastery": {"Cannabis Mastery License"};
 	case "license_civ_processmastery": {"Process Mastery License"};
 	case "license_civ_meth": {"Meth Training"};
+	case "license_med_air": {"Pilot License"};
 	
     //Virtual Inventory Items
     case "life_inv_storage1": {"House Storage"};

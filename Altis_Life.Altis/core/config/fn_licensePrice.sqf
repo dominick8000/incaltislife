@@ -39,4 +39,5 @@ switch (_type) do
 	case "hmastery": {3000000};
 	case "canmastery": {3000000};
 	case "processmastery": {3000000};
+	case "mair": {10000};
 };
