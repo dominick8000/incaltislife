@@ -431,6 +431,13 @@ switch (_shop) do
 			["C_Van_01_fuel_F",7500]
 		];
 	};
+	case "med_air_1":
+	{
+		_return = 
+		[	
+			["B_Heli_Light_01_F",5000]
+		];
+	};
 };
 
 _return;

@@ -19,5 +19,6 @@ _position = [_position] call DB_fnc_mresArray;
 if(_uid == "" OR _houseId == "") exitWith {};
 
 _query = format["INSERT INTO houses (house_id, pid, storage, trunk, position, occupied) VALUES ('%1', '%2', '%3', '%4', '%5', '%6')",_houseId, _uid, _storage, _trunk, _position, 1];
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
-diag_log format ["query : %1", _query];
+waitUntil {!DB_Async_Active};
+_thread = [_query,false] spawn DB_fnc_asyncCall;
+waitUntil {scriptDone _thread};
