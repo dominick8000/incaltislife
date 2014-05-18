@@ -29,7 +29,7 @@ if (isNull _injuries) then {
 		_text = _text + "\n Blutverlust rechtes Bein";
 	};	
 	if(["headshot"] in _injuries) then {
-		_text = _text + "\n Kopfschutz";
+		_text = _text + "\n Kopfschuss";
 	};
 };
 hint _text;
