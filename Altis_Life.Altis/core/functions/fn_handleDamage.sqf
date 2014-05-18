@@ -59,38 +59,35 @@ if (_projectile in ["mini_Grenade"]) then {
 _injuries = _unit getVariable "injuries";
 _bleeding = _unit getVariable "bleeding";
 if (_projectile == "") then {
-	if(vehicle _source isKindOf "LandVehicle") then {
-		_injuries set [count _injuries,["fraktur"]];
-	} else
-	{
-		_injuries set [count _injuries,["fraktur"]];
+	if (_damage > 0.4) then {
+		//* Player wurde nicht von Projektil getroffen
+		//* Füge Frakturen Hinzu
+		switch (_part) do {
+			case "head": _injuries set [0,true];
+			case "body": _injuries set [1,true];
+			case "hand_l": _injuries set [2, true];
+			case "hand_r": _injuries set [3, true];
+			case "leg_l": 
+			{
+				_injuries set [4, true];
+				player setFatigue 1;
+			};
+			case "leg_r": {
+				_injuries set [5, true];
+				player setFatigue 1; 
+			};
+		};
 	};
-} 
-else 
-{
+} else {
+	_bleeding = _bleeding+(_damage)*50;
 	//* Player wurde von Projektil getroffen
-	if (_part == "head") then {
-		_injuries set [count _injuries,["headshot"]];
-	};
-	if (_part == "body") then {
-		_injuries set [count _injuries,["bl_body"]];
-		_bleeding = _bleeding+(1-_damage)*5;
-	};
-	if (_part == "hand_l") then {
-		_injuries set [count _injuries,["bl_hand_l"]];
-		_bleeding = _bleeding+(1-_damage)*1;
-	};
-	if (_part == "hand_r") then {
-		_injuries set [count _injuries,["bl_hand_r"]];
-		_bleeding = _bleeding+(1-_damage)*1;
-	};
-	if (_part == "leg_l") then {
-		_injuries set [count _injuries,["bl_leg_l"]];
-		_bleeding = _bleeding+(1-_damage)*2;
-	};
-	if (_part == "leg_r") then {
-		_injuries set [count _injuries,["bl_leg_r"]];
-		_bleeding = _bleeding+(1-_damage)*2;
+	switch (_part) do {
+		case "head": _injuries set [6,true];
+		case "body": _injuries set [7,true];
+		case "hand_l": _injuries set [8,true];
+		case "hand_r": _injuries set [9,true];
+		case "leg_l": _injuries set [10, true];
+		case "leg_r": _injuries set [11,true];
 	};
 };
 diag_log format["HandleDamage: Bleeding: %1 Projectile: %2 Part: %3 Damage: %4",_bleeding, _projectile, _part, _damage];

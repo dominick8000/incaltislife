@@ -24,4 +24,5 @@ switch (_shop) do
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "meth": {["Tuco",["crystal_meth","crystal_meth_pure"]]};
 	case "pharmacy": {["Altis pharmacy",["meth_kit"]]};
+	case "hospital": {["Kavala Hospital",["sew_kit","bandage","splint"]]};
 };

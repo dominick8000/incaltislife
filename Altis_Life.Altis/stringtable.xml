@@ -392,8 +392,11 @@
 		<Key ID="STR_pInAct_Medicate">
 			<Original>Behandeln</Original>
 		</Key>
-		<Key ID="STR_pInAct_StopBleeding">
-			<Original>Blutungen stoppen</Original>
+		<Key ID="STR_pInAct_ApplyBandage">
+			<Original>Bandagieren</Original>
+		</Key>
+		<Key ID="STR_pInAct_Suture">
+			<Original>Neahen</Original>
 		</Key>
 		<Key ID="STR_pInAct_MedicateEnd">
 			<Original>Behandlung beenden</Original>
@@ -401,6 +404,12 @@
 		<Key ID="STR_pInAct_Diagnose">
 			<Original>Untersuchen</Original>
 		</Key>		
+		<Key ID="STR_pInAct_HealFracture">
+			<Original>Fraktur heilen</Original>
+		</Key>
+		<Key ID="STR_pInAct_Revive">
+			<Original>Wiederbeleben</Original>
+		</Key>
 	</Package>
 	<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">

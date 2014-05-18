@@ -33,23 +33,40 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 life_pInact_curTarget = _curTarget;
 
-//Set Unrestrain Button
-_Btn1 ctrlSetText localize "STR_pInAct_Diagnose";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_diagnosePlayer; closeDialog 0;";
-
-//Set Check Licenses Button
 if((_curTarget getVariable["Medicated",false])) then {
-	_Btn2 ctrlSetText localize "STR_pInAct_Medicate";
-	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateEndAction; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
+	_Btn1 ctrlSetText localize "STR_pInAct_Medicate";
+	_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateAction; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
 } else {
-	_Btn2 ctrlSetText localize "STR_pInAct_MedicateEnd";
-	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateAction; closeDialog 0;";
+	_Btn1 ctrlSetText localize "STR_pInAct_MedicateEnd";
+	_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateEndAction; closeDialog 0;";
 };
 
-if((_curTarget getVariable["Medicated",false]) OR !alive _curTarget) then {
-	_Btn3 ctrlSetText localize "STR_pInAct_StopBleeding";
-	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopBleeding; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
+if((_curTarget getVariable["Medicated",true]) OR !alive _curTarget) then {
+	_Btn2 ctrlSetText localize "STR_pInAct_Diagnose";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_diagnosePlayer; closeDialog 0;";
+	
+	_Btn3 ctrlSetText localize "STR_pInAct_ApplyBandage";
+	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_bandagePlayer; closeDialog 0";
+	
+	_Btn4 ctrlSetText localize "STR_pInAct_Suture";
+	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_suturePlayer; closeDialog 0";
+	
+	_Btn5 ctrlSetText localize "STR_pInAct_HealFracture";
+	_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_healFracture; closeDialog 0";
+	
+	_Btn6 ctrlSetText localize "STR_pInAct_Revive";
+	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_revive; closeDialog 0";	
 } else {
+	_Btn2 ctrlEnable false;
 	_Btn3 ctrlEnable false;
+	_Btn4 ctrlEnable false;
+	_Btn5 ctrlEnable false;
+	_Btn6 ctrlEnable false;
 };
+
+
+
+
+
+
 	

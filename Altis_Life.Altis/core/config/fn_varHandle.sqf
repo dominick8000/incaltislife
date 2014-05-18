@@ -67,6 +67,9 @@ switch (_mode) do
 			case "crystal_meth": {"life_inv_crystal_meth"};
 			case "crystal_meth_pure": {"life_inv_crystal_meth_pure"};
 			case "mauer": {"life_inv_mauer"};
+			case "splint"; {"life_inv_splint"};
+			case "sew_kit"; {"life_inv_sew_kit"};
+			case "bandage"; {"life_inv_bandage"};
 		};
 	};
 	
@@ -125,6 +128,9 @@ switch (_mode) do
 			case "life_inv_crystal_meth": {"crystal_meth"};
 			case "life_inv_crystal_meth_pure": {"crystal_meth_pure"};
 			case "life_inv_mauer": {"mauer"};
+			case "life_inv_split"; {"Schiene"};
+			case "life_inv_sew_kit"; {"Nadel und Faden"};
+			case "life_inv_bandage"; {"Bandage"};					
 		};
 	};
 };

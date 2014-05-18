@@ -9,6 +9,7 @@ private["_curTarget"];
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _text = "";
 _injuries = _curTarget getVariable "Injuries";
+_bleeding = _curTarget getVariable "Bleeding";
 if (isNull _injuries) then {
 	_text = "Keine Verletzungen";
 } else {

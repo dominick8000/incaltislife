@@ -165,7 +165,10 @@ life_inv_items =
 	"life_inv_sodium_hydroxide",
 	"life_inv_crystal_meth",
 	"life_inv_crystal_meth_pure",
-	"life_inv_mauer"
+	"life_inv_mauer",
+	"life_inv_sew_kit",
+	"life_inv_splint",
+	"life_inv_bandage"
 ];
 
 //Setup variable inv vars.
@@ -252,7 +255,10 @@ sell_array =
 	["sodium_hydroxyde",1000],
 	["meth_kit",1500],
 	["crystal_meth_pure",40000],
-	["mauer",2500]
+	["mauer",2500],
+	["bandage",25],
+	["sew_kit",50],
+	["splint",45]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -281,7 +287,10 @@ buy_array =
 	["storage1",50000],
     ["storage2",250000],
 	["meth_kit",15000],
-	["mauer",5000]
+	["mauer",5000],
+	["bandage",50],
+	["sew_kit",100],
+	["splint",75]
 ];
 __CONST__(buy_array,buy_array);
 

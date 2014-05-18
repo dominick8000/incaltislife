@@ -53,6 +53,11 @@ class Life_Client_Core
 		class medicLoadout {};
 		class medicInteractionMenu {};
 		class diagnosePlayer {};
+		class medicateAction {};
+		class medicateEndAction {};
+		class suturePlayer {};
+		class bandagePlayer {};
+		class healFracture {};
 	};
 	
 	class Actions
@@ -102,10 +107,7 @@ class Life_Client_Core
 		class storeVehicle {};
 		class robAction {};
 		class sellTurtle {};
-		//* Medic!!!
-		class medicateAction {};
-		class medicateEndAction {};
-		class stopBleeding {};
+
 		
 	};
 	

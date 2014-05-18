@@ -2597,13 +2597,13 @@ class Mission
 				class Item40
 				{
 					position[]={3771.7004,18.85,12988.012};
-					azimut=-85.908379;
+					azimut=-85.908401;
 					special="NONE";
 					id=138;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital]; this addAction[""Bekleidung"",life_fnc_clothingMenu,""med""]; this addAction[""Sanitaets Bedarf"",life_fnc_virt_menu,""hospital""]; this addAction[""General Store"",life_fnc_weaponShopMenu,""genstore""];";
 				};
 				class Item41
 				{

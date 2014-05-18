@@ -16,7 +16,7 @@ hint format["%1 has revived you and a fee of $%2 was taken from your bank accoun
 closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
-
+life_my_blood = 10;
 //Take fee for services.
 if(life_atmcash > (call life_revive_fee)) then {
 	life_atmcash = life_atmcash - (call life_revive_fee);
