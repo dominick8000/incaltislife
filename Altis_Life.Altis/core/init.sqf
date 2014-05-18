@@ -62,6 +62,7 @@ switch (playerSide) do
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
+player setVariable["bleeding",0,true];
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
 diag_log "Executing client.fsm";
@@ -92,6 +93,10 @@ uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass
 [] call life_fnc_setupActions;
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
+[] call life_fnc_initBleeding;
+
+
+
 
 /*
 	Initialize SpyGlass

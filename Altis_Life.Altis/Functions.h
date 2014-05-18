@@ -25,6 +25,7 @@ class Life_Client_Core
 		class initCop {};
 		class initMedic {};
 		class welcomeNotification {};
+		class initBleeding {};
 	};
 	
 	class Admin
@@ -50,6 +51,7 @@ class Life_Client_Core
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
+		class medicInteractionMenu {};
 	};
 	
 	class Actions
@@ -99,6 +101,10 @@ class Life_Client_Core
 		class storeVehicle {};
 		class robAction {};
 		class sellTurtle {};
+		//* Medic!!!
+		class medicateAction {};
+		class stopBleeding {};
+		
 	};
 	
 	class Config

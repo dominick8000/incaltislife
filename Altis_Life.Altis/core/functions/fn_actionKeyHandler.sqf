@@ -33,8 +33,10 @@ life_action_inUse = true;
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
 	if(playerSide == west && {(call life_revive_cops)} && {"Medkit" in (items player)}) then {
 		[_curTarget] call life_fnc_revivePlayer;
-	} else {
-		[_curTarget] call life_fnc_revivePlayer;
+	};
+	if(playerSide == independent) then {
+//*		[_curTarget] call life_fnc_revivePlayer;
+		[_curTarget] call life_fnc_medicInteractionMenu;
 	};
 };
 
@@ -42,6 +44,9 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
+	};
+	if(playerSide == independent) then {
+		[_curTarget] call life_fnc_medicInteractionMenu;
 	};
 } else {
 	//OK, it wasn't a player so what is it?

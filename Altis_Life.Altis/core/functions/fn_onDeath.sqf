@@ -17,8 +17,16 @@ if(playerSide == civilian) then
 {
 	removeAllContainers _unit;
 };
-
-hideBody _unit;
+_script = {
+	_medicsonline = [independent] call life_fnc_playerCount;
+	if (_medicsonline == 0 OR isNil "_medicsonline") then {
+		_medicsonline = 1;
+	};
+	_maxTime = (time + (life_respawn_timer * 60)) * _medicsonline; 
+	sleep (_maxTime); //Wait 10 minutes
+	hideBody _unit;
+};
+[] spawn _script;
 //Make my killer wanted!
 if(side _source != west && alive _source) then
 {

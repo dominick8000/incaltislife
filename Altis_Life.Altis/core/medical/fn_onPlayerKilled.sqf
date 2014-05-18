@@ -38,8 +38,11 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	
-	_maxTime = time + (life_respawn_timer * 60);
+	_medicsonline = [independent] call life_fnc_playerCount;
+	if (_medicsonline == 0 OR isNil "_medicsonline") then {
+		_medicsonline = 1;
+	};
+	_maxTime = (time + (life_respawn_timer * 60)) * _medicsonline; 
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn Available in: %1",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 	round(_maxTime - time) <= 0 OR isNull _this};

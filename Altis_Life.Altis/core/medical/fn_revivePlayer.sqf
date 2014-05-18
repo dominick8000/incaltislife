@@ -8,7 +8,8 @@
 private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
 _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
-
+//* For Medics
+if(_target getVariable["Bleeding",0] > 0) exitWith {hint "You must first Stop the bleeding";};
 _revivable = _target getVariable["Revive",FALSE];
 if(_revivable) exitWith {};
 if(_target getVariable ["Reviving",ObjNull] == player) exitWith {hint "Someone else is already reviving this person";};

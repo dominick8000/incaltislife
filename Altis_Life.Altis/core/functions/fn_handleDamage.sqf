@@ -55,5 +55,48 @@ if (_projectile in ["mini_Grenade"]) then {
 [_projectile] spawn life_fnc_handleFlashbang;
 };
 
+//* For Medic System:
+_injuries = _unit getVariable "injuries";
+_bleeding = _unit getVariable "bleeding";
+if (_projectile == "") then {
+	if(vehicle _source isKindOf "LandVehicle") then {
+		_injuries set [count _injuries,["fraktur"]];
+	} else
+	{
+		_injuries set [count _injuries,["fraktur"]];
+	};
+} 
+else 
+{
+	//* Player wurde von Projektil getroffen
+	if (_part == "head") then {
+		_injuries set [count _injuries,["headshot"]];
+	};
+	if (_part == "body") then {
+		_injuries set [count _injuries,["bodyshot"]];
+		_bleeding = _bleeding+(1-_damage)*5;
+	};
+	if (_part == "hand_l") then {
+		_injuries set [count _injuries,["handshot"]];
+		_bleeding = _bleeding+(1-_damage)*1;
+	};
+	if (_part == "hand_r") then {
+		_injuries set [count _injuries,["handshot"]];
+		_bleeding = _bleeding+(1-_damage)*1;
+	};
+	if (_part == "leg_l") then {
+		_injuries set [count _injuries,["legshot"]];
+		_bleeding = _bleeding+(1-_damage)*2;
+	};
+	if (_part == "leg_r") then {
+		_injuries set [count _injuries,["legshot"]];
+		_bleeding = _bleeding+(1-_damage)*2;
+	};
+};
+diag_log format["HandleDamage: Bleeding: %1 Projectile: %2 Part: %3 Damage: %4",_bleeding, _projectile, _part, _damage];
+_unit setVariable["injuries",_injuries,true];
+_unit setVariable["bleeding",_bleeding,true];
+
+
 [] call life_fnc_hudUpdate;
 _damage;
