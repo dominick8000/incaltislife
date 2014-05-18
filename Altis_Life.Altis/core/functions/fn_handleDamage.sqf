@@ -73,23 +73,23 @@ else
 		_injuries set [count _injuries,["headshot"]];
 	};
 	if (_part == "body") then {
-		_injuries set [count _injuries,["bodyshot"]];
+		_injuries set [count _injuries,["bl_body"]];
 		_bleeding = _bleeding+(1-_damage)*5;
 	};
 	if (_part == "hand_l") then {
-		_injuries set [count _injuries,["handshot"]];
+		_injuries set [count _injuries,["bl_hand_l"]];
 		_bleeding = _bleeding+(1-_damage)*1;
 	};
 	if (_part == "hand_r") then {
-		_injuries set [count _injuries,["handshot"]];
+		_injuries set [count _injuries,["bl_hand_r"]];
 		_bleeding = _bleeding+(1-_damage)*1;
 	};
 	if (_part == "leg_l") then {
-		_injuries set [count _injuries,["legshot"]];
+		_injuries set [count _injuries,["bl_leg_l"]];
 		_bleeding = _bleeding+(1-_damage)*2;
 	};
 	if (_part == "leg_r") then {
-		_injuries set [count _injuries,["legshot"]];
+		_injuries set [count _injuries,["bl_leg_r"]];
 		_bleeding = _bleeding+(1-_damage)*2;
 	};
 };

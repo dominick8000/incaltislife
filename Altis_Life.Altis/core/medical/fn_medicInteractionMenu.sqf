@@ -35,12 +35,12 @@ life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
 _Btn1 ctrlSetText localize "STR_pInAct_Diagnose";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_diagnosePlayer; closeDialog 0;";
 
 //Set Check Licenses Button
 if((_curTarget getVariable["Medicated",false])) then {
 	_Btn2 ctrlSetText localize "STR_pInAct_Medicate";
-	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopMedication; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateEndAction; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
 } else {
 	_Btn2 ctrlSetText localize "STR_pInAct_MedicateEnd";
 	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateAction; closeDialog 0;";

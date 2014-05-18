@@ -52,6 +52,7 @@ class Life_Client_Core
 		class deathScreen {};
 		class medicLoadout {};
 		class medicInteractionMenu {};
+		class diagnosePlayer {};
 	};
 	
 	class Actions
@@ -103,6 +104,7 @@ class Life_Client_Core
 		class sellTurtle {};
 		//* Medic!!!
 		class medicateAction {};
+		class medicateEndAction {};
 		class stopBleeding {};
 		
 	};
