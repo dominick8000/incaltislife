@@ -368,8 +368,6 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 5) then
 		{
 		_return set[count _return,
-		["B_UAV_02_CAS_F",100000]];
-		_return set[count _return,
 		["B_Plane_CAS_01_F",500000]];
 		};
 	}; 
