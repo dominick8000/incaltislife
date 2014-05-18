@@ -27,7 +27,6 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-[] execVM "IgiLoad\IgiLoadInit.sqf";
 _logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 [] execVM "teargas\teargas.sqf";
 
