@@ -33,7 +33,7 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 life_pInact_curTarget = _curTarget;
 
-if((_curTarget getVariable["Medicated",false])) then {
+if(!(_curTarget getVariable["Medicated",false])) then {
 	_Btn1 ctrlSetText localize "STR_pInAct_Medicate";
 	_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_medicateAction; [life_pInact_curTarget] call life_fnc_medicInteractionMenu;";
 } else {
