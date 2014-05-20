@@ -377,5 +377,18 @@ class Life_Client_Core
         class calcGarageSpawn {};
         class onPut {};
         class onTake {};
-    };	
+    };
+
+	class Special
+	
+	{
+		file = "core\special";
+		class openEmpMenu {};
+		class isEmpOperator {};
+		class scanVehicles {};
+		class warnVehicle {};
+		class empVehicle {};
+		class vehicleWarned {};
+		class vehicleEmpd {};
+	};
 };
