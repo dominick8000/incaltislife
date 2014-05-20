@@ -103,9 +103,4 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["B_MRAP_01_F","C_SUV_01_F
 	_vehicle setVariable["lights",false,true];
 };
 
-if((_vInfo select 1) == "cop" && (_vInfo select 2) == "B_Heli_Light_01_F") then 
-{
-	_vehicle setVariable ["nano_emp_enabled", true, true];
-};
-
 serv_sv_use = serv_sv_use - [_vid];
