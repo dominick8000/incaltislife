@@ -382,5 +382,11 @@ class Life_Client_Core
 	class Emp
 	{
 		file = "core\emp";
+		class disableVehicle {};
+		class openEmpMenu {};
+		class scanVehicles {};
+		class vehicleDisabled {};
+		class vehicleWarned {};
+		class warnVehicle {};
 	};
 };
