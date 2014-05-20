@@ -4,7 +4,7 @@
 	Date: 14/12/2013
 	Description:
 	Creates an intro on the bottom-right hand corner of the screen.
-*/
+
 
 _onScreenTime = 5; //<-- How long is the text on the screen for ? Recommended: 1 
 
@@ -39,3 +39,5 @@ sleep (_onScreenTime);
 [_role2, _role2names],
 [_role3, _role3names]
 ];
+
+*/
