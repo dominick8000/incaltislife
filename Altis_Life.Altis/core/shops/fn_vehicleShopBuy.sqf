@@ -51,8 +51,7 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
-		if(_className == "B_Heli_Light_01_F") then {
-      		_vehicle setVariable ["nano_emp_enabled", true, true];
+		[_vehicle,"cop_littlebird",true] _vehicle setVariable["nano_emp_enabled", true, true];
    		};
 	};
 	
