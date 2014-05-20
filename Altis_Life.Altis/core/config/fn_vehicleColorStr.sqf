@@ -67,6 +67,7 @@ switch (_vehicle) do
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Cop";};
 			case 5: {_color = "Medic";};
+			case 6: {_color = "Polizei";};
 		};
 	};
 	
