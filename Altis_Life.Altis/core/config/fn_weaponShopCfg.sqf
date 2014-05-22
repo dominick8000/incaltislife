@@ -133,7 +133,8 @@ switch(_shop) do
 						["optic_SOS",nil,1000],
 						["B_UavTerminal",nil,1000],
 						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200]
+						["MiniGrenade","Flashbang",200],
+						["B_UAV_01_backpack_F","Darter Drohne",10000]
 					]
 				];
 			};
@@ -175,7 +176,8 @@ switch(_shop) do
 						["optic_tws",nil,1000],
 						["optic_SOS",nil,1000],
 						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200]
+						["MiniGrenade","Flashbang",200],
+						["B_UAV_01_backpack_F","Darter Drohne",10000]
 					]
 				];
 			};
