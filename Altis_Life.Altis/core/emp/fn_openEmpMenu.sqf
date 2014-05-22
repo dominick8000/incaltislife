@@ -4,7 +4,7 @@
 	
 */
 if(!alive player) exitWith {};
-createDialog "EMPMenu";
+createDialog "emp_menu";
 disableSerialization;
-waitUntil {!isNull (findDisplay 3494)};
-[] spawn life_fnc_scanVehicles;
+//*waitUntil {!isNull (findDisplay 3494)};
+//*[] spawn life_fnc_scanVehicles;
