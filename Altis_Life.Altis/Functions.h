@@ -284,8 +284,10 @@ class Life_Client_Core
 		class licensesRead {};
 		//* Added for Housing
 		class houseOwnerSearch {};
-        class houseInvSearch {};
-        class raidHouse {};
+        	class houseInvSearch {};
+        	class raidHouse {};
+		class arrestDialog_Arrest {};
+		class showArrestDialog {};
 	};
 	
 	class Gangs
