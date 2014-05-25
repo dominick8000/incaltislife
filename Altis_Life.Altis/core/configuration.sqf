@@ -42,8 +42,6 @@ life_inv_meth_kit = objNull;
 life_inv_sodium_hydroxide = objNull;
 life_inv_crystal_meth = objNull;
 life_inv_crystal_meth_pure = objNull;
-life_empInUse = false;
-life_lastVehicles = [];
 /*
 *****************************
 ****** Weight Variables *****

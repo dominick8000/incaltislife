@@ -378,9 +378,4 @@ class Life_Client_Core
         class onPut {};
         class onTake {};
     };
-
-	class Emp
-	{
-		file = "core\emp";
-	};
 };
