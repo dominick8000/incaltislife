@@ -1,6 +1,6 @@
-class emp_menu {
+class nanoEMPConsole {
 	idd = 3494;
-	name= "emp_menu";
+	name= "EMPMenu";
 	movingEnable = false;
 	enableSimulation = true;
 	onLoad = "[] spawn life_fnc_openEmpMenu;";
@@ -60,7 +60,7 @@ class emp_menu {
 
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
-			text = "Schliessen";
+			text = "Schlieﬂen";
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);

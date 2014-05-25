@@ -12,7 +12,7 @@ if(!isNull (findDisplay 3494)) then {
 	_vehicle = life_lastVehicles select _index;
 	if (isNull _vehicle) exitWith{};
 	(vehicle player) say3D "empacsound";
-	[[_vehicle], "life_fnc_vehicleDisabled",crew _vehicle,false] spawn life_fnc_MP;
-	sleep (3 * 60);
+	[[_vehicle], "life_fnc_vehicleDisabled",crew _vehicle,false}] spawn life_fnc_MP;
+	sleep (3 + 60);
 	life_empInUse = false;
 };

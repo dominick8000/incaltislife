@@ -51,6 +51,7 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+		[_vehicle,"cop_littlebird",true] _vehicle setVariable["nano_emp_enabled", true, true];
    		};
 	};
 	
@@ -59,6 +60,7 @@ switch(playerSide) do {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
+};
 
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
