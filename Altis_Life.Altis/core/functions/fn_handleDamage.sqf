@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_handleDamage.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -54,6 +54,46 @@ if (_projectile in ["mini_Grenade"]) then {
 	_damage = 0;
 [_projectile] spawn life_fnc_handleFlashbang;
 };
+
+/*For Medic System:
+_injuries = _unit getVariable "injuries";
+_bleeding = _unit getVariable "bleeding";
+if (_projectile == "") then {
+	if (_damage > 0.4) then {
+		//* Player wurde nicht von Projektil getroffen
+		//* Füge Frakturen Hinzu
+		switch (_part) do {
+			case "head": _injuries set [0,true];
+			case "body": _injuries set [1,true];
+			case "hand_l": _injuries set [2, true];
+			case "hand_r": _injuries set [3, true];
+			case "leg_l": 
+			{
+				_injuries set [4, true];
+				player setFatigue 1;
+			};
+			case "leg_r": {
+				_injuries set [5, true];
+				player setFatigue 1; 
+			};
+		};
+	};
+} else {
+	_bleeding = _bleeding+(_damage)*50;
+	//* Player wurde von Projektil getroffen
+	switch (_part) do {
+		case "head": _injuries set [6,true];
+		case "body": _injuries set [7,true];
+		case "hand_l": _injuries set [8,true];
+		case "hand_r": _injuries set [9,true];
+		case "leg_l": _injuries set [10, true];
+		case "leg_r": _injuries set [11,true];
+	};
+};
+diag_log format["HandleDamage: Bleeding: %1 Projectile: %2 Part: %3 Damage: %4",_bleeding, _projectile, _part, _damage];
+_unit setVariable["injuries",_injuries,true];
+_unit setVariable["bleeding",_bleeding,true];
+*/
 
 [] call life_fnc_hudUpdate;
 _damage;
