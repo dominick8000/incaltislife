@@ -55,7 +55,7 @@ if (_projectile in ["mini_Grenade"]) then {
 [_projectile] spawn life_fnc_handleFlashbang;
 };
 
-/*For Medic System:
+//* For Medic System:
 _injuries = _unit getVariable "injuries";
 _bleeding = _unit getVariable "bleeding";
 if (_projectile == "") then {
@@ -93,7 +93,7 @@ if (_projectile == "") then {
 diag_log format["HandleDamage: Bleeding: %1 Projectile: %2 Part: %3 Damage: %4",_bleeding, _projectile, _part, _damage];
 _unit setVariable["injuries",_injuries,true];
 _unit setVariable["bleeding",_bleeding,true];
-*/
+
 
 [] call life_fnc_hudUpdate;
 _damage;
