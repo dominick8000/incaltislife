@@ -95,9 +95,6 @@ uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass
 [] call life_fnc_setupActions;
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
-[] call life_fnc_initBleeding;
-
-
 
 
 /*
