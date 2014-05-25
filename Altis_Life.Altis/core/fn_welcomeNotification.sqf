@@ -6,9 +6,9 @@
 	Creates an intro on the bottom-right hand corner of the screen.
 */
 
-_onScreenTime = 10; //<-- How long is the text on the screen for ? Recommended: 1 
+_onScreenTime = 1; //<-- How long is the text on the screen for ? Recommended: 1 
 
-sleep 25; //Wait in seconds before the credits start after player is in-game
+sleep 3; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Willkommen auf dem InC AL Server!";
 _role1names = [""];
