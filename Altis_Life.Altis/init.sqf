@@ -29,6 +29,7 @@ if(X_Client) then
 [] execVM "KRON_Strings.sqf";
 _logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 [] execVM "teargas\teargas.sqf";
+[] execVM "IgiLoad\IgiLoadInit.sqf";
 
 if(!StartProgress) then
 {
