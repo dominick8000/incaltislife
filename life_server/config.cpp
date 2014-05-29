@@ -149,7 +149,7 @@ class CfgFunctions
 			file = "\life_server\Functions\msc";
 			class insertGang{};
 			class queryGangs{};
-			class queryPlayerGang{};
+			class queryGangPlayers{};
 			class insertGangPlayer{};
 			class removeGangPlayer{};
 			class removeGang{};

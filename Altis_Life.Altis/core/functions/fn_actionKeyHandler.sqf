@@ -31,10 +31,11 @@ life_action_inUse = true;
 
 //Check if it's a dead body.
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
-	if(playerSide == west && {(call life_revive_cops)} && {"Medkit" in (items player)}) then {
+//Hotfix code by ins0
+	if(playerSide == west && {(call life_revive_cops)} && {"Medikit" in (items player)}) then {
 		[_curTarget] call life_fnc_revivePlayer;
 	};
-	if(playerSide == independent) then {
+	if(playerSide == independent && {"Medikit" in (items player)}) then {
 		[_curTarget] call life_fnc_revivePlayer;
 	};
 };

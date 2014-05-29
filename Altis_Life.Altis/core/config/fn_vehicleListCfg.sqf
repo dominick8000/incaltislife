@@ -431,18 +431,23 @@ switch (_shop) do
 			["C_Van_01_fuel_F",7500]
 		];
 	};
-	case "med_air_1":
+	case "med_shop":
 	{
 		_return = 
 		[	
-			["B_Heli_Light_01_F",5000]
+			["C_SUV_01_F",5000],
+			["C_Offroad_01_F",10000],
+			["I_Truck_02_medical_F",25000],
+			["O_Truck_03_medical_F",45000],
+			["B_Truck_01_medical_F",60000]
 		];
 	};
-	case "med_car_1":
+	case "med_air_hs":
 	{
 		_return = 
 		[
-			["C_SUV_01_F",5000]
+			["B_Heli_Light_01_F",50000],
+			["O_Heli_Light_02_unarmed_F",75000]
 		];
 	};
 };

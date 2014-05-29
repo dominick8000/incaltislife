@@ -26,7 +26,3 @@ _water ctrlCommit 0;
 _health ctrlSetPosition [safeZoneX+safeZoneW-0.090,safeZoneY+safeZoneH-0.456];
 _health ctrlSetText format["%1", round((1 - (damage player)) * 100)];
 _health ctrlCommit 0;
-//Update Blood
-_blood ctrlSetPosition [safeZoneX+safeZoneW-0.090,safeZoneY+safeZoneH-0.410];
-_blood ctrlSetText format["%1", life_my_blood];
-_blood ctrlCommit 0;

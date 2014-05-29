@@ -37,7 +37,6 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
@@ -47,6 +46,27 @@ switch(_shop) do
 		};
 	};
 
+	case "med_basic":
+	{
+		switch (true) do 
+		{
+			case (playerSide != independent): {"You are not an EMS Medic"};
+			default {
+				["Hospital EMS Shop",
+					[
+						["ItemGPS",nil,100],
+						["Binocular",nil,150],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,500],
+						["NVGoggles",nil,1200],
+						["B_FieldPack_ocamo",nil,3000]
+					]
+				];
+			};
+		};
+	};
+	
 	case "cop_patrol":
 	{
 		switch(true) do

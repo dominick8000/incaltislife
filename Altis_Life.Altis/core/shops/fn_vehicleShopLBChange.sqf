@@ -14,9 +14,12 @@ _index = _this select 1;
 
 //Fetch some information.
 _className = _control lbData _index;
-_basePrice = _control lbValue _index;
+_vIndex = _control lbValue _index;
+_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
+if(!_trunkSpace) then {_trunkSpace2 == "None"} else {_trunkSpace2 = _trunkSpace},
+
 
 ctrlShow [2330,true];
 (getControl(2300,2303)) ctrlSetStructuredText parseText format[
@@ -26,7 +29,7 @@ ctrlShow [2330,true];
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+_trunkSpace2,
 _vehicleInfo select 12,
 _vehicleInfo select 9
 ];

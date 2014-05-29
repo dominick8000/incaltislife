@@ -55,6 +55,18 @@ switch (playerSide) do
         life_actions = life_actions + [player addAction["Store Vehicle in Garage",life_fnc_storeVehicle,"",0,false,false,"",
         ' !life_garage_store && !isNull cursorTarget && (player distance cursorTarget) < 20 && license_civ_home && cursorTarget isKindOf "House" && (typeOf cursorTarget == "Land_i_Garage_V1_F" || typeOf cursorTarget == "Land_i_Garage_V2_F" || typeOf cursorTarget == "Land_i_Garage_V1_dam_F") && (((getPlayerUID player) in (cursorTarget getVariable["life_homeOwners", []])) || (cursorTarget getVariable["life_locked", 1]) == 0) ']];
     };
+	case independent: 
+	{
+		life_actions = life_actions + [player addAction ["Apply patch on self", "core\medical\cupmed_actions.sqf", "patchself", 20, true, true, "", "call CUP_checkPatchSelf"]];
+		life_actions = life_actions + [player addAction ["Give injection to self", "core\medical\cupmed_actions.sqf", "injectself", 0, false, true, "", "call CUP_checkInjectSelf"]];
+		life_actions = life_actions + [player addAction ["Bandage self", "core\medical\cupmed_actions.sqf", "bandageself", 25, true, true, "", "call CUP_checkBandageSelf"]];
+		life_actions = life_actions + [player addAction ["Apply patch on target", "core\medical\cupmed_actions.sqf", "patchtarget", 21, true, true, "", "call CUP_checkPatchTarget"]];
+		life_actions = life_actions + [player addAction ["Give injection to target", "core\medical\cupmed_actions.sqf", "injecttarget", 1, false, true, "", "call CUP_checkInjectTarget"]];
+		life_actions = life_actions + [player addAction ["Bandage target", "core\medical\cupmed_actions.sqf", "bandagetarget", 26, true, true, "", "call CUP_checkBandageTarget"]];
+		life_actions = life_actions + [player addAction ["Drag", "core\medical\cupmed_actions.sqf", "drag", 29, true, true, "", "call CUP_checkDrag"]];
+		life_actions = life_actions + [player addAction ["Check own vitals", "core\medical\cupmed_actions.sqf", "checkownvitals", 10, false, false, "", "call CUP_checkCheckOwnVitals"]];
+		life_actions = life_actions + [player addAction ["Check target vitals", "core\medical\cupmed_actions.sqf", "checktargetvitals", 11, false, false, "", "call CUP_checkCheckTargetVitals"]];
+	};
 };
 
 

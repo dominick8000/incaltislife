@@ -33,7 +33,7 @@ life_removeWanted = false;
 life_mauer = ObjNull;
 
 //Revive constant variables.
-__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
+__CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
 __CONST__(life_revive_fee,750);
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
@@ -89,7 +89,6 @@ __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
-life_my_blood = 100;
 
 life_vehicles = [];
 bank_robber = [];

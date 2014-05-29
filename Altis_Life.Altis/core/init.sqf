@@ -24,6 +24,8 @@ diag_log "::Life Client:: Eventhandlers completed";
 //_handle = [] spawn life_fnc_setupActions;
 //diag_log "::Life Client:: Setting up user actions";
 //waitUntil {scriptDone _handle};
+call compileFinal  preprocessFileLineNumbers "core\init_cms.sqf";
+
 diag_log "::Life Client:: User actions completed";
 diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil {clientGangLeader})};
@@ -62,9 +64,6 @@ switch (playerSide) do
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
-player setVariable["bleeding",0,true];
-_injuries = [false,false,false,false,false,false,false,false,false,false,false,false];
-player setVariable["injuries",_injuries,true];
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
 diag_log "Executing client.fsm";

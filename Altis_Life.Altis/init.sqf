@@ -38,3 +38,6 @@ if(!StartProgress) then
 
 };
 StartProgress = true;
+
+call compile preprocessFile "UI\HUD.sqf";
+[] spawn ICE_HUD; 
