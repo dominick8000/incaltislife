@@ -87,6 +87,18 @@ class CfgSounds
 	sound[] = {\sounds\caralarm.ogg", 1, 2};
 	titles[] = {};
   };
+  class empwarn
+  {
+	name = "empwarn";
+	sound[] = {\sounds\empwarn.ogg", 1, 2};
+	titles[] = {};
+  };
+  class empactivate
+  {
+	name = "empactivate";
+	sound[] = {\sounds\empac.ogg", 1, 2};
+	titles[] = {};
+  };
 };
 
 class CfgDebriefing

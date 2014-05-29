@@ -369,5 +369,11 @@ class Life_Client_Core
         class calcGarageSpawn {};
         class onPut {};
         class onTake {};
-    };	
+    };
+
+	class Emp
+	{
+		file = "core\emp";
+		class fireEMP;
+	};
 };
