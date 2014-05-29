@@ -100,4 +100,4 @@ __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 /*
 	Initialize SpyGlass
 */
-[] call SPY_fnc_payLoad;
+//*[] call SPY_fnc_payLoad;

@@ -375,5 +375,6 @@ class Life_Client_Core
 	{
 		file = "core\emp";
 		class fireEMP;
+		class releaseEMP;
 	};
 };
