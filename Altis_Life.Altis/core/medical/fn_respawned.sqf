@@ -54,3 +54,4 @@ switch(playerSide) do
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+[] spawn CUP_playerInit;
