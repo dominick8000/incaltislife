@@ -30,6 +30,8 @@ if(X_Client) then
 _logistic = execVM "=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 [] execVM "teargas\teargas.sqf";
 [] execVM "IgiLoad\IgiLoadInit.sqf";
+[] execVM "carradio\initCarRadio.sqf";
+
 
 if(!StartProgress) then
 {

@@ -24,7 +24,7 @@ corpseRemovalMinTime = 10;
 corpseRemovalMaxTime = 30;
 
 #include "dialog\MasterHandler.h"
-
+#include "carradio\description.h"
 class RscTitles
 {
 	#include "dialog\ui.hpp"
@@ -209,4 +209,82 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
+};
+
+class CfgMusic
+{
+	tracks[] = {"Copenhagen","Spiders","Sexdrugsnrocknroll","Divergence","Heroines","Subliminalpestilence","Whoreofbabylon","Breakout","Nodoctor","Iwannabe","Sweet","Midnightmind"};
+
+	class Copenhagen
+	{
+		name = "Figures in Motion - Copenhagen";
+		sound[] = {"\music\electronic\copenhagen.ogg", db+0, 1.0};
+	};
+	
+	class Spiders
+	{
+		name = "Oursvince - Spiders";
+		sound[] = {"\music\electronic\spiders.ogg", db+0, 1.0};
+	};
+
+	class Sexdrugsnrocknroll
+	{
+		name = "The Easton Ellises - Sexdrugsandrocknroll";
+		sound[] = {"\music\electronic\sexdrugsnrocknroll.ogg", db+0, 1.0};
+	};	
+	
+	class Divergence
+	{
+		name = "The Black Parrot - Divergence";
+		sound[] = {"\music\electronic\divergence.ogg", db+0, 1.0};
+	};
+	
+	class Heroines
+	{
+		name = "Diablo Swing Orchestra - Heroines";
+		sound[] = {"\music\metal\heroines.ogg", db+0, 1.0};
+	};
+	
+	class Subliminalpestilence
+	{
+		name = "Daniel Bautista - Subliminal Pestilence";
+		sound[] = {"\music\metal\subliminalpestilence.ogg", db+0, 1.0};
+	};
+
+	class Whoreofbabylon
+	{
+		name = "Sons of Sin - Whore of Babylon";
+		sound[] = {"\music\metal\whoreofbabylon.ogg", db+0, 1.0};
+	};	
+
+	class Breakout
+	{
+		name = "Asaf Productions - Breakout";
+		sound[] = {"\music\pop\breakout.ogg", db+0, 1.0};
+	};	
+	
+	class Nodoctor
+	{
+		name = "Ay14ice - No Doctor";
+		sound[] = {"\music\pop\nodoctor.ogg", db+0, 1.0};
+	};
+
+	class Iwannabe
+	{
+		name = "Quentin Hannappe - I wanna be";
+		sound[] = {"\music\pop\iwannabe.ogg", db+0, 1.0};
+	};	
+	
+	class Sweet
+	{
+		name = "Tamara Laurel - Sweet";
+		sound[] = {"\music\pop\sweet.ogg", db+0, 1.0};
+	};	
+	
+	class Midnightmind
+	{
+		name = "Lyonn - Midnight Mind";
+		sound[] = {"\music\pop\midnightmind.ogg", db+0, 1.0};
+	};	
+	
 };
