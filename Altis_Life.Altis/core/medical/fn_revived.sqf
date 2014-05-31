@@ -34,7 +34,4 @@ hideBody life_corpse;
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
-_bloodLevel = player getVariable "CUP_bloodLevel";
-if (_bloodLevel < 500) then {
-	player setVariable ["CUP_bloodLevel", 500, true];
-};
+[] spawn CUP_playerInit;
