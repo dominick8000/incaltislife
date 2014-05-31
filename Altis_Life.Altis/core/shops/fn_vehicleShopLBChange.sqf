@@ -18,7 +18,7 @@ _vIndex = _control lbValue _index;
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
-if(!_trunkSpace) then {_trunkSpace2 == "None"} else {_trunkSpace2 = _trunkSpace},
+if(!_trunkSpace) then {_trunkSpace2 == "None"} else {_trunkSpace2 = _trunkSpace};
 
 
 ctrlShow [2330,true];
