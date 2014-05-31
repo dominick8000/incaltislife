@@ -74,7 +74,8 @@ switch (_shop) do
 			["C_Van_01_box_F",120000],
 			["I_Truck_02_transport_F",280000],
 			["I_Truck_02_covered_F",480000],
-			["B_Truck_01_transport_F",2000000]
+			["B_Truck_01_transport_F",2000000],
+			["B_Truck_01_box_F",3000000]
 		];	
 	};
 	
@@ -85,7 +86,8 @@ switch (_shop) do
 			["C_Van_01_box_F",120000],
 			["I_Truck_02_transport_F",280000],
 			["I_Truck_02_covered_F",480000],
-			["B_Truck_01_transport_F",2000000]
+			["B_Truck_01_transport_F",2000000],
+			["B_Truck_01_box_F",3000000]
 		];	
 	};
 	
