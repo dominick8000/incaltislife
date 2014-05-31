@@ -4,7 +4,7 @@ closeDialog 0;
 CLAY_RadioPlaylistEditor = createDialog "CLAY_CarRadio_PlaylistDlg";
 
 
-_allTracks = CLAY_RadioElectro + CLAY_RadioMetal + CLAY_RadioPop
+_allTracks = CLAY_RadioElectro + CLAY_RadioMetal + CLAY_RadioPop;
 
 for "_i" from 0 to ((count _allTracks) - 1) do
 {
