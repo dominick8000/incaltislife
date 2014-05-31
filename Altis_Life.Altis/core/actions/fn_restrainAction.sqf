@@ -9,7 +9,7 @@ private["_unit"];
 _unit = cursorTarget;
 if(isNull _unit) exitWith {}; //Not valid
 if((_unit getVariable "restrained")) exitWith {};
-if(side _unit == west) exitWith {};
+//*if(side _unit == west) exitWith {};
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
