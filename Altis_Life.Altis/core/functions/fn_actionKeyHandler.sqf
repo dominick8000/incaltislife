@@ -94,10 +94,3 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		};
 	};
 };
-
-//start kidnap
-if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-    if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == civilian) then {
-        [_curTarget] call life_fnc_civInteractionMenu;
-    };
-};

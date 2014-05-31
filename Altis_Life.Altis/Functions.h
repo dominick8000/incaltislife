@@ -226,8 +226,6 @@ class Life_Client_Core
 		class robPerson {};
 		class removeLicenses {};
 		class zoneCreator {};
-		//* Added for Kidnapping
-		class civInteractionMenu {};
 	};
 	class Zones
 	{
