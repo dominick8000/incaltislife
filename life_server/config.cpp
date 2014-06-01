@@ -126,6 +126,7 @@ class CfgFunctions
 			class chopShopSell {};
 			class silentSync {};
 			class clientDisconnect {};
+			class cleanupRequest {};
 		};
 	};
 	class BRUUUDIS_System {

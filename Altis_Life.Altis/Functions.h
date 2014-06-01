@@ -129,6 +129,7 @@ class Life_Client_Core
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
+		class clothing_kart {};		
 		//* Added for Housing
         class houseContainers {};
         class housePrice {};
@@ -193,6 +194,7 @@ class Life_Client_Core
 		class escInterupt {};
 		class onTakeItem {};
 		class fetchVehInfo {};
+		class pushObject {};
 		//* Added for Flashbang
 		class handleFlashbang {};
 		//* Added for Housing

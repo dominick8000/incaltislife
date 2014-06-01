@@ -10,7 +10,7 @@ _sum = ["cocaine",1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff
 if(_sum > 0) then
 {
 	life_action_inUse = true;
-	titleText["Gathering Cocaine...","PLAIN"];
+	titleText[format[localize "STR_NOTF_Gathering",localize "STR_Item_Cocaine"],"PLAIN"];
 	if(license_civ_cmastery) then
 	{
 		titleFadeOut 1;
@@ -22,7 +22,7 @@ if(_sum > 0) then
 	};
 	if(([true,"cocaine",1] call life_fnc_handleInv)) then
 	{
-		titleText["You have collected some Cocaine.","PLAIN"];
+		titleText[format[localize "STR_NOTF_Collected",localize "STR_Item_Cocaine"],"PLAIN"];
 	};
 };
 

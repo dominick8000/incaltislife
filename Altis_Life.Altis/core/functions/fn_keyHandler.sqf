@@ -19,6 +19,11 @@ _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
+//Vault handling...
+if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable "restrained")}) exitWith {
+	true;
+};
+
 if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
@@ -44,7 +49,22 @@ switch (_code) do
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 		};
 	};
-	
+	//Holster / recall weapon.
+	case 35:
+	{
+		if(_shift && !_ctrlKey && currentWeapon player != "") then {
+			life_curWep_h = currentWeapon player;
+			player action ["SwitchWeapon", player, player, 100];
+			player switchcamera cameraView;
+		};
+		
+		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
+			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
+				player selectWeapon life_curWep_h;
+			};
+		};
+	};
+		
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -129,11 +149,7 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-	//V Key
-	case 47:
-	{
-		if(playerSide != west && (player getVariable "restrained") OR (player getVariable "transporting")) then {_handled = true;};
-	};
+
 	//F Key
 	case 33:
 	{

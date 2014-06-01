@@ -232,38 +232,6 @@ switch (_shop) do
 		["C_Quadbike_01_F",200000]];
 	};
 	
-	case "fed_car":
-	{
-		_return set[count _return,
-		["B_Quadbike_01_F",0]];
-		_return set[count _return,
-		["C_Offroad_01_F",0]];
-		_return set[count _return,
-		["B_MRAP_01_F",0]];
-		_return set[count _return,
-		["I_MRAP_03_F",0]];
-		_return set[count _return,
-		["I_Truck_02_covered_F",0]];
-		_return set[count _return,
-		["I_Truck_02_transport_F",0]];
-		_return set[count _return,
-		["B_Truck_01_covered_F",0]];
-		_return set[count _return,
-		["B_Truck_01_transport_F",0]];
-	};
-	
-	case "fed_air":
-	{
-		_return set[count _return,
-		["B_Heli_Light_01_F",0]];
-		_return set[count _return,
-		["O_Heli_Light_02_unarmed_F",0]];
-		_return set[count _return,
-		["B_Heli_Transport_01_F",0]];
-		_return set[count _return,
-		["I_Heli_Transport_02_F",0]];
-	};
-	
 	case "civ_air_1":
 	{
 		_return =
@@ -366,7 +334,17 @@ switch (_shop) do
 			["B_SDV_01_F",100000]
 		];
 	};
-	
+
+	case "kart_shop":
+	{
+		_return = [
+			["C_Kart_01_Blu_F",15000],
+			["C_Kart_01_Fuel_F",15000],
+			["C_Kart_01_Red_F",15000],
+			["C_Kart_01_Vrana_F",15000]
+		];
+	};	
+
 	case "med_shop":
 	{
 		_return = 

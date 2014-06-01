@@ -33,11 +33,11 @@ switch (_type) do
 	case "iron": {50000};
 	case "copper": {10000};
 	case "cement": {35000};
-    	case "home": {100000};
+    case "home": {100000};
 	case "meth": {80000};
 	case "cmastery": {3000000};
 	case "hmastery": {3000000};
 	case "canmastery": {3000000};
 	case "processmastery": {3000000};
-	case "mair": {10000};
+	case "mair": {15000};
 };
