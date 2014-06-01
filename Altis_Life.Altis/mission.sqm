@@ -3706,7 +3706,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1595;
+		items=1594;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -19509,18 +19509,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this setObjectTexture [0, ""textures\sonsofsin.jpg""];";
-		};
-		class Item1594
-		{
-			position[]={4676.8896,74.59922,13097.397};
-			azimut=40;
-			special="NONE";
-			id=1816;
-			side="EMPTY";
-			vehicle="Land_Billboard_F";
-			leader=1;
-			skill=0.60000002;
-			init="this allowDamage false; this setObjectTexture [0, ""textures\oursvince.jpg""];";
 		};
 	};
 	class Markers
