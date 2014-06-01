@@ -32,7 +32,7 @@ if(_sum > 0 && (typeOf (vehicle player) == "O_Truck_03_device_F")) then
 	disableSerialization;
 
 	_ctrl = "oilu";
-	_num = 1;
+	_num = 10;
 	[[vehicle player, "tempestwork",100],"life_fnc_playSound",true,false] spawn BIS_fnc_MP;
 	titleText["Turing on","PLAIN"]; sleep 5;
 	_totalWeight = [vehicle player] call life_fnc_vehicleWeight;
