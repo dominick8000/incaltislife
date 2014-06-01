@@ -350,14 +350,6 @@ CUP_doCheckTargetVitals =
 };
 
 CUP_playerInit = {
-	//* diag_log "Cupmed Player initiation!";
-	// Set variables to starting values
-	player setVariable ["CUP_bloodLevel", 5500, true];
-	player setVariable ["CUP_bleedRate", 0, true];
-	player setVariable ["CUP_regenRate", 1, true];
-	player setVariable ["CUP_canAct", 1, true];
-	player setVariable ["CUP_lifeState", 0, true];
-	player setVariable ["CUP_armDamage", 0, true];
 	// Initiate control loop
 	[] spawn
 	{

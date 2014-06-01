@@ -54,4 +54,13 @@ switch(playerSide) do
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+//* diag_log "Cupmed Player initiation!";
+// Set variables to starting values
+player setVariable ["CUP_bloodLevel", 5500, true];
+player setVariable ["CUP_bleedRate", 0, true];
+player setVariable ["CUP_regenRate", 1, true];
+player setVariable ["CUP_canAct", 1, true];
+player setVariable ["CUP_lifeState", 0, true];
+player setVariable ["CUP_armDamage", 0, true];
+
 [] spawn CUP_playerInit;
