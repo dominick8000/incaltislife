@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_vehicleWeightCfg.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -24,7 +24,7 @@ switch (_className) do
 	case "C_Boat_Civil_01_F": {85};  //* Boot 1
 	case "C_Boat_Civil_01_police_F": {85}; //* Boot 2 (Police)
 	case "C_Boat_Civil_01_rescue_F": {85}; //* Boot 3 (Rettung)
-	case "B_Truck_01_box_F": {3000};  //* LKW Donator
+	case "B_Truck_01_box_F": {3500};  //* LKW Donator
 	case "B_Truck_01_transport_F": {2500}; //* LKW ganz groß
 	case "B_MRAP_01_F": {150};
 	case "O_MRAP_02_F": {140};
