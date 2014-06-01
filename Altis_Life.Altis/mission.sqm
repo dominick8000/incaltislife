@@ -3706,7 +3706,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1575;
+		items=1582;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -19260,8 +19260,8 @@ class Mission
 		};
 		class Item1573
 		{
-			position[]={3690.6228,10.633911,13139.657};
-			azimut=2;
+			position[]={4856.2686,19.673531,14366.717};
+			azimut=35;
 			special="NONE";
 			id=1795;
 			side="EMPTY";
@@ -19272,8 +19272,8 @@ class Mission
 		};
 		class Item1574
 		{
-			position[]={3610.6035,9.868947,13123.371};
-			azimut=280;
+			position[]={3688.7556,10.58494,13140.255};
+			azimut=2;
 			special="NONE";
 			id=1796;
 			side="EMPTY";
@@ -19281,6 +19281,90 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this setObjectTexture [0, ""textures\polizeibewerbung.jpg""];";
+		};
+		class Item1575
+		{
+			position[]={11585.818,39.110725,15785.967};
+			azimut=70;
+			special="NONE";
+			id=1797;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\poppsie1.jpg""];";
+		};
+		class Item1576
+		{
+			position[]={14329.421,17.173349,18122.512};
+			azimut=335;
+			special="NONE";
+			id=1798;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\csd.jpg""];";
+		};
+		class Item1577
+		{
+			position[]={4203.3018,25.448257,13893.289};
+			azimut=235;
+			special="NONE";
+			id=1799;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\poppsie2.jpg""];";
+		};
+		class Item1578
+		{
+			position[]={15601.174,14.854487,17495.584};
+			azimut=305;
+			special="NONE";
+			id=1800;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\microlost.jpg""];";
+		};
+		class Item1579
+		{
+			position[]={17412.656,4.386271,13777.998};
+			azimut=180;
+			special="NONE";
+			id=1801;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\pizzaslut.jpg""];";
+		};
+		class Item1580
+		{
+			position[]={12920.888,14.911529,15927.116};
+			azimut=90;
+			special="NONE";
+			id=1802;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\starfucks.jpg""];";
+		};
+		class Item1581
+		{
+			position[]={5021.2744,27.681574,13664.139};
+			azimut=15;
+			special="NONE";
+			id=1803;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this setObjectTexture [0, ""textures\kahunaburger.jpg""];";
 		};
 	};
 	class Markers
