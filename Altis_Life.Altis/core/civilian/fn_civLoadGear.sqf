@@ -72,10 +72,14 @@ if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_ha
     };
 } foreach (_hItems);
 
+{player addItemToUniform _x;} foreach (_uItems);
+{(uniformContainer player) addItemCargoGlobal [_x,1];} foreach (_uMags);
+{player addItemToVest _x;} foreach (_vItems);
+{(vestContainer player) addItemCargoGlobal [_x,1];} foreach (_vMags);
+{player addItemToBackpack _x;} foreach (_bItems);
+{(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
+
 {
     _item = [_x,1] call life_fnc_varHandle;
     [true,_item,1] call life_fnc_handleInv;
 } foreach (_yItems);
-
-
-
