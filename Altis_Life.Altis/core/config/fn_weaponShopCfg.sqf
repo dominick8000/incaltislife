@@ -27,19 +27,15 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a cop!"};
 			default
 			{
-				["Altis Cop Shop",
+				["Rekrut Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["16Rnd_9x21_Mag",nil,50]
 					]
 				];
 			};
@@ -72,18 +68,43 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (__GETC__(life_coplevel) < 3): {"You are not at a patrol officer rank!"};
 			default
 			{
-				["Altis Patrol Officer Shop",
+				["Patrol Officer Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
+						["SMG_02_ACO_F",nil,1000],
+						["30Rnd_9x21_Mag","Sting Munition",250],
+						["hgun_P07_snds_F","Stun Pistol",1000],
 						["MineDetector",nil,1000],
 						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_9x21_Mag",nil,250]
+						["muzzle_snds_H",nil,1000]
+					]
+				];
+			};
+		};
+	};
+
+	case "cop_officer":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 4): {"You are not at a sergeant rank!"};
+			default
+			{
+				["Officer Shop",
+					[
+						["SMG_02_ACO_F",nil,1000],
+						["30Rnd_9x21_Mag","Sting Munition",250],
+						["hgun_P07_snds_F","Stun Pistol",1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_MXC_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXC Munition",250],
+						["muzzle_snds_H","MXC Schalldaempfer",500],
+						["optic_Arco",nil,500],
+						["MineDetector",nil,1000],
+						["acc_flashlight",nil,750]
 					]
 				];
 			};
@@ -95,22 +116,29 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (__GETC__(life_coplevel) < 5): {"You are not at a sergeant rank!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
+				["Sergeant Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200],
-						["Laserdesignator",nil,200],
-						["Laserbatteries ",nil,100],
-						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200]
+						["SMG_02_ACO_F",nil,1000],
+						["30Rnd_9x21_Mag","Sting Munition",250],
+						["hgun_P07_snds_F","Stun Pistol",1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_MXC_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXC Munition",250],
+						["muzzle_snds_H","MX Schalldaempfer",500],
+						["arifle_MX_F","MX",1000],
+						["arifle_MX_GL_F","MX mit Granatwerfer",1000],
+						["30Rnd_65x39_caseless_mag","MX Munition",250],
+						["1Rnd_SmokeBlue_Grenade_shell","TG für MXGL",500],
+						["arifle_MXM_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXM Munition",250],
+						["optic_Hamr",nil,500],
+						["optic_Arco",nil,500],
+						["optic_DMS",nil,500],
+						["MineDetector",nil,1000],
+						["acc_flashlight",nil,750]
 					]
 				];
 			};
@@ -128,33 +156,31 @@ switch(_shop) do
 			{
 				["Altis GSG Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["30Rnd_9x21_Mag",nil,60],
-						["hgun_ACPC2_F",nil,17500],
-						["9Rnd_45ACP_Mag",nil,200],
-						["arifle_MX_F",nil,30000],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["arifle_MX_SW_F",nil,30000],
-						["100Rnd_65x39_caseless_mag",nil,100],
-						["arifle_MXM_F",nil,30000],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["srifle_LRR_F",nil,50000],
-						["7Rnd_408_Mag",nil,1000],
-						["muzzle_snds_H",nil,2750],
-						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
-						["muzzle_snds_acp",nil,2750],
-						["muzzle_snds_B",nil,2750],
-						["muzzle_snds_L",nil,2750],
-						["muzzle_snds_M",nil,2750],
-						["Rangefinder",nil,1000],
-						["optic_Aco",nil,1000],
-						["optic_Hamr",nil,1000],
-						["optic_tws",nil,1000],
-						["optic_SOS",nil,1000],
-						["B_UavTerminal",nil,1000],
-						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200],
-						["B_UAV_01_backpack_F","Darter Drohne",10000]
+						["SMG_02_ACO_F",nil,1000],
+						["30Rnd_9x21_Mag","Sting Munition",250],
+						["hgun_P07_snds_F","Stun Pistol",1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_MXC_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXC Munition",250],
+						["muzzle_snds_H","MX Schalldaempfer",500],
+						["arifle_MX_F","MX",1000],
+						["arifle_MX_GL_F","MX mit Granatwerfer",1000],
+						["30Rnd_65x39_caseless_mag","MX Munition",250],
+						["1Rnd_SmokeBlue_Grenade_shell","TG für MXGL",500],
+						["arifle_MX_SW_F","MX MG",1000],
+						["100Rnd_65x39_caseless_mag","MX MG Munition",250],
+						["muzzle_snds_H_MG","MX MG Schalldaemfper",500],
+						["arifle_MXM_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXM Munition",250],
+						["srifle_LRR_F",nil,1000],
+						["7Rnd_408_Mag","LRR Munition",250],
+						["optic_Hamr",nil,500],
+						["optic_Arco",nil,500],
+						["optic_DMS",nil,500],
+						["MineDetector",nil,1000],
+						["acc_flashlight",nil,750],
+						["MiniGrenade","Flashbang",500],
+						["SmokeShellBlue","Traenengas",500]
 					]
 				];
 			};
@@ -172,32 +198,31 @@ switch(_shop) do
 			{
 				["Altis Chief Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["30Rnd_9x21_Mag",nil,60],
-						["hgun_ACPC2_F",nil,17500],
-						["9Rnd_45ACP_Mag",nil,200],
-						["arifle_MX_F",nil,30000],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["arifle_MX_SW_F",nil,30000],
-						["100Rnd_65x39_caseless_mag",nil,100],
-						["arifle_MXM_F",nil,30000],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["srifle_LRR_F",nil,50000],
-						["7Rnd_408_Mag",nil,1000],
-						["muzzle_snds_H",nil,2750],
-						["muzzle_snds_H_MG","MG Schalldaempfer",2750],
-						["muzzle_snds_acp",nil,2750],
-						["muzzle_snds_B",nil,2750],
-						["muzzle_snds_L",nil,2750],
-						["muzzle_snds_M",nil,2750],
-						["Rangefinder",nil,1000],
-						["optic_Aco",nil,1000],
-						["optic_Hamr",nil,1000],
-						["optic_tws",nil,1000],
-						["optic_SOS",nil,1000],
-						["SmokeShellBlue","Traenengas",200],
-						["MiniGrenade","Flashbang",200],
-						["B_UAV_01_backpack_F","Darter Drohne",10000]
+						["SMG_02_ACO_F",nil,1000],
+						["30Rnd_9x21_Mag","Sting Munition",250],
+						["hgun_P07_snds_F","Stun Pistol",1000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_MXC_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXC Munition",250],
+						["muzzle_snds_H","MX Schalldaempfer",500],
+						["arifle_MX_F","MX",1000],
+						["arifle_MX_GL_F","MX mit Granatwerfer",1000],
+						["30Rnd_65x39_caseless_mag","MX Munition",250],
+						["1Rnd_SmokeBlue_Grenade_shell","TG für MXGL",500],
+						["arifle_MX_SW_F","MX MG",1000],
+						["100Rnd_65x39_caseless_mag","MX MG Munition",250],
+						["muzzle_snds_H_MG","MX MG Schalldaemfper",500],
+						["arifle_MXM_F",nil,1000],
+						["30Rnd_65x39_caseless_mag","MXM Munition",250],
+						["srifle_LRR_F",nil,1000],
+						["7Rnd_408_Mag","LRR Munition",250],
+						["optic_Hamr",nil,500],
+						["optic_Arco",nil,500],
+						["optic_DMS",nil,500],
+						["MineDetector",nil,1000],
+						["acc_flashlight",nil,750],
+						["MiniGrenade","Flashbang",500],
+						["SmokeShellBlue","Traenengas",500]
 					]
 				];
 			};
