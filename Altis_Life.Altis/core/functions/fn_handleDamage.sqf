@@ -55,12 +55,6 @@ if (_projectile in ["mini_Grenade"]) then {
 [_projectile] spawn life_fnc_handleFlashbang;
 };
 
-if (_projectile in ["G_40mm_SmokeBlue"]) then {
-	_damage = 0;
-[_projectile] spawn life_fnc_handleFlashbang;
-};
-
-
 // BLEEEDD!!!
 if (!(_projectile in ["B_9x21_Ball","B_556x45_dual"] && _curWep in ["hgun_P07_snds_F","arifle_SDAR_F"])) then {
 	if (_part == "") then // General damage
