@@ -267,6 +267,8 @@ class Life_Client_Core
 		class ticketGive {};
 		class ticketPay {};
 		class ticketPrompt {};
+		class showArrestDialog {};
+		class arrestDialog_Arrest {};
 		class copSiren {};
 		class spikeStripEffect {};
 		class radar {};
