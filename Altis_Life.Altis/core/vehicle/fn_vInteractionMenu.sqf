@@ -84,7 +84,18 @@ if(playerSide == west) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn2 ctrlEnable false;} else {_Btn2 ctrlEnable true;};
 		};
 	};
-	_Btn3 ctrlShow false;
+
+if(typeOf _curTarget == "O_Truck_03_device_F") then {
+		_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
+		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deviceMine";
+		if(!isNil {(_curTarget getVariable "mining")}) then {
+			_Btn3 ctrlEnable false;
+		} else {
+			_Btn3 ctrlEnable true;
+		};
+	} else {
+		_Btn3 ctrlShow false;
+	};
 	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
