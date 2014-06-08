@@ -34,7 +34,6 @@ hideBody life_corpse;
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
-//* diag_log "Cupmed Player initiation!";
 // Set variables to starting values
 _bloodLevel = player getVariable "CUP_bloodLevel";
 if (_bloodLevel < 500) then {
@@ -44,4 +43,5 @@ player setVariable ["CUP_canAct", 1, true];
 player setVariable ["CUP_lifeState", 0, true];
 player setVariable ["CUP_armDamage", 0, true];
 
+[] call life_fnc_hudUpdate; //Request update of hud.
 [] spawn CUP_playerInit;

@@ -233,12 +233,26 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
+			case (playerSide != civilian): {"You are not a civilian!"};
 			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
 			default
 			{
 				["Mohammed's Jihadi Shop",
 					[
+						["hgun_Rook40_F",nil,500],
+						["hgun_PDW2000_F",nil,6500],
+						["hgun_pistol_heavy_01_F",nil,5850],
+						["arifle_Mk20C_plain_F",nil,25000],
+						["optic_ACO_grn_smg",nil,750],
+						["optic_MRCO",nil,10000],
+						["NVGoggles",nil,350],
+						["ToolKit",nil,50],
+						["itemgps",nil,50],
+						["FirstAidKit",nil,25],
+						["16Rnd_9x21_Mag",nil,25],
+						["30Rnd_9x21_Mag",nil,75],
+						["11Rnd_45ACP_Mag",nil,85],
+						["30Rnd_556x45_Stanag",nil,125],
 						["arifle_TRG20_F",nil,25000],
 						["30Rnd_556x45_Stanag",nil,100],
 						["SMG_01_F",nil,10000],
@@ -253,6 +267,8 @@ switch(_shop) do
 						["optic_tws",nil,1000],
 						["optic_SOS",nil,1000],
 						["Rangefinder",nil,1000]
+
+						
 					]
 				];
 			};
@@ -263,7 +279,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a cop!"};
+			case (playerSide != civilian): {"You are not a civilian!"};
 			case (!license_civ_gun): {"You don't have a Firearms license!"};
 			default
 			{
@@ -279,68 +295,6 @@ switch(_shop) do
 						["9Rnd_45ACP_Mag",nil,45],
 						["6Rnd_45ACP_Cylinder",nil,50],
 						["30Rnd_9x21_Mag",nil,75]
-					]
-				];
-			};
-		};
-	};
-	
-	case "donator":
-	{
-		switch(true) do
-		{
-			case (__GETC__(life_donator) == 0): {"You are not a donator!"};
-			case (__GETC__(life_donator) == 1):
-			{
-				["STS Donator Shop Tier 1",
-					[
-						["hgun_Rook40_F",nil,750],
-						["hgun_PDW2000_F",nil,6500],
-						["optic_ACO_grn_smg",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,75]
-					]
-				];
-			};
-
-			case (__GETC__(life_donator) == 2):
-			{
-				["STS Donator Shop Tier 2",
-					[
-						["hgun_Rook40_F",nil,750],
-						["hgun_PDW2000_F",nil,6500],
-						["arifle_MK20C_plain_F",nil,25000],
-						["optic_ACO_grn_smg",nil,750],
-						["NVGoggles",nil,350],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,75],
-						["30Rnd_556x45_Stanag",nil,125]
-					]
-				];
-			};
-
-			case (__GETC__(life_donator) >= 3):
-			{
-				["STS Donator Shop Tier 3",
-					[
-						["hgun_Rook40_F",nil,500],
-						["hgun_PDW2000_F",nil,6500],
-						["hgun_pistol_heavy_01_F",nil,5850],
-						["arifle_Mk20C_plain_F",nil,25000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,10000],
-						["NVGoggles",nil,350],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["FirstAidKit",nil,25],
-						["16Rnd_9x21_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,75],
-						["11Rnd_45ACP_Mag",nil,85],
-						["30Rnd_556x45_Stanag",nil,125]
 					]
 				];
 			};

@@ -40,8 +40,7 @@ if(_time <= 0) then { _time = time + (15 * 60); hintC "Please Report to Admin: J
 
 while {true} do
 {
-	if((round(_time - time)) > 0) then
-	{
+	if((round(_time - time)) > 0) then {
 		_countDown = if(round (_time - time) > 60) then {format["%1 minute(s)",round(round(_time - time) / 60)]} else {format["%1 second(s)",round(_time - time)]};
 		if(isNil "life_canpay_bail") then
 		{
@@ -54,22 +53,17 @@ while {true} do
 		
 	};
 	
-	if(player distance (getMarkerPos "jail_marker") > 60) exitWith
-	{
+	if(player distance (getMarkerPos "jail_marker") > 60) exitWith {
 		_esc = true;
 	};
 	
-	if(life_bail_paid) exitWith
-	{
+	if(life_bail_paid) exitWith {
 		_bail = true;
 	};
 	
 	if((round(_time - time)) < 1) exitWith {hint ""};
-	if(!alive player && ((round(_time - time)) > 0)) exitWith
-	{
-	
-	};
-	sleep 1;
+	if(!alive player && ((round(_time - time)) > 0)) exitWith {};
+	sleep 0.1;
 };
 
 
