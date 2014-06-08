@@ -49,7 +49,8 @@ class Mission
 		"A3_Structures_F_EPB_Civ_Camping",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Air_F_Gamma_UAV_02",
-		"a3_characters_f"
+		"a3_characters_f",
+		"A3_Structures_F_Mil_Flags"
 	};
 	addOnsAuto[]=
 	{
@@ -90,6 +91,7 @@ class Mission
 		"A3_Structures_F_Naval_Buoys",
 		"A3_Structures_F_Mil_BagFence",
 		"A3_Structures_F_EPA_Civ_Camping",
+		"A3_Structures_F_Mil_Flags",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -3726,7 +3728,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1594;
+		items=1595;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -19529,6 +19531,15 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this setObjectTexture [0, ""textures\sonsofsin.jpg""];";
+		};
+		class Item1594
+		{
+			position[]={3227.8293,2.0570641,12942.713};
+			id=1817;
+			side="EMPTY";
+			vehicle="FlagPole_F";
+			skill=0.60000002;
+			init="this addAction[""Drop Stuff"",life_fnc_dropStuff];";
 		};
 	};
 	class Markers
