@@ -10,7 +10,7 @@
 	ARRAY - If array has 0 elements it should be handled as an error in client-side files.
 	STRING - The request had invalid handles or an unknown error and is logged to the RPT.
 */
-private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","_thread","_threadGang","_handlerGang","_handlerHousing","_queryGang","_queryHousing","_queryGangResult","_queryHousingResult","_Gangqhandle","_Housingqhandle"];
+private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","_thread","_handlerhousing","_queryHousingResult"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _ownerID = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -78,7 +78,6 @@ switch (_side) do {
 };
 
 _ret = [];
-_queryGangResult = [];
 switch (_side) do {
 	case civilian: {
 		//compile our query request
@@ -124,6 +123,7 @@ switch (_side) do {
 		_queryResult set[9, _ret];
 	};
 };
+_queryGangResult = [];
 switch (_side) do {
 	case civilian: {
 		_queryGang = format["SELECT gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
