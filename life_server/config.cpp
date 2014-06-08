@@ -70,7 +70,7 @@ class CfgFunctions
 		
 		class Jail_Sys
 		{
-			file = "\life_server\core\jail";
+			file = "\life_server\Functions\jail";
 			class jailSys {};
 			class jailTimer {};
 			class jailPlayer {};

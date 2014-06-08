@@ -68,7 +68,6 @@ if(playerSide == west) then {
 	};
 
 } else {
-
 	if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -86,20 +85,19 @@ if(playerSide == west) then {
 	};
 	
 	if(typeOf _curTarget == "O_Truck_03_device_F") then {
-			_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
-			_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deviceMine";
-			if(!isNil {(_curTarget getVariable "mining")}) OR !local _curTarget && {_curTarget in life_vehicles} then {
-				_Btn3 ctrlEnable false;
-			} else {
-				_Btn3 ctrlEnable true;
-			};
+		_Btn3 ctrlSetText localize "STR_vInAct_DeviceMine";
+		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deviceMine";
+		if(!isNil {(_curTarget getVariable "mining")} OR !local _curTarget && {_curTarget in life_vehicles}) then {
+			_Btn3 ctrlEnable false;
 		} else {
-			_Btn3 ctrlShow false;
+			_Btn3 ctrlEnable true;
 		};
-		_Btn4 ctrlShow false;
-		_Btn5 ctrlShow false;
-		_Btn6 ctrlShow false;
+	} else {
+		_Btn3 ctrlShow false;
 	};
+	_Btn4 ctrlShow false;
+	_Btn5 ctrlShow false;
+	_Btn6 ctrlShow false;
 };
 
 if(playerSide == civilian) then {

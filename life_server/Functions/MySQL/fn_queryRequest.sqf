@@ -42,7 +42,6 @@ while {true} do {
 	if(!isNil "_queryResult") exitWith {};
 };
 if(typeName _queryResult == "ARRAY") then {
-	_queryResult = _queryResult select 0;
 	diag_log format["got mission namespace variable: %1 Result: %2",_uid,_queryResult];
 };
 if(typeName _queryResult == "STRING") exitWith {
@@ -77,54 +76,31 @@ switch (_side) do {
 		_queryResult set[8,_new];
 	};
 };
-diag_log format["Got Player Information: Return: %1",_queryResult];
 
-switch(_side) do
-{
-	case civilian: 
-	{
+_ret = [];
+_queryGangResult = [];
+switch (_side) do {
+	case civilian: {
 		//compile our query request
-		_queryGang = format["SELECT gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
-		//* diag_log format["get Player Gang Information: Query: %1",_queryGang];
+		_query = format["SELECT houses.position, houses.storage, houses.weapon_storage FROM houses WHERE pid='%1'",_uid];
 		waitUntil{!DB_Async_Active};
-		_Gangqhandle = format["%1_GANG",_uid];
-		//* diag_log format["Handle: %1",_Gangqhandle];
-		while {true} do {
-			_threadGang = [_queryGang,_Gangqhandle] spawn _handler;
-			waitUntil {scriptDone _threadGang};
-			sleep 0.2;
-			_queryGangResult = (missionNamespace getVariable format["QUERY_%1",_Gangqhandle]);
-			if(!isNil "_queryResult") exitWith {};
-		};
-		if(typeName _queryGangResult == "ARRAY") then {
-			_queryGangResult = _queryGangResult select 0;
-			//* diag_log format["got mission namespace variable: %1 Result: %2",_Gangqhandle,_queryGangResult];
-		}
-		else {
-			_queryGangResult = [];
-		};
-		missionNamespace setVariable[format["QUERY_%1",_Gangqhandle],nil]; //Unset the variable.
-		_queryResult set[count _queryResult,[_queryGangResult]];
-		
-		//* diag_log format["got Player Gang Information: Return: %1",_queryGangResult];
-		
 
-		//compile our query request
-		_queryHousing = format["SELECT houses.position, houses.storage, houses.weapon_storage FROM houses WHERE pid='%1'",_uid];
-		
-		//* diag_log format["get Player Housing Information: Query: %1",_queryHousing];
-		waitUntil{!DB_Async_Active};
-		
-		_Housingqhandle = format["%1_HOUSING",_uid];
-		while {true} do {
-			_threadHousing = [_queryHousing,_Housingqhandle] spawn _handler;
-			waitUntil {scriptDone _threadHousing};
-			sleep 0.2;
-			_queryHousingResult = missionNamespace getVariable format["QUERY_%1", _Housingqhandle];
-			if(!isNil "_queryResult") exitWith {};
+		_handlerhousing = {
+			private["_thread"];
+			_thread = [_this select 0,true,_this select 1,false] spawn DB_fnc_asyncCall;
+			waitUntil {scriptDone _thread};
 		};
+		
+		while {true} do {
+			_thread = [_query,_uid] spawn _handlerhousing;
+			waitUntil {scriptDone _thread};
+			sleep 0.2;
+			_queryHousingResult = missionNamespace getVariable format["QUERY_%1", _uid];
+			if(!isNil "_queryHousingResult") exitWith {};
+		};
+		missionNamespace setVariable[format["QUERY_%1",_uid],nil];
 		if(typeName _queryHousingResult == "ARRAY") then {
-			//* diag_log format["got mission namespace variable: %1",_queryHousingResult];
+			
 			// Parse Housing Data:
 			_i = 0;
 			{	
@@ -144,16 +120,26 @@ switch(_side) do
 				//_ret set[_i, _new];
 				_i = _i + 1;
 			}forEach (_queryHousingResult);
-		}
-		else {
-			_queryHousingResult = [];
-			_ret = [];
+		};	
+	};
+};
+switch (_side) do {
+	case civilian: {
+		_queryGang = format["SELECT gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
+		waitUntil{!DB_Async_Active};
+		while {true} do {
+			_threadGang = [_queryGang,_uid] spawn _handler;
+			waitUntil {scriptDone _threadGang};
+			sleep 0.2;
+			_queryGangResult = (missionNamespace getVariable format["QUERY_%1",_uid]);
+			if(!isNil "_queryResult") exitWith {};
 		};
+		missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
 	};	
 };
-missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
-_queryResult set[count _queryResult,[_ret]];
 
+_queryResult set[9, _ret];
+_queryResult set[10, _queryGangResult];
 //* diag_log format["got Player Housing Information: Return: %1",_ret];
 //* diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

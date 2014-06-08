@@ -24,6 +24,13 @@ diag_log "::Life Client:: Eventhandlers completed";
 //_handle = [] spawn life_fnc_setupActions;
 //diag_log "::Life Client:: Setting up user actions";
 //waitUntil {scriptDone _handle};
+player setVariable ["CUP_bloodLevel", 5500, true];
+player setVariable ["CUP_bleedRate", 0, true];
+player setVariable ["CUP_regenRate", 1, true];
+player setVariable ["CUP_canAct", 1, true];
+player setVariable ["CUP_lifeState", 0, true];
+player setVariable ["CUP_armDamage", 0, true];
+
 call compileFinal  preprocessFileLineNumbers "core\init_cms.sqf";
 
 diag_log "::Life Client:: User actions completed";
@@ -64,12 +71,6 @@ switch (playerSide) do
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
-player setVariable ["CUP_bloodLevel", 5500, true];
-player setVariable ["CUP_bleedRate", 0, true];
-player setVariable ["CUP_regenRate", 1, true];
-player setVariable ["CUP_canAct", 1, true];
-player setVariable ["CUP_lifeState", 0, true];
-player setVariable ["CUP_armDamage", 0, true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";

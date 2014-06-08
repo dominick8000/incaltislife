@@ -78,10 +78,10 @@ switch (playerSide) do
 		// Fetch Global Gang list
 		life_gang_list = missionNamespace getVariable "life_gang_list";
 		// Get Players Gang Result
-		_gangresult = (_this select 9) select 0;
+		_gangresult = _this select 10;
 		_leer = [];
 		diag_log format["Gangresult: %1",_gangresult];
-		if(isNil "_gangresult") then
+		if(typeName _gangresult == "STRING") then
 		{
 			diag_log "No Gangs for player in Database. 1";
 		}
@@ -144,8 +144,8 @@ switch (playerSide) do
     case civilian:
     {
         // Housing initialization
-		diag_log format["Housing result: %1",_this select 10];
-        life_houses = (_this select 10) select 0;
+		diag_log format["Housing result: %1",_this select 9];
+        life_houses = _this select 9;
         life_houses_markers = [];
     };
 };
