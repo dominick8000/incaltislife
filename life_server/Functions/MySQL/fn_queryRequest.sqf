@@ -120,7 +120,8 @@ switch (_side) do {
 				//_ret set[_i, _new];
 				_i = _i + 1;
 			}forEach (_queryHousingResult);
-		};	
+		};
+		_queryResult set[9, _ret];
 	};
 };
 switch (_side) do {
@@ -135,11 +136,12 @@ switch (_side) do {
 			if(!isNil "_queryResult") exitWith {};
 		};
 		missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
+		_queryResult set[10, _queryGangResult];
 	};	
 };
 
-_queryResult set[9, _ret];
-_queryResult set[10, _queryGangResult];
+
+
 //* diag_log format["got Player Housing Information: Return: %1",_ret];
 //* diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
