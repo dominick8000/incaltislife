@@ -6,7 +6,7 @@ _veh attachTo [_para,[0,0,0]];
 // Land safely
 WaitUntil {((((position _veh) select 2) < 1) || (isNil "_para"))};
 detach _veh;
-_veh SetVelocity [0,0,-5];           
+_veh SetVelocity [0,0,-5];
 sleep 0.3;
 _veh setPos [(position _veh) select 0, (position _veh) select 1, 1];
 _veh SetVelocity [0,0,0];

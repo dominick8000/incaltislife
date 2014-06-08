@@ -85,6 +85,8 @@ switch (_shop) do
 		_return set[count _return,
 		["C_Offroad_01_F",5000]];
 		_return set[count _return,
+		["Box_NATO_AmmoVeh_F",6]];
+		_return set[count _return,
 		["C_SUV_01_F",20000]];
 		if(__GETC__(life_coplevel) > 2) then
 		{

@@ -45,4 +45,5 @@ switch (_className) do
 	case "O_Truck_03_transport_F": {2000};
 	case "O_Truck_03_covered_F": {2500};
 	case "O_Truck_03_device_F": {3000};
+	case "Box_NATO_AmmoVeh_F": {100};
 };
