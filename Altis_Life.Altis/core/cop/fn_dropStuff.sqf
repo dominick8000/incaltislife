@@ -4,7 +4,7 @@ _veh = createVehicle ["C_SUV_01_F", [0,0,80], [], 0, ""];
 _veh attachTo [_para,[0,0,0]]; 
 
 // Land safely
-WaitUntil {((((position _veh) select 2) < 0.6) || (isNil "_para"))};
+WaitUntil {((((position _veh) select 2) < 1) || (isNil "_para"))};
 detach _veh;
 _veh SetVelocity [0,0,-5];           
 sleep 0.3;
